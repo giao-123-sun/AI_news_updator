@@ -1,0 +1,20 @@
+[
+  {
+    "name": "AI 工具导航与工作流集合",
+    "description": "聚合高质量工具，提供可复制工作流模板。",
+    "support_keywords": ["tool", "workflow", "agent", "开源", "工具", "github", "模板"],
+    "risk_keywords": ["封号", "宕机", "价格上涨", "不稳定", "bug", "失败", "风控"]
+  },
+  {
+    "name": "论文追踪与实验复现",
+    "description": "持续追踪论文，形成可复现实验与评估对比。",
+    "support_keywords": ["paper", "arxiv", "research", "论文", "实验", "benchmark"],
+    "risk_keywords": ["复现失败", "数据偏差", "样本不足", "不可复现", "夸大", "误导"]
+  },
+  {
+    "name": "产品体验情报雷达",
+    "description": "持续收集真实体验反馈，提炼可执行改进点。",
+    "support_keywords": ["体验", "review", "实测", "用了", "好用", "不好用", "踩坑"],
+    "risk_keywords": ["噪音", "广告", "水帖", "误导", "偏见", "极端观点"]
+  }
+]

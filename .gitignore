@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Secrets
+config/github_key.txt
+human_comment/cookies.txt
+
+# Local crawl outputs
+twitter_*.csv
+
+# Generated assets
+tweet_images/
+report/
+report_karpathy/
+tmp_ai_digest/
+human_comment/3ofthem/qa/
+human_comment/3ofthem/*.md
+human_comment/3ofthem/reading_room.html
+
+# Misc local artifacts
+site_ai_digest_home.html
+

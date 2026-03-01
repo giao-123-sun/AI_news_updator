@@ -1,0 +1,249 @@
+{
+  "timestamp": "2026-02-27T13:24:55.858163+00:00",
+  "proxy_used": false,
+  "tested_users": [
+    {
+      "user": "vista8",
+      "status": "ok",
+      "tweets_on_first_page": 20,
+      "reply_count": 12,
+      "reply_ratio": 0.6,
+      "reply_parent_also_in_same_page": 5
+    },
+    {
+      "user": "lijigang_com",
+      "status": "ok",
+      "tweets_on_first_page": 0,
+      "reply_count": 0,
+      "reply_ratio": 0,
+      "reply_parent_also_in_same_page": 0
+    },
+    {
+      "user": "dotey",
+      "status": "ok",
+      "tweets_on_first_page": 20,
+      "reply_count": 13,
+      "reply_ratio": 0.65,
+      "reply_parent_also_in_same_page": 0
+    },
+    {
+      "user": "op7418",
+      "status": "ok",
+      "tweets_on_first_page": 20,
+      "reply_count": 15,
+      "reply_ratio": 0.75,
+      "reply_parent_also_in_same_page": 6
+    },
+    {
+      "user": "dongxi_nlp",
+      "status": "failed"
+    },
+    {
+      "user": "indigo11",
+      "status": "ok",
+      "tweets_on_first_page": 0,
+      "reply_count": 0,
+      "reply_ratio": 0,
+      "reply_parent_also_in_same_page": 0
+    },
+    {
+      "user": "venturetwins",
+      "status": "ok",
+      "tweets_on_first_page": 20,
+      "reply_count": 18,
+      "reply_ratio": 0.9,
+      "reply_parent_also_in_same_page": 0
+    },
+    {
+      "user": "GabrielPeterss4",
+      "status": "ok",
+      "tweets_on_first_page": 0,
+      "reply_count": 0,
+      "reply_ratio": 0,
+      "reply_parent_also_in_same_page": 0
+    },
+    {
+      "user": "deedydas",
+      "status": "ok",
+      "tweets_on_first_page": 20,
+      "reply_count": 16,
+      "reply_ratio": 0.8,
+      "reply_parent_also_in_same_page": 9
+    },
+    {
+      "user": "ding_liam",
+      "status": "ok",
+      "tweets_on_first_page": 20,
+      "reply_count": 11,
+      "reply_ratio": 0.55,
+      "reply_parent_also_in_same_page": 5
+    }
+  ],
+  "reply_detection": {
+    "users_tested_ok": 9,
+    "total_reply_samples": 85,
+    "sample_replies": [
+      {
+        "user": "vista8",
+        "tweet_id": "2027323750266614206",
+        "is_reply": true,
+        "parent_id": "2027323508875985399",
+        "in_reply_to_screen_name": "vista8",
+        "author": "",
+        "text": "Github 地址 https://t.co/GJCqulhJKl\n\n可以用Docker安装，目前有3w7 Stars"
+      },
+      {
+        "user": "vista8",
+        "tweet_id": "2027293865125003441",
+        "is_reply": true,
+        "parent_id": "2027293527944949899",
+        "in_reply_to_screen_name": "86BhzMPw2KYDz8k",
+        "author": "",
+        "text": "@86BhzMPw2KYDz8k @ddb0ooha 不用啊，昨天测试邮箱或gmail账号都能直接注册成功。"
+      },
+      {
+        "user": "vista8",
+        "tweet_id": "2027293374513029630",
+        "is_reply": true,
+        "parent_id": "2027292985470382202",
+        "in_reply_to_screen_name": "86BhzMPw2KYDz8k",
+        "author": "",
+        "text": "@86BhzMPw2KYDz8k @ddb0ooha 不用手机号，apple余额支付，用安卓会更省"
+      },
+      {
+        "user": "vista8",
+        "tweet_id": "2027282379572985900",
+        "is_reply": true,
+        "parent_id": "2027280236677861659",
+        "in_reply_to_screen_name": "ddb0ooha",
+        "author": "",
+        "text": "@ddb0ooha 可以翻下昨天的帖子，有订阅方法，不过需要静态住宅IP会稳些"
+      },
+      {
+        "user": "vista8",
+        "tweet_id": "2027282187926786553",
+        "is_reply": true,
+        "parent_id": "2027280397319753752",
+        "in_reply_to_screen_name": "berryxia",
+        "author": "",
+        "text": "@berryxia 可以，抽空给他弄一个。"
+      }
+    ]
+  },
+  "reply_parent_fetch_test": {
+    "sample_reply": {
+      "user": "vista8",
+      "tweet_id": "2027323750266614206",
+      "is_reply": true,
+      "parent_id": "2027323508875985399",
+      "in_reply_to_screen_name": "vista8",
+      "author": "",
+      "text": "Github 地址 https://t.co/GJCqulhJKl\n\n可以用Docker安装，目前有3w7 Stars"
+    },
+    "conversation_query": "conversation_id:2027323508875985399",
+    "conversation_result_count": 2,
+    "contains_parent_id": false,
+    "unique_authors": [],
+    "sample_conversation_rows": [
+      {
+        "tweet_id": "2027337884068721006",
+        "is_reply": true,
+        "parent_id": "2027323508875985399",
+        "in_reply_to_screen_name": "vista8",
+        "author": "",
+        "text": "@vista8 本地api小管家"
+      },
+      {
+        "tweet_id": "2027323750266614206",
+        "is_reply": true,
+        "parent_id": "2027323508875985399",
+        "in_reply_to_screen_name": "vista8",
+        "author": "",
+        "text": "Github 地址 https://t.co/GJCqulhJKl\n\n可以用Docker安装，目前有3w7 Stars"
+      }
+    ]
+  },
+  "comments_fetch_test": {
+    "target_post": {
+      "user": "vista8",
+      "tweet_id": "2027350971203092564",
+      "is_reply": false,
+      "parent_id": null,
+      "in_reply_to_screen_name": null,
+      "author": "",
+      "text": "小红书的风控也是绝了，好久没发。\n\n用Listenhub生成视频，上传给我提示这个。。。\n\n删除N个插件，最后发现可能是一个微信读书划线插件。\n\n这跟小红书风险有啥关系呢？ https://t.co/sIXnAyibYf"
+    },
+    "conversation_query": "conversation_id:2027350971203092564",
+    "conversation_result_count": 4,
+    "direct_reply_count": 4,
+    "contains_target_post": false,
+    "sample_direct_replies": [
+      {
+        "tweet_id": "2027371561515356268",
+        "is_reply": true,
+        "parent_id": "2027350971203092564",
+        "in_reply_to_screen_name": "vista8",
+        "author": "",
+        "text": "@vista8 腾讯元宝的浏览器插件也有问题，会修改网页 dom，导致ChatGPT 的网页端巨卡，加载网页慢上好几秒"
+      },
+      {
+        "tweet_id": "2027366955272081629",
+        "is_reply": true,
+        "parent_id": "2027350971203092564",
+        "in_reply_to_screen_name": "vista8",
+        "author": "",
+        "text": "@vista8 小红书是最莫名其妙的一个平台，不知道什么样的帖子才是符合他的标准的，浏览量也很魔性，还经常的判定违规。注销了小红书是我觉得最爽的事。"
+      },
+      {
+        "tweet_id": "2027353753700143611",
+        "is_reply": true,
+        "parent_id": "2027350971203092564",
+        "in_reply_to_screen_name": "vista8",
+        "author": "",
+        "text": "@vista8 改到某些 DOM 就会报，不是针对微信，其他好几个插件我都遭遇过。"
+      },
+      {
+        "tweet_id": "2027351778501529803",
+        "is_reply": true,
+        "parent_id": "2027350971203092564",
+        "in_reply_to_screen_name": "vista8",
+        "author": "",
+        "text": "@vista8 这也太离谱了吧！微信读书的划线竟然会触发小红书的风控？这逻辑…有点晕。难道小红书觉得划线内容敏感？🤔"
+      }
+    ],
+    "sample_rows": [
+      {
+        "tweet_id": "2027371561515356268",
+        "is_reply": true,
+        "parent_id": "2027350971203092564",
+        "in_reply_to_screen_name": "vista8",
+        "author": "",
+        "text": "@vista8 腾讯元宝的浏览器插件也有问题，会修改网页 dom，导致ChatGPT 的网页端巨卡，加载网页慢上好几秒"
+      },
+      {
+        "tweet_id": "2027366955272081629",
+        "is_reply": true,
+        "parent_id": "2027350971203092564",
+        "in_reply_to_screen_name": "vista8",
+        "author": "",
+        "text": "@vista8 小红书是最莫名其妙的一个平台，不知道什么样的帖子才是符合他的标准的，浏览量也很魔性，还经常的判定违规。注销了小红书是我觉得最爽的事。"
+      },
+      {
+        "tweet_id": "2027353753700143611",
+        "is_reply": true,
+        "parent_id": "2027350971203092564",
+        "in_reply_to_screen_name": "vista8",
+        "author": "",
+        "text": "@vista8 改到某些 DOM 就会报，不是针对微信，其他好几个插件我都遭遇过。"
+      },
+      {
+        "tweet_id": "2027351778501529803",
+        "is_reply": true,
+        "parent_id": "2027350971203092564",
+        "in_reply_to_screen_name": "vista8",
+        "author": "",
+        "text": "@vista8 这也太离谱了吧！微信读书的划线竟然会触发小红书的风控？这逻辑…有点晕。难道小红书觉得划线内容敏感？🤔"
+      }
+    ]
+  }
+}

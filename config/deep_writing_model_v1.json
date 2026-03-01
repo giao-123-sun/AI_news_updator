@@ -1,0 +1,5 @@
+{
+  "model": "google/gemini-3.1-pro-preview",
+  "provider": "openrouter",
+  "notes": "Deep writing uses this model id as runtime selection. You can override with DEEP_WRITING_MODEL env."
+}
