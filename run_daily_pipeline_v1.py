@@ -13,6 +13,7 @@ def main():
     run([sys.executable, "build_insight_hub_v1.py"])
     run([sys.executable, "build_longreads_v1.py"])
     run([sys.executable, "build_ai_digest_clone.py"])
+    run([sys.executable, "scripts/build_daily_site_index.py"])
     print("daily pipeline done")
 
 

@@ -45,6 +45,7 @@ python x_user_crawler.py
 ```bash
 python run_daily_pipeline_v1.py
 ```
+(`run_daily_pipeline_v1.py` now also regenerates `reports/daily/index.html` automatically.)
 
 4. Build stable web entry page:
 ```bash
