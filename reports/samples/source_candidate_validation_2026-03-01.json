@@ -1,0 +1,313 @@
+{
+  "generated_at": "2026-03-01",
+  "candidates": [
+    {
+      "name": "a16z",
+      "track": "business",
+      "feed_url": "https://a16z.com/feed/",
+      "site_url": "https://a16z.com/",
+      "status": "fail",
+      "http_status": 404,
+      "entries": 0,
+      "feed_title": "",
+      "error": "HTTP 404"
+    },
+    {
+      "name": "Benchmark",
+      "track": "business",
+      "feed_url": "https://www.benchmark.com/feed/",
+      "site_url": "https://www.benchmark.com/",
+      "status": "fail",
+      "http_status": 404,
+      "entries": 0,
+      "feed_title": "",
+      "error": "HTTP 404"
+    },
+    {
+      "name": "Anthropic News",
+      "track": "frontier",
+      "feed_url": "https://www.anthropic.com/news",
+      "site_url": "https://www.anthropic.com/news",
+      "status": "no_entries",
+      "http_status": 200,
+      "entries": 0,
+      "feed_title": "",
+      "error": "<unknown>:3:27726: not well-formed (invalid token)"
+    },
+    {
+      "name": "DeepMind Blog",
+      "track": "research",
+      "feed_url": "https://deepmind.google/blog/rss.xml",
+      "site_url": "https://deepmind.google/blog/",
+      "status": "ok",
+      "http_status": 200,
+      "entries": 100,
+      "feed_title": "Google DeepMind News",
+      "error": ""
+    },
+    {
+      "name": "Google Research Blog",
+      "track": "research",
+      "feed_url": "https://research.google/blog/rss/",
+      "site_url": "https://research.google/blog/",
+      "status": "ok",
+      "http_status": 200,
+      "entries": 100,
+      "feed_title": "The latest research from Google",
+      "error": ""
+    },
+    {
+      "name": "Meta AI Blog",
+      "track": "frontier",
+      "feed_url": "https://ai.meta.com/blog/rss/",
+      "site_url": "https://ai.meta.com/blog/",
+      "status": "fail",
+      "http_status": 404,
+      "entries": 0,
+      "feed_title": "",
+      "error": "HTTP 404"
+    },
+    {
+      "name": "AWS ML Blog",
+      "track": "business",
+      "feed_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "site_url": "https://aws.amazon.com/blogs/machine-learning/",
+      "status": "ok",
+      "http_status": 200,
+      "entries": 20,
+      "feed_title": "Artificial Intelligence",
+      "error": ""
+    },
+    {
+      "name": "NVIDIA Research",
+      "track": "research",
+      "feed_url": "https://research.nvidia.com/rss.xml",
+      "site_url": "https://research.nvidia.com/",
+      "status": "ok",
+      "http_status": 200,
+      "entries": 10,
+      "feed_title": "Research",
+      "error": ""
+    },
+    {
+      "name": "Microsoft Research Blog",
+      "track": "research",
+      "feed_url": "https://www.microsoft.com/en-us/research/feed/",
+      "site_url": "https://www.microsoft.com/en-us/research/blog/",
+      "status": "fail",
+      "http_status": 403,
+      "entries": 0,
+      "feed_title": "",
+      "error": "HTTP 403"
+    },
+    {
+      "name": "OpenAI Blog",
+      "track": "frontier",
+      "feed_url": "https://openai.com/news/rss.xml",
+      "site_url": "https://openai.com/news/",
+      "status": "ok",
+      "http_status": 200,
+      "entries": 863,
+      "feed_title": "OpenAI News",
+      "error": ""
+    },
+    {
+      "name": "OpenAI Research",
+      "track": "research",
+      "feed_url": "https://openai.com/research/",
+      "site_url": "https://openai.com/research/",
+      "status": "fail",
+      "http_status": 403,
+      "entries": 0,
+      "feed_title": "",
+      "error": "HTTP 403"
+    },
+    {
+      "name": "Lawfare",
+      "track": "law",
+      "feed_url": "https://www.lawfaremedia.org/rss.xml",
+      "site_url": "https://www.lawfaremedia.org/",
+      "status": "fail",
+      "http_status": 403,
+      "entries": 0,
+      "feed_title": "",
+      "error": "HTTP 403"
+    },
+    {
+      "name": "EU AI Act",
+      "track": "law",
+      "feed_url": "https://artificialintelligenceact.eu/feed/",
+      "site_url": "https://artificialintelligenceact.eu/",
+      "status": "ok",
+      "http_status": 200,
+      "entries": 22,
+      "feed_title": "EU Artificial Intelligence Act",
+      "error": ""
+    },
+    {
+      "name": "OECD AI Blog",
+      "track": "law",
+      "feed_url": "https://oecd.ai/en/blog/rss",
+      "site_url": "https://oecd.ai/en/",
+      "status": "no_entries",
+      "http_status": 200,
+      "entries": 0,
+      "feed_title": "",
+      "error": "<unknown>:2617:11: mismatched tag"
+    },
+    {
+      "name": "Stanford HAI News",
+      "track": "research",
+      "feed_url": "https://hai.stanford.edu/news/rss.xml",
+      "site_url": "https://hai.stanford.edu/news",
+      "status": "no_entries",
+      "http_status": 200,
+      "entries": 0,
+      "feed_title": "",
+      "error": "<unknown>:2:4172: not well-formed (invalid token)"
+    },
+    {
+      "name": "MIT News AI",
+      "track": "research",
+      "feed_url": "https://news.mit.edu/rss/topic/artificial-intelligence2",
+      "site_url": "https://news.mit.edu/topic/artificial-intelligence2",
+      "status": "ok",
+      "http_status": 200,
+      "entries": 50,
+      "feed_title": "MIT News - Artificial intelligence",
+      "error": ""
+    },
+    {
+      "name": "Nature AI",
+      "track": "research",
+      "feed_url": "https://www.nature.com/subjects/machine-learning.rss",
+      "site_url": "https://www.nature.com/subjects/machine-learning",
+      "status": "ok",
+      "http_status": 200,
+      "entries": 30,
+      "feed_title": "Machine learning : nature.com subject feeds",
+      "error": ""
+    },
+    {
+      "name": "ScienceDaily AI",
+      "track": "research",
+      "feed_url": "https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml",
+      "site_url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/",
+      "status": "ok",
+      "http_status": 200,
+      "entries": 60,
+      "feed_title": "Artificial Intelligence News -- ScienceDaily",
+      "error": ""
+    },
+    {
+      "name": "arXiv cs.AI",
+      "track": "research",
+      "feed_url": "https://export.arxiv.org/rss/cs.AI",
+      "site_url": "https://arxiv.org/list/cs.AI/recent",
+      "status": "no_entries",
+      "http_status": 200,
+      "entries": 0,
+      "feed_title": "cs.AI updates on arXiv.org",
+      "error": ""
+    },
+    {
+      "name": "arXiv cs.LG",
+      "track": "research",
+      "feed_url": "https://export.arxiv.org/rss/cs.LG",
+      "site_url": "https://arxiv.org/list/cs.LG/recent",
+      "status": "no_entries",
+      "http_status": 200,
+      "entries": 0,
+      "feed_title": "cs.LG updates on arXiv.org",
+      "error": ""
+    },
+    {
+      "name": "arXiv cs.CL",
+      "track": "research",
+      "feed_url": "https://export.arxiv.org/rss/cs.CL",
+      "site_url": "https://arxiv.org/list/cs.CL/recent",
+      "status": "no_entries",
+      "http_status": 200,
+      "entries": 0,
+      "feed_title": "cs.CL updates on arXiv.org",
+      "error": ""
+    },
+    {
+      "name": "36Kr",
+      "track": "business_cn",
+      "feed_url": "https://www.36kr.com/feed",
+      "site_url": "https://www.36kr.com/",
+      "status": "ok",
+      "http_status": 200,
+      "entries": 30,
+      "feed_title": "36氪",
+      "error": ""
+    },
+    {
+      "name": "Huxiu",
+      "track": "business_cn",
+      "feed_url": "https://www.huxiu.com/rss/0.xml",
+      "site_url": "https://www.huxiu.com/",
+      "status": "ok",
+      "http_status": 200,
+      "entries": 10,
+      "feed_title": "虎嗅网",
+      "error": ""
+    },
+    {
+      "name": "GeekPark",
+      "track": "business_cn",
+      "feed_url": "https://www.geekpark.net/rss",
+      "site_url": "https://www.geekpark.net/",
+      "status": "fail",
+      "http_status": 0,
+      "entries": 0,
+      "feed_title": "",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='www.geekpark.net', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "name": "QbitAI",
+      "track": "frontier_cn",
+      "feed_url": "https://www.qbitai.com/feed",
+      "site_url": "https://www.qbitai.com/",
+      "status": "ok",
+      "http_status": 200,
+      "entries": 10,
+      "feed_title": "量子位",
+      "error": ""
+    },
+    {
+      "name": "Jiqizhixin",
+      "track": "frontier_cn",
+      "feed_url": "https://www.jiqizhixin.com/rss",
+      "site_url": "https://www.jiqizhixin.com/",
+      "status": "no_entries",
+      "http_status": 200,
+      "entries": 0,
+      "feed_title": "",
+      "error": "<unknown>:2:0: syntax error"
+    },
+    {
+      "name": "Ruanyifeng",
+      "track": "dev_cn",
+      "feed_url": "https://www.ruanyifeng.com/blog/atom.xml",
+      "site_url": "https://www.ruanyifeng.com/blog/",
+      "status": "fail",
+      "http_status": 403,
+      "entries": 0,
+      "feed_title": "",
+      "error": "HTTP 403"
+    },
+    {
+      "name": "InfoQ China",
+      "track": "dev_cn",
+      "feed_url": "https://www.infoq.cn/feed",
+      "site_url": "https://www.infoq.cn/",
+      "status": "ok",
+      "http_status": 200,
+      "entries": 20,
+      "feed_title": "InfoQ - 促进软件开发领域知识与创新的传播",
+      "error": ""
+    }
+  ]
+}

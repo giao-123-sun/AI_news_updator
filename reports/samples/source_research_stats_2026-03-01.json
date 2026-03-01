@@ -1,0 +1,837 @@
+{
+  "generated_at": "2026-03-01",
+  "total_sources": 280,
+  "ok_sources": 263,
+  "failed_sources": 17,
+  "ok_ratio": 0.9393,
+  "category_distribution": {
+    "People Query": 52,
+    "Company Query": 90,
+    "Direct RSS/Atom": 95,
+    "Google News (other)": 22,
+    "Substack": 4
+  },
+  "recency_distribution": {
+    "0-1d": 108,
+    "2-3d": 25,
+    "4-7d": 22,
+    "8-30d": 54,
+    ">30d": 54
+  },
+  "failure_reason_distribution": {
+    "SSL error": 2,
+    "HTTP 404": 3,
+    "No entries": 12
+  },
+  "top_stale_sources": [
+    {
+      "source": "paulgraham.com",
+      "feed_url": "http://www.aaronsw.com/2002/feeds/pgessays.rss",
+      "published": "1970-01-01T00:00:00+00:00",
+      "days_old": 20513,
+      "title": "Superlinear Returns",
+      "link": "http://www.paulgraham.com/superlinear.html",
+      "category": "Direct RSS/Atom"
+    },
+    {
+      "source": "chadnauseam.com",
+      "feed_url": "https://chadnauseam.com/rss.xml",
+      "published": "1970-01-01T00:00:00+00:00",
+      "days_old": 20513,
+      "title": "semaglutide-has-changed-the-world",
+      "link": "https://chadnauseam.com/random/semaglutide-has-changed-the-world",
+      "category": "Direct RSS/Atom"
+    },
+    {
+      "source": "People: 王树森 AI (Google News query feed)",
+      "feed_url": "https://news.google.com/rss/search?q=%E7%8E%8B%E6%A0%91%E6%A3%AE+AI&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+      "published": "2020-05-12T23:00:00+00:00",
+      "days_old": 2118,
+      "title": "王树森教授：西达本胺为HR+/HER2-乳腺癌带来治疗革新，中国原创新药助力乳腺癌长期生存-MedSci.cn - 梅斯医学 MedSci",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9sSmxiZGkxa3JxcnBnMW01c2xSdjNUM1dHR3VlRVRFaUhRaVItRV9IMlNOdFNjRFlxSTJzZ21jRnhxajA3MDdCNlFvMUoteWd1Qll4R2czazlVcm1SaHhLTnY0RzJUdlR6Wm9QSm13?oc=5",
+      "category": "People Query"
+    },
+    {
+      "source": "gwern.net",
+      "feed_url": "https://gwern.substack.com/feed",
+      "published": "2021-06-11T06:16:22+00:00",
+      "days_old": 1723,
+      "title": "May 2021 Gwern.net Newsletter",
+      "link": "https://gwern.substack.com/p/may-2021-gwernnet-newsletter",
+      "category": "Substack"
+    },
+    {
+      "source": "danielwirtz.com",
+      "feed_url": "https://danielwirtz.com/rss.xml",
+      "published": "2021-12-09T11:35:00+00:00",
+      "days_old": 1542,
+      "title": "How to create a tool library in Airtable",
+      "link": "https://danielwirtz.com/blog/airtable-tool-library",
+      "category": "Direct RSS/Atom"
+    },
+    {
+      "source": "Benchmark (Google News site feed)",
+      "feed_url": "https://news.google.com/rss/search?q=site%3Abenchmark.com&hl=en-US&gl=US&ceid=US%3Aen",
+      "published": "2022-11-16T06:38:24+00:00",
+      "days_old": 1200,
+      "title": "More info: @benchmark » - benchmark.com",
+      "link": "https://news.google.com/rss/articles/CBMiOkFVX3lxTE0xRTdVYVF6SUQ0RDdoVEdYb1lBRUhCb3NZVUxTNHVWbll1NzVpNlhpeFI4c3gzNTFlbVE?oc=5",
+      "category": "Google News (other)"
+    },
+    {
+      "source": "Microsoft AI Blog (Official RSS)",
+      "feed_url": "https://blogs.microsoft.com/ai/feed/",
+      "published": "2022-12-06T09:29:09+00:00",
+      "days_old": 1180,
+      "title": "A conversation with Kevin Scott: What’s next in AI",
+      "link": "https://blogs.microsoft.com/ai/a-conversation-with-kevin-scott-whats-next-in-ai/",
+      "category": "Direct RSS/Atom"
+    },
+    {
+      "source": "Company: 360.cn (Google News site feed)",
+      "feed_url": "https://news.google.com/rss/search?q=site%3A360.cn&hl=en-US&gl=US&ceid=US:en",
+      "published": "2023-12-31T16:44:18+00:00",
+      "days_old": 790,
+      "title": "Connect my 360 Video Doorbell - 360智能摄像机",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1yTXpiOW1SUVpJQ1dLR0dGVEJscnR3Y0pUc0hEWWxjaTJocVBQZHhLWWF3aTVLaV9hQ0Z6aE1xcHJJbmxuTmt3azhKZmd5Mzh5aFd2cW83Q1pPUQ?oc=5",
+      "category": "Company Query"
+    },
+    {
+      "source": "Company: covariant.ai (Google News site feed)",
+      "feed_url": "https://news.google.com/rss/search?q=site%3Acovariant.ai&hl=en-US&gl=US&ceid=US:en",
+      "published": "2024-08-29T23:00:00+00:00",
+      "days_old": 548,
+      "title": "Introducing the next phase of our AI Robotics journey - Covariant",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQRlJJMjcxcl9FUlVfOG5BZUZWNW1tSXptVnpUNmo4TjNjOWxRWGdNcXN6azc5ZXJTeGtDTFp2TDVOc3EzeXZ2QzZGdEJlSXFJY2FNQnl6dVBjRWVyQ0JONnlDenBnYTFuTjhITVdYRVRDMm5TYlB4Nl9KZHdZZDRPU3pOUzdQbEQ0elN4SQ?oc=5",
+      "category": "Company Query"
+    },
+    {
+      "source": "Company: minimax.chat (Google News site feed)",
+      "feed_url": "https://news.google.com/rss/search?q=site%3Aminimax.chat&hl=en-US&gl=US&ceid=US:en",
+      "published": "2025-01-14T12:57:38+00:00",
+      "days_old": 410,
+      "title": "MiniMax-01: Scaling Foundation Models with Lightning Attention - filecdn.minimax.chat",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBxX3NzQUtUazU3R3VMQkgyVF9naWlRZ0tJNzBHQ0R3cTk5Q3ZpdFRkYWtXb01GYVNEcTFSemVFNFh3dVlDc004TnVwTDMyOWpHR3BORmtnRmpkYXZBUnc3TnZ2WmRyLTJu?oc=5",
+      "category": "Company Query"
+    },
+    {
+      "source": "Company: modelbest.cn (Google News site feed)",
+      "feed_url": "https://news.google.com/rss/search?q=site%3Amodelbest.cn&hl=en-US&gl=US&ceid=US:en",
+      "published": "2025-01-14T00:56:20+00:00",
+      "days_old": 410,
+      "title": "MiniCPM-omni - 面壁智能",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBwWmlxN3J6SmNuNnFMRWgwWHd0REMtamxjbk94S1VFSHFNbXNUaGJVRVVsV2ljS2JHcGJMdEQ4UmJVcnQ3NmlXZ3h1SmltdzBEMGxOei1uLVA?oc=5",
+      "category": "Company Query"
+    },
+    {
+      "source": "Company: baichuan-ai.com (Google News site feed)",
+      "feed_url": "https://news.google.com/rss/search?q=site%3Abaichuan-ai.com&hl=en-US&gl=US&ceid=US:en",
+      "published": "2025-04-16T22:03:42+00:00",
+      "days_old": 318,
+      "title": "- 百川智能",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE01blFzdnBycDl6YmNLUm9Hbi1Qa096MHpPa24yWnAwMjZpZlc5elc5dEM4aFhlTjFRVkwxM2Q0MzdvRDlLZUlwbWszUllyMnhCc2oyNzhB?oc=5",
+      "category": "Company Query"
+    },
+    {
+      "source": "philiplaine.com",
+      "feed_url": "https://philiplaine.com/index.xml",
+      "published": "2025-04-20T16:00:00+00:00",
+      "days_old": 314,
+      "title": "Getting Forked by Microsoft",
+      "link": "https://philiplaine.com/posts/getting-forked-by-microsoft/",
+      "category": "Direct RSS/Atom"
+    },
+    {
+      "source": "Company: moonshot.cn (Google News site feed)",
+      "feed_url": "https://news.google.com/rss/search?q=site%3Amoonshot.cn&hl=en-US&gl=US&ceid=US:en",
+      "published": "2025-05-14T16:54:31+00:00",
+      "days_old": 290,
+      "title": "Moonshot AI Status - Moonshot.cn",
+      "link": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE85cnlPd2s5NEY1MGdUQmRyTnQwLXZfb2pUb2lfUl9TRUxIQkY4Z1RXUU9BWGNnT3dGNTBucWZzaVM?oc=5",
+      "category": "Company Query"
+    },
+    {
+      "source": "Company: 01.ai (Google News site feed)",
+      "feed_url": "https://news.google.com/rss/search?q=site%3A01.ai&hl=en-US&gl=US&ceid=US:en",
+      "published": "2025-05-31T14:02:35+00:00",
+      "days_old": 273,
+      "title": "EN1.0 - 01.ai",
+      "link": "https://news.google.com/rss/articles/CBMiOkFVX3lxTE55ZjBpWWE3WG42M0lPYkNBdW1jcVBtazY4dDhMWmNHVmcteENMcy10UFVPVmMtaVAtRWc?oc=5",
+      "category": "Company Query"
+    },
+    {
+      "source": "brutecat.com",
+      "feed_url": "https://brutecat.com/rss.xml",
+      "published": "2025-06-08T16:00:00+00:00",
+      "days_old": 265,
+      "title": "Leaking the phone number of any Google user",
+      "link": "https://brutecat.com/articles/leaking-google-phones",
+      "category": "Direct RSS/Atom"
+    },
+    {
+      "source": "chiark.greenend.org.uk/~sgtatham",
+      "feed_url": "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/feed.xml",
+      "published": "2025-09-01T16:00:00+00:00",
+      "days_old": 180,
+      "title": "Aperiodic Tilings V: the Refinable Frontier",
+      "link": "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/aperiodic-refine/",
+      "category": "Direct RSS/Atom"
+    },
+    {
+      "source": "People: Noam Brown AI (Google News query feed)",
+      "feed_url": "https://news.google.com/rss/search?q=Noam+Brown+AI&hl=en-US&gl=US&ceid=US:en",
+      "published": "2025-09-14T23:00:00+00:00",
+      "days_old": 167,
+      "title": "Brain Co. Raises $30 Million in Series A - The SaaS News",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1pOUZ1TDZCMkMyWFB6LWFPWFo5SzFfLS1BR2pvdFpzTnlkc3pyT180akw3M2FMeVJJai1CbEpMYzI0TWw1eFlCTWlROVNYemp4QmVJbXpvWVl5X1YyVHVTMV8wMVh4WHFvOVFNOXlOdDJDRUZjbmxiZXRmZw?oc=5",
+      "category": "People Query"
+    },
+    {
+      "source": "Company: neo4j.com (Google News site feed)",
+      "feed_url": "https://news.google.com/rss/search?q=site%3Aneo4j.com&hl=en-US&gl=US&ceid=US:en",
+      "published": "2025-10-07T16:40:53+00:00",
+      "days_old": 144,
+      "title": "Product analytics - Neo4j",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE11cE1RUGJjRmhaYWhpeXVDVWpVX0twYWZJRlJvNXVNSEQ3QXVzbWhJWHdWVzBrWnNRNWFSSS1xaHdPRW16VUM4blVQOGNhZXliUnBQc0VPZ1dKS2VpSTVpalV6aW5BX0dBSXhfLQ?oc=5",
+      "category": "Company Query"
+    },
+    {
+      "source": "blog.pixelmelt.dev",
+      "feed_url": "https://blog.pixelmelt.dev/rss/",
+      "published": "2025-10-15T11:29:16+00:00",
+      "days_old": 136,
+      "title": "How I Reversed Amazon's Kindle Web Obfuscation Because Their App Sucked",
+      "link": "https://blog.pixelmelt.dev/kindle-web-drm/",
+      "category": "Direct RSS/Atom"
+    },
+    {
+      "source": "bogdanthegeek.github.io",
+      "feed_url": "https://bogdanthegeek.github.io/blog/index.xml",
+      "published": "2025-10-19T06:07:31+00:00",
+      "days_old": 132,
+      "title": "World's Cheapest ARM Debugger is Actually RISC-V",
+      "link": "https://bogdanthegeek.github.io/blog/projects/v003-dap/",
+      "category": "Direct RSS/Atom"
+    },
+    {
+      "source": "beej.us",
+      "feed_url": "https://beej.us/blog/rss.xml",
+      "published": "2025-10-23T16:00:00+00:00",
+      "days_old": 128,
+      "title": "Rust RPN Calculator",
+      "link": "http://beej.us/blog/data/rust-rpn-calc/",
+      "category": "Direct RSS/Atom"
+    },
+    {
+      "source": "geoffreylitt.com",
+      "feed_url": "https://www.geoffreylitt.com/feed.xml",
+      "published": "2025-10-24T06:59:00+00:00",
+      "days_old": 127,
+      "title": "Code like a surgeon",
+      "link": "https://geoffreylitt.com/2025/10/24/code-like-a-surgeon.html",
+      "category": "Direct RSS/Atom"
+    },
+    {
+      "source": "hugotunius.se",
+      "feed_url": "https://hugotunius.se/feed.xml",
+      "published": "2025-10-25T15:00:00+00:00",
+      "days_old": 126,
+      "title": "Claude, Teach Me Something",
+      "link": "https://hugotunius.se/2025/10/26/claude-teach-me-something.html",
+      "category": "Direct RSS/Atom"
+    },
+    {
+      "source": "simone.org",
+      "feed_url": "https://simone.org/feed/",
+      "published": "2025-10-28T07:26:41+00:00",
+      "days_old": 123,
+      "title": "The Postcard and the Thing Itself (On Falling in Love with Ideas)",
+      "link": "https://simone.org/the-postcard-and-the-thing-itself-on-falling-in-love-with-ideas/",
+      "category": "Direct RSS/Atom"
+    },
+    {
+      "source": "People: Bjarne Stroustrup AI (Google News query feed)",
+      "feed_url": "https://news.google.com/rss/search?q=Bjarne+Stroustrup+AI&hl=en-US&gl=US&ceid=US:en",
+      "published": "2025-11-18T00:00:00+00:00",
+      "days_old": 103,
+      "title": "Learn C++ Programming: A Complete Beginner's Guide to Know - Simplilearn.com",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1TTFpTR01zb3BENnFINnBHMEtzeTJCT3pvVVdCYWZkaE9BeFk2M2JzZWZ3MFdNREwzQWdpTEIwTHZtUXd6RThRckdzZkVpbTRzUG5zbzdNbUwxbWx3YUx0ZGZGMHc0Z1VuRExMeDFmVHYydTVjLWc?oc=5",
+      "category": "People Query"
+    },
+    {
+      "source": "People: 周志华 机器学习 (Google News query feed)",
+      "feed_url": "https://news.google.com/rss/search?q=%E5%91%A8%E5%BF%97%E5%8D%8E+%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+      "published": "2025-11-24T00:00:00+00:00",
+      "days_old": 97,
+      "title": "贵阳六中校友周志华当选中国科学院院士！ - 新浪财经",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQUlBiQnlHYnlhdnhudDFGOFlMc1N0ZVNOR1ZjZDVBM1dXc0tKRjdpN0NlTW9FNEhKLVBKUkRUUUFtT1IyM3NaaUppelZUcXdHenNGci1uUGtLNzlkOW45bF9QUXZCV0RhUDJhbExyNGg5eTVqWVlueklLMFZpV1YybmdTc3o?oc=5",
+      "category": "People Query"
+    },
+    {
+      "source": "People: Sebastian Bubeck AI (Google News query feed)",
+      "feed_url": "https://news.google.com/rss/search?q=Sebastian+Bubeck+AI&hl=en-US&gl=US&ceid=US:en",
+      "published": "2025-11-30T00:00:00+00:00",
+      "days_old": 91,
+      "title": "GPT-5 generates the \"most impressive LLM output\" yet, says OpenAI researcher - the-decoder.com",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQU1J0c0x3TC1RbkZaQklUSEJCZzNvSVJSVzR3RGxXYTNDT1UxZVdLYi1Pa1pob3c4dTA0Qm9nOVVkTFVtOVdfYW9LQVVnRU1uZlU2SnBBTTZ3TTRZQjlkd09mMWItVGROdVJVUjhCa1I1ekdlcHF1QTlnNTlLWktPcEtMMm9TUlhUNVFmNW9hUzNIUFZ2WjhtYW9GM3Vfb3M?oc=5",
+      "category": "People Query"
+    },
+    {
+      "source": "danieldelaney.net",
+      "feed_url": "https://danieldelaney.net/feed",
+      "published": "2025-12-01T16:00:00+00:00",
+      "days_old": 89,
+      "title": "I built a timer I can’t fail to set",
+      "link": "http://danieldelaney.net/timer/",
+      "category": "Direct RSS/Atom"
+    },
+    {
+      "source": "timsh.org",
+      "feed_url": "https://timsh.org/rss/",
+      "published": "2025-12-04T15:58:22+00:00",
+      "days_old": 86,
+      "title": "Scam Telegram: Uncovering a network of groups spreading crypto drainers",
+      "link": "https://timsh.org/scam-telegram-investigation/",
+      "category": "Direct RSS/Atom"
+    },
+    {
+      "source": "People: Ian Goodfellow AI (Google News query feed)",
+      "feed_url": "https://news.google.com/rss/search?q=Ian+Goodfellow+AI&hl=en-US&gl=US&ceid=US:en",
+      "published": "2025-12-24T00:00:00+00:00",
+      "days_old": 67,
+      "title": "Who is Ian Goodfellow and Why is He Important? - Analytics India Magazine",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBiR3NqMmxCQU5LaWhGTkRoQVM2S2l4YzdUcF9pZkh1eHF4UndGcjBSRFlWaEFkRnV3aTREcVpLWTdZQkJKRXNoblltQl9pUmdpNE12NUx5bE9aYllWQngxcA?oc=5",
+      "category": "People Query"
+    },
+    {
+      "source": "People: Guido van Rossum AI (Google News query feed)",
+      "feed_url": "https://news.google.com/rss/search?q=Guido+van+Rossum+AI&hl=en-US&gl=US&ceid=US:en",
+      "published": "2025-12-28T00:00:00+00:00",
+      "days_old": 63,
+      "title": "F*** You! Co-Creator of Go Language is Rightly Furious Over This Appreciation Email - It's FOSS",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5SSloyVVVCM0VDdDdaX2hNdlh1MWJmbGNmRU5PdC1xZE15V3ExN1duZGVYYjhUa250QXZzMG1nNHA1WXlndm5veGJkX05kLTJBajJ4Sw?oc=5",
+      "category": "People Query"
+    },
+    {
+      "source": "downtowndougbrown.com",
+      "feed_url": "https://www.downtowndougbrown.com/feed/",
+      "published": "2025-12-29T17:52:17+00:00",
+      "days_old": 61,
+      "title": "Finding a broken trace on my old Mac with the help of its ROM diagnostics",
+      "link": "https://www.downtowndougbrown.com/2025/12/finding-a-broken-trace-on-my-old-mac-with-the-help-of-its-rom-diagnostics/",
+      "category": "Direct RSS/Atom"
+    },
+    {
+      "source": "xania.org",
+      "feed_url": "https://xania.org/feed",
+      "published": "2025-12-31T13:30:00+00:00",
+      "days_old": 59,
+      "title": "2025 in Review",
+      "link": "http://xania.org/202512/2025-in-review?utm_source=feed&utm_medium=rss",
+      "category": "Direct RSS/Atom"
+    },
+    {
+      "source": "refactoringenglish.com",
+      "feed_url": "https://refactoringenglish.com/index.xml",
+      "published": "2026-01-01T16:00:00+00:00",
+      "days_old": 58,
+      "title": "The Most Popular Blogs of Hacker News in 2025",
+      "link": "https://refactoringenglish.com/blog/2025-hn-top-5/",
+      "category": "Direct RSS/Atom"
+    },
+    {
+      "source": "Company: notion.so (Google News site feed)",
+      "feed_url": "https://news.google.com/rss/search?q=site%3Anotion.so&hl=en-US&gl=US&ceid=US:en",
+      "published": "2026-01-05T00:00:00+00:00",
+      "days_old": 55,
+      "title": "The all-in-one workspace for your notes, tasks, wikis, and databases. - Notion",
+      "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1TS1lvSWM1M2ZMY1h1ZDNyX2pjOHVVTnhSSnN5al9XcmJtUUNKOU1RSVdUWTRSNl9HVWhxWlVyU0xaVW9HLUE?oc=5",
+      "category": "Company Query"
+    },
+    {
+      "source": "Company: nuro.ai (Google News site feed)",
+      "feed_url": "https://news.google.com/rss/search?q=site%3Anuro.ai&hl=en-US&gl=US&ceid=US:en",
+      "published": "2026-01-05T00:00:00+00:00",
+      "days_old": 55,
+      "title": "Lucid, Nuro, and Uber Unveil Global Robotaxi at CES, Announce Autonomous On-Road Testing - nuro.ai",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1HWklqZV9DWG9VS3ctM3pqdjREa1Nta0htNHZXeE9ISXdfZm9hWElkeURoVGN1RGdyU1dXZ2NqQzJ4bG9VQUNRdzBLSjktTFlwd2NuZEVLWU5XWjA3WC1VWmlsWldxOXhaWkE?oc=5",
+      "category": "Company Query"
+    },
+    {
+      "source": "Company: meta.com (Google News site feed)",
+      "feed_url": "https://news.google.com/rss/search?q=site%3Ameta.com&hl=en-US&gl=US&ceid=US:en",
+      "published": "2026-01-05T00:00:00+00:00",
+      "days_old": 55,
+      "title": "Gorilla Tag - meta.com",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9JQjZXTko1VjhoTWFrUzNzdXFtLU5EazhnOFUzeS1WZUc2UDdodzlxM2ZWanN4ZUE2RXlHdHpfb0dlSVB3WF9uTXRuM0ZlN01NLUJBZlpSUXZpUUxSMlNRcVdpV1cwNmRQT2x2OWxmaw?oc=5",
+      "category": "Company Query"
+    },
+    {
+      "source": "mjg59.dreamwidth.org",
+      "feed_url": "https://mjg59.dreamwidth.org/data/rss",
+      "published": "2026-01-05T14:26:23+00:00",
+      "days_old": 54,
+      "title": "Not here",
+      "link": "https://mjg59.dreamwidth.org/74084.html",
+      "category": "Direct RSS/Atom"
+    },
+    {
+      "source": "aresluna.org",
+      "feed_url": "https://aresluna.org/main.rss",
+      "published": "2026-01-05T11:52:00+00:00",
+      "days_old": 54,
+      "title": "Fav tech museums",
+      "link": "https://aresluna.org/fav-tech-museums",
+      "category": "Direct RSS/Atom"
+    }
+  ],
+  "top_fresh_sources": [
+    {
+      "source": "People: Sam Altman AI (Google News query feed)",
+      "feed_url": "https://news.google.com/rss/search?q=Sam+Altman+AI&hl=en-US&gl=US&ceid=US:en",
+      "published": "2026-03-01T07:27:42+00:00",
+      "days_old": 0,
+      "title": "\"Cancel ChatGPT\" movement goes big after OpenAI's latest move - Windows Central",
+      "link": "https://news.google.com/rss/articles/CBMiogJBVV95cUxNemZLM1VKUkxiLVNLMkFJRDJxa3VqV3pEUEFEQ3JOYmJ6QWdQNndYVDNmT2RnRURlUmNndnRuQkxwYTRwcTZjNVJWdmQxQTFsRnhYam81cEVmeTNpcl9FQ202bnV2NS1XSGM5OTBTWnhuM0U4TUE3Wk1qbzRrenpSS0Rqa3JFdkpMLUppUXNzOFcyYVlmQzVJY2FRZUtFVWRtZ29oYVpGR1RGS2pSRTMtVVM2UnVtdUx4endoSjl3TTJ0WXJ6bEJIZU14Y2J3ano1Q3lyVVR2M3U0OUJERjV2M2UyYzZsWVF4ZWNISzV3TnhjSVBRVjl2Z1ZKaGFDXzJUX0xmV3ZOWTA4dzdHMEI3QjRBRFpQSktNOTQtY1NmXzRlUQ?oc=5",
+      "category": "People Query"
+    },
+    {
+      "source": "People: Dario Amodei AI (Google News query feed)",
+      "feed_url": "https://news.google.com/rss/search?q=Dario+Amodei+AI&hl=en-US&gl=US&ceid=US:en",
+      "published": "2026-03-01T07:23:00+00:00",
+      "days_old": 0,
+      "title": "AI executive Dario Amodei on the red lines Anthropic would not cross - CBS News",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQc3FFZ3hYMWJzcnRkc2xnNmM2SktMZkxjcW9PV1NUbEJoRzRLSURSVkV2MUVJWnVwdldkWHp1bW1oRG9hT0cxWkFxVU00VUtZbzdtS20tUENHX1pmWG5LQ1NzZDlvZ0UwaklWbjNpRWFnRkI4LUJtNmNUdWlYejVaaFVqdVh6cW5XdTRtUzV3U3picktFakNIZjJ3MEhsbkHSAaQBQVVfeXFMTUkxWmgtMEFwY0hxSWJ0UEpfcHRjd0w3UjFMQmd4a0o1QV9mVHNPWVRnSUFKcHRkWHlNUmMyZml3VG5EcWFfcmVXSkdRY3pMYUM3aVZlRVFILXM0Q0loZDc0X1BNYjQzc2wyaW1za200a09CQWhaNzBXcGp1ZjlDc0N5NWlPaDRyZ0xkMlM0QXlzWENCTXp1SkpDSUVjVk1EYjhTQ1E?oc=5",
+      "category": "People Query"
+    },
+    {
+      "source": "Company: huawei.com (Google News site feed)",
+      "feed_url": "https://news.google.com/rss/search?q=site%3Ahuawei.com&hl=en-US&gl=US&ceid=US:en",
+      "published": "2026-03-01T07:14:29+00:00",
+      "days_old": 0,
+      "title": "HUAWEI MatePad Mini - HUAWEI Global",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFAwc3RvXzRReWh1UThNRWlpVHNKVElIbWRvdG5ZeDI5TWJzaWpRMldSUlJ0V3A0MWJRNkJLWFdqZ1JNU0hSNGoxZWFSYWNWWG9vaWhFZFlRQTU0SF8xT2dBQTln?oc=5",
+      "category": "Company Query"
+    },
+    {
+      "source": "Company: suno.com (Google News site feed)",
+      "feed_url": "https://news.google.com/rss/search?q=site%3Asuno.com&hl=en-US&gl=US&ceid=US:en",
+      "published": "2026-03-01T07:09:52+00:00",
+      "days_old": 0,
+      "title": "渚♡ロックオン by kero tan - Suno | AI Music Generator",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5NNWhpS3E0TENRY3N4TGlFMk5VZ2VLbkwwN1IyNExVXzUxR05Kdy0wZHlUTmRkc25JcGVHSGtGRXY1WHhsM2oyczFhOA?oc=5",
+      "category": "Company Query"
+    },
+    {
+      "source": "Company: cursor.com (Google News site feed)",
+      "feed_url": "https://news.google.com/rss/search?q=site%3Acursor.com&hl=en-US&gl=US&ceid=US:en",
+      "published": "2026-03-01T06:58:43+00:00",
+      "days_old": 0,
+      "title": "My Cursor keeps getting stuck when creating files, such as requirements.txt.” - Cursor - Community Forum",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOX21RWkJRVlEwME9NaDl4LVR2bWl4RHU5eHdybWhpeVZMUjI1V0sxOTJ2RnNsa0Z5ejNiZlpKVEoxN3ZVbGlHWWljeFFpUTJwaDF4dXJiSnJUYW1zWXhjcFJrOXVsVEYxUDJJdi1HdnhUZy12dDBRWTRZNWdLWURtX3BPR1JnS0M5RjVkWEtRREY0djJ4QW4zaDFlRFR3ZURVc2NHZ2VWTjZZQjJ5?oc=5",
+      "category": "Company Query"
+    },
+    {
+      "source": "Hacker News Front Page (Official RSS)",
+      "feed_url": "https://news.ycombinator.com/rss",
+      "published": "2026-03-01T06:52:22+00:00",
+      "days_old": 0,
+      "title": "Why XML Tags Are So Fundamental to Claude",
+      "link": "https://glthr.com/XML-fundamental-to-Claude",
+      "category": "Direct RSS/Atom"
+    },
+    {
+      "source": "Company: openai.com (Google News site feed)",
+      "feed_url": "https://news.google.com/rss/search?q=site%3Aopenai.com&hl=en-US&gl=US&ceid=US:en",
+      "published": "2026-03-01T06:47:50+00:00",
+      "days_old": 0,
+      "title": "WebSocket Mode - OpenAI",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9GX3BpQktlRFBqenNhQXVvamtXcHV2SXVybUhzNWo0bDJnUmNUc3hMa2dIakpMcWpHMDlUaU1sV0I0Qk1Ra0JZd0hGYXFRZHNQdzUtQ0FyaXRjR0JJc2t6ZHlvem1ScDd6bFRRRVNB?oc=5",
+      "category": "Company Query"
+    },
+    {
+      "source": "Company: siemens.com (Google News site feed)",
+      "feed_url": "https://news.google.com/rss/search?q=site%3Asiemens.com&hl=en-US&gl=US&ceid=US:en",
+      "published": "2026-03-01T06:32:10+00:00",
+      "days_old": 0,
+      "title": "Configuration Recommendation - Siemens",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQdkp3Z0ZkQmQzNEtSY3otdnMzbkd2c1RqR3h4MkRQeHNNVF9GMVYtNk9Pb0d3SnBZRU9EcEh2SW5CYjdzb0t1eWZibFY2RGpwdGx1N0dMdXVXcndKUzBKUU9EMnZkcG1LekJhXzlQZkhQQVo5WkcyOXA5NTA3dDJYMFRjcVRfdEFTQnhVRjlPRF9HMmZtcS1uNk5pZjR2dTdN?oc=5",
+      "category": "Company Query"
+    },
+    {
+      "source": "Company: netlify.com (Google News site feed)",
+      "feed_url": "https://news.google.com/rss/search?q=site%3Anetlify.com&hl=en-US&gl=US&ceid=US:en",
+      "published": "2026-03-01T06:30:25+00:00",
+      "days_old": 0,
+      "title": "Domain akron.art.br already has an owner - Netlify Support Forums",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPcGZzX2NleU5SX0pXalFxUXg2djNwMkZ6eG5ibXZUc3R4dnY2cXk3cDFsMXc3aHRPbmtUMjctMjEyM2g4V0g5MkJCaUFCRzctQmU5TGoxYlBGcmIwU0xCc0pZWTBOVmIxQS1nLXFCZUdROXVaTGhMNWM4WVV3bmZSOGNFRQ?oc=5",
+      "category": "Company Query"
+    },
+    {
+      "source": "CN Blogger: 虎嗅 AI (Google News query feed)",
+      "feed_url": "https://news.google.com/rss/search?q=%E8%99%8E%E5%97%85+AI&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+      "published": "2026-03-01T06:27:43+00:00",
+      "days_old": 0,
+      "title": "德米斯·哈萨比斯的AI探索：从围棋到蛋白质折叠再到AGI - 虎嗅",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE0wZnp3aFRZRExrZ2FiZUxYTVlWbmJDdWZrYW42ZVJJVFlVNUFVdC1Jc094UmtCOXpIMWtQeGNNM3dmX2UyRFhUVFd1b19jWmp0QW9Raw?oc=5",
+      "category": "Google News (other)"
+    },
+    {
+      "source": "Company: google.com (Google News site feed)",
+      "feed_url": "https://news.google.com/rss/search?q=site%3Agoogle.com&hl=en-US&gl=US&ceid=US:en",
+      "published": "2026-03-01T06:02:08+00:00",
+      "days_old": 0,
+      "title": "Google Classrooms - Google",
+      "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9CbGhPLTMxWjQ1b1RucENrX0Z4Ni1yQXU4d0ZBNjd2c3BjckMyWEtGQlR6RTc5aDZaZFNkSGlPaVhMRHdJVEhNWnZn?oc=5",
+      "category": "Company Query"
+    },
+    {
+      "source": "People: Jensen Huang AI (Google News query feed)",
+      "feed_url": "https://news.google.com/rss/search?q=Jensen+Huang+AI&hl=en-US&gl=US&ceid=US:en",
+      "published": "2026-03-01T05:30:59+00:00",
+      "days_old": 0,
+      "title": "Latest line: A good week for Jensen Huang, a bad week for Rusty Hicks - The Mercury News",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPMU1taFZfYkwzdzBRNkR1NVMtMkU5OWhLOEx2QWw2V3diaWVlMVU1LXFEUTJYcUl2Nm5WRTV0Yi1EMlJJMkgwLUdpa0kxRW5iOU9PcXpEWFdIZWxxZUlnVEk1RWtBa0ROZ2VWc3pQZ2NRQmNOSUY1bDlpekNUdHBNS2xzNFhOLXN2WWhHSldMN0pLUEVZN3MxMzR1dG9XdFpvYVhua3lSbE9VYlXSAbABQVVfeXFMTlBTRkdVYUNKX0wxY254WE4zU0RBMG5LOVpqZG5ZbWJGSTBETXlOd2VYVGRKNlVfeEFlVkRUTUpwd2YtdGw2VmVnUGZFbGpxbzZNMGJtM1owWVp0ZUxTNjV2R3lPSWsxUXd4bkIwUWVoS3M3YmZGWTdiRmFKc2hwQmZFYWwzczZFaFNCc0JkSUNReThuQ2trTXRwbGxNZjh2REZha1ExSGwxQzQ5NkQ0LTE?oc=5",
+      "category": "People Query"
+    },
+    {
+      "source": "Lobsters Front Page (Official RSS)",
+      "feed_url": "https://lobste.rs/rss",
+      "published": "2026-03-01T05:13:01+00:00",
+      "days_old": 0,
+      "title": "Supercharge Rust functions with implicit arguments using CGP v0.7.0",
+      "link": "https://contextgeneric.dev/blog/v0.7.0-release",
+      "category": "Direct RSS/Atom"
+    },
+    {
+      "source": "Company: perplexity.ai (Google News site feed)",
+      "feed_url": "https://news.google.com/rss/search?q=site%3Aperplexity.ai&hl=en-US&gl=US&ceid=US:en",
+      "published": "2026-03-01T05:08:28+00:00",
+      "days_old": 0,
+      "title": "- Perplexity",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1sZk5CZGp3OWgwYzhOM3lDM3VTUE5WOUdvNmMwQmJ0bkx0RFl5Y2JBcnpYUGxzaExTLXFRNTVpVUtxdlE3TlI5dzdxZ0h1QjRY?oc=5",
+      "category": "Company Query"
+    },
+    {
+      "source": "Company: bytedance.com (Google News site feed)",
+      "feed_url": "https://news.google.com/rss/search?q=site%3Abytedance.com&hl=en-US&gl=US&ceid=US:en",
+      "published": "2026-03-01T05:01:25+00:00",
+      "days_old": 0,
+      "title": "- ByteDance",
+      "link": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE1lUGdiQm9ncEVrWGZ5cVBIb2NXWnp6a1NrX3VYM0VXU1JJYWw5eVZnVGZrR3BfeXVWMXg0V2NtUng?oc=5",
+      "category": "Company Query"
+    },
+    {
+      "source": "Company: amazon.com (Google News site feed)",
+      "feed_url": "https://news.google.com/rss/search?q=site%3Aamazon.com&hl=en-US&gl=US&ceid=US:en",
+      "published": "2026-03-01T04:59:10+00:00",
+      "days_old": 0,
+      "title": "Amazon Author Profile - Amazon Author",
+      "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9FUmRfODMydHZEQmFCTWtjVHNvU2dRV1JvOGJZU2pnYlhBQU1sMG02UUt1cWdvUmxpQlgyRDJyUFpmbTlJS20tLQ?oc=5",
+      "category": "Company Query"
+    },
+    {
+      "source": "shkspr.mobi",
+      "feed_url": "https://shkspr.mobi/blog/feed/",
+      "published": "2026-03-01T04:34:27+00:00",
+      "days_old": 0,
+      "title": "Book Review: Under Fire - Black Britain in Wartime by Stephen Bourne ★★★★☆",
+      "link": "https://shkspr.mobi/blog/2026/03/book-review-under-fire-black-britain-in-wartime-by-stephen-bourne/",
+      "category": "Direct RSS/Atom"
+    },
+    {
+      "source": "Company: coda.io (Google News site feed)",
+      "feed_url": "https://news.google.com/rss/search?q=site%3Acoda.io&hl=en-US&gl=US&ceid=US:en",
+      "published": "2026-03-01T03:46:44+00:00",
+      "days_old": 0,
+      "title": "Coda Docs - Coda",
+      "link": "https://news.google.com/rss/articles/CBMiN0FVX3lxTFBWS3NMS1FPWGRXVVY5WjZ3VFpCNTdfdVlrYzRHNGZsOHBLbmJJQkdlWFRvSlctZUk?oc=5",
+      "category": "Company Query"
+    },
+    {
+      "source": "simonwillison.net",
+      "feed_url": "https://simonwillison.net/atom/everything/",
+      "published": "2026-03-01T03:21:45+00:00",
+      "days_old": 0,
+      "title": "Quoting claude.com/import-memory",
+      "link": "https://simonwillison.net/2026/Mar/1/claude-import-memory/#atom-everything",
+      "category": "Direct RSS/Atom"
+    },
+    {
+      "source": "People: Elon Musk AI (Google News query feed)",
+      "feed_url": "https://news.google.com/rss/search?q=Elon+Musk+AI&hl=en-US&gl=US&ceid=US:en",
+      "published": "2026-03-01T02:26:52+00:00",
+      "days_old": 0,
+      "title": "Did Grok predict US attack on Iran? Elon Musk claims victory for xAI after viral test - Mint",
+      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQcGJKYTJIRl9fendPeHVfdVdja2RoTWs4TkpfaGR3Q0toOUlJREFySW5kWjg3ajFEWnI4V0hTcTQ3UjAyR2ZYaDNJS0lkUUIteEJXMVh2R3BZYUVTMmpsUWFqVGtRRGM3dnFpUDlCcmoxSlhhWkN2UmFuOThOekxwek5DVzVnTFdIb0ZVdUNoODhvRDYwVGlWVFBlN2d1OVRMU3k4UFgzdjJyeENEWm03T0hSdGtGZEpHSXBCcWZZWnRIT1dWVl9XQnlYeVhsLS1xMi01VnJMUmZsWFZ6ejFuUEt5cEPSAeoBQVVfeXFMUGtOZGVacDVQLTQ3bzBYWDRGMm9iNGQyQWxZa01OUHZNcmNjWFFMejFydWUtUWFNVURZMzdkMDUzaFF2VDhXQWUyTGE4ZzFxS3RXSFBtalZ0dERNQ1cwcHJXTEtNdFBSWk5lekdDS0VKWWpZRjZGc3BLazhBYm5iM0F1R2duN0xzOUtmQWllTnBzdmtYT3UwbDd3UW9jRC03R2dRWUROQUVIZGtZYm1SVDVpWVcwUHIwZU8yVlMycEQ2bHluNnlkRkpNS1NYUExPZGFPM2toRE9hQjVPczZsdzFtbTB4SkE1ZUF3?oc=5",
+      "category": "People Query"
+    },
+    {
+      "source": "berthub.eu",
+      "feed_url": "https://berthub.eu/articles/index.xml",
+      "published": "2026-03-01T02:22:53+00:00",
+      "days_old": 0,
+      "title": "Praatjes",
+      "link": "https://berthub.eu/articles/praatjes/",
+      "category": "Direct RSS/Atom"
+    },
+    {
+      "source": "People: Andrej Karpathy AI (Google News query feed)",
+      "feed_url": "https://news.google.com/rss/search?q=Andrej+Karpathy+AI&hl=en-US&gl=US&ceid=US:en",
+      "published": "2026-03-01T02:14:39+00:00",
+      "days_old": 0,
+      "title": "Stop tab-hopping between AI models and try this tool - AOL.com",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBzdUdNQ251OUp2ZVQzUWgxWG1zalpOMkwxWDNIQ3p1XzlPQVd6eDY2dS1pV0JoU0pNYTZ3SkVxd1doVUVkU3dVR21oSkZHM1JUemJqMi1DUVFsTzAyOFVWdmt2eDlZUEFIZXViU2N5RUhnRV94ejE3MWFaQQ?oc=5",
+      "category": "People Query"
+    },
+    {
+      "source": "Company: midjourney.com (Google News site feed)",
+      "feed_url": "https://news.google.com/rss/search?q=site%3Amidjourney.com&hl=en-US&gl=US&ceid=US:en",
+      "published": "2026-03-01T02:03:36+00:00",
+      "days_old": 0,
+      "title": "Image - Midjourney",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOUUtDXzRFSW9qWDNibmY5MTBON2FWNlluczB0ekVXNFQ4RjdIMXJnNEloZFJNZjhoNXhhWGxaUnd3aTVzREdfcVItWWlYTzF3Wm5OMFZILUNUWkV3OTh4XzVQVXZZVDdiN1NQMEhnNThJb0tiUTl6eElYMmFLbjFOb3d3?oc=5",
+      "category": "Company Query"
+    },
+    {
+      "source": "antirez.com",
+      "feed_url": "http://antirez.com/rss",
+      "published": "2026-03-01T01:55:09+00:00",
+      "days_old": 0,
+      "title": "Redis patterns for coding",
+      "link": "http://antirez.com/news/161",
+      "category": "Direct RSS/Atom"
+    },
+    {
+      "source": "CN Blogger: 量子位 AI (Google News query feed)",
+      "feed_url": "https://news.google.com/rss/search?q=%E9%87%8F%E5%AD%90%E4%BD%8D+AI&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+      "published": "2026-03-01T01:40:00+00:00",
+      "days_old": 0,
+      "title": "破解RL样本效率难题！让AI一次性提炼环境常识，后续零调用成本 - 智源社区",
+      "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE0xUVp6UEVhaG1VdFpjYVctclFZeVJIbHVKNU1oODR2OUcwbUk1VnN5ZDdKUmVJN2RlcEoyb184X1JsRk4zeDc5Vw?oc=5",
+      "category": "Google News (other)"
+    },
+    {
+      "source": "CN Blogger: 36Kr AI (Google News query feed)",
+      "feed_url": "https://news.google.com/rss/search?q=36Kr+AI&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+      "published": "2026-03-01T01:37:13+00:00",
+      "days_old": 0,
+      "title": "烧钱45亿的春节AI大战，到底图什么？_精彩视频为您呈现_36氪 - 36 Kr",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9KV3lxUkVkeXFWY2R3NnQ4ekxYN3RTMUVRUXY2NklVM1NQTmlJSTVEbGhEdDFJa2h1NUVwbWJDbHVjd0paMDg2U0lYRXFmQ3o5cFFDTWxB?oc=5",
+      "category": "Google News (other)"
+    },
+    {
+      "source": "Company: alibaba.com (Google News site feed)",
+      "feed_url": "https://news.google.com/rss/search?q=site%3Aalibaba.com&hl=en-US&gl=US&ceid=US:en",
+      "published": "2026-03-01T01:04:59+00:00",
+      "days_old": 0,
+      "title": "Roman - Alibaba.com",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5ucmFyZ1pGR0ZiMVFTYWFUTXdpVVc3ZDFLQUIwdlBhbVJiUk93RFZzNExrX0xoenhhQlFjOFJGbUtFRnhjdzJGbjFjSTVUdExwMGVyaUdhTUVPcWZPSkVaSVRTM0t6Um1LX0ZDQ0lUYjQ?oc=5",
+      "category": "Company Query"
+    },
+    {
+      "source": "CN Blogger: 新智元 AI (Google News query feed)",
+      "feed_url": "https://news.google.com/rss/search?q=%E6%96%B0%E6%99%BA%E5%85%83+AI&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+      "published": "2026-03-01T00:30:00+00:00",
+      "days_old": 0,
+      "title": "第一次，多模态大模型学会边看边听，Meta新作性能暴涨113% - 智源社区",
+      "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9LdjFpdTJ0TWlYZU1qSVFvaVRhOHphWGY5bjEtMzVBUzFPN1hRT0txWDRPLUJsc0tZSXB2WDFiQkJlQUdlR2d5Mg?oc=5",
+      "category": "Google News (other)"
+    },
+    {
+      "source": "Company: xiaomi.com (Google News site feed)",
+      "feed_url": "https://news.google.com/rss/search?q=site%3Axiaomi.com&hl=en-US&gl=US&ceid=US:en",
+      "published": "2026-02-28T23:10:57+00:00",
+      "days_old": 0,
+      "title": "- 小米游戏中心",
+      "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOTVR5a1NRel93TGRWNnhYRlhYdl81UVRnWHNXRHdsUVNDckV3RXdEVjNVT0hScUc4eExpTDBxY2JwUGVsY3MxRE5JcURCSm0wRTFzQWxYQVFqRF82TXlUQUtBVkxVZFNxdlVFMXlmam5tTDdXWk9SM0x2UHNqZEJ4UW1veDNMOW1yTXpOZGlPTlRjcEk4Y2s0V1Fud1hhRzVWNlotQjFYdEpjMVNSZzNxYXk2R1hsQ3pDdkhvcWt6Nm5Cdks4dGF3THRGMERCVzNWNnVNdGZYM2M0aGF2cGFjenVYaV96Rm56SlpnRktjM095bnZkRkJ4akxidw?oc=5",
+      "category": "Company Query"
+    },
+    {
+      "source": "Company: nvidia.com (Google News site feed)",
+      "feed_url": "https://news.google.com/rss/search?q=site%3Anvidia.com&hl=en-US&gl=US&ceid=US:en",
+      "published": "2026-02-28T23:05:42+00:00",
+      "days_old": 0,
+      "title": "NVIDIA and Partners Show That Software-Defined AI-RAN Is the Next Wireless Generation - NVIDIA Blog",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFAwd0tuQU9uRDZoSUF6MVBhb1Roc0xFSjRHMG1GSVBnakl0MjNYNExJTHJoZnlCRHNCRTJCNUVXc0d2aFp0RWh2VDFWSkRUZGxSX1BaUklCQTdrdEZHSks5M0oyZHU?oc=5",
+      "category": "Company Query"
+    },
+    {
+      "source": "NVIDIA Blog (Official RSS)",
+      "feed_url": "https://blogs.nvidia.com/feed/",
+      "published": "2026-02-28T23:00:45+00:00",
+      "days_old": 0,
+      "title": "NVIDIA Advances Autonomous Networks With Agentic AI Blueprints and Telco Reasoning Models",
+      "link": "https://blogs.nvidia.com/blog/nvidia-agentic-ai-blueprints-telco-reasoning-models/",
+      "category": "Direct RSS/Atom"
+    },
+    {
+      "source": "People: Mark Zuckerberg AI (Google News query feed)",
+      "feed_url": "https://news.google.com/rss/search?q=Mark+Zuckerberg+AI&hl=en-US&gl=US&ceid=US:en",
+      "published": "2026-02-28T22:01:01+00:00",
+      "days_old": 0,
+      "title": "Mark Zuckerberg Net Worth: $224 Billion Meta titan eyes Miami’s “Billionaire Bunker” amid tax storm - Storyboard18",
+      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNdklETGtQdHVmUVVuWHJNUzJmWFJYSDdzM3hTdXNhMGFZR0ljOEJTTmxXaDNiTU54MUVVTVdQZm1uMFo5R21EOFF0cFJ0anFQM1NtRmtERnRGN2l1cDFKd3lJLTBiOTFlUmJCSHNRSHNaejV4Z0pSUTF3UnNqem15UTB5R2JtNXBDRklISFdhaTN4MXV1UWVYdDlYS3pGMTRTcmlBRkNnTkJsSGFmR09rWjZVLXhKbHd1MXJNbnNScWVVdTJkdUpFbmVpUGdvT08tcjlqMzFNem13UGMtTUh1Sk5LOFjSAeQBQVVfeXFMTXZJRExrUHR1ZlFVblhyTVMyZlhSWEg3czN4U3VzYTBhWUdJYzhCU05sV2gzYk1OeDFFVU1XUGZtbjBaOUdtRDhRdHBSdGpxUDNTbUZrREZ0RjdpdXAxSnd5SS0wYjkxZVJiQkhzUUhzWno1eGdKUlExd1JzanpteVEweUdibTVwQ0ZJSEhXYWkzeDF1dVFlWHQ5WEt6RjE0U3JpQUZDZ05CbEhhZkdPa1o2VS14Smx3dTFyTW5zUnFlVXUyZHVKRW5laVBnb09PLXI5ajMxTXptd1BjLU1IdUpOSzhY?oc=5",
+      "category": "People Query"
+    },
+    {
+      "source": "People: Manus AI Agent (Google News query feed)",
+      "feed_url": "https://news.google.com/rss/search?q=Manus+AI+Agent&hl=en-US&gl=US&ceid=US:en",
+      "published": "2026-02-28T20:25:03+00:00",
+      "days_old": 0,
+      "title": "3 AI Agents For Work You Should Try Before Your Boss Asks - Forbes",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPVmhTU3gxMU4yUVJhR2RxSTF0d3hfQXFXbHhURWxNYVotWWl4a3dtZWJRNnZmMEFvWndSaVJHWFU4LUxRNWlKcVFtMTZ2ZlZNZDlEMm8wcjlKclZkQ3hvdDlRUzd3REUtU0N6MWY4UXI2dl9lUUtCY05rNS1NQk5XcUdIeEJYZjA0N2tvS1FuSUpGU3VWWlJrUUU5RHBfUmJWSlBtMUFfODAtMlphZ1Jn?oc=5",
+      "category": "People Query"
+    },
+    {
+      "source": "Company: replicate.com (Google News site feed)",
+      "feed_url": "https://news.google.com/rss/search?q=site%3Areplicate.com&hl=en-US&gl=US&ceid=US:en",
+      "published": "2026-02-28T20:06:27+00:00",
+      "days_old": 0,
+      "title": "ultracoderru nova-anime-xl-il-140 2ba1d6f8 - Replicate",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOZVFOajVfTTRRRy1SbGt0Mjg3dlBWYXRYS25ITVZFbi1UdUVDR0R5REhNRW1FdUlXaU5mbnBqS2RGRnpjdzhPUzRHUVJuU3JsU3JoTkc2aGw2dXJ5ekZ2eXhkWVZ6UDJRWGc2bU9ucTJ0Zzl1Sk1XN2FxYWpTOFpmYVUwVEMyangxM2hZdnRxRHZsUzVXRUdEaGVMdTU2R0FIUXZBZ19LVUhrUzYwc3VaX1JNZnVka2ZaaDNoSnV6dFFJRDE5aWZiTQ?oc=5",
+      "category": "Company Query"
+    },
+    {
+      "source": "eli.thegreenplace.net",
+      "feed_url": "https://eli.thegreenplace.net/feeds/all.atom.xml",
+      "published": "2026-02-28T18:58:00+00:00",
+      "days_old": 0,
+      "title": "Notes on Lagrange Interpolating Polynomials",
+      "link": "https://eli.thegreenplace.net/2026/notes-on-lagrange-interpolating-polynomials/",
+      "category": "Direct RSS/Atom"
+    },
+    {
+      "source": "Company: manus.im (Google News site feed)",
+      "feed_url": "https://news.google.com/rss/search?q=site%3Amanus.im&hl=en-US&gl=US&ceid=US:en",
+      "published": "2026-02-28T17:59:44+00:00",
+      "days_old": 0,
+      "title": "Manus - Manus",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE42Nk14T21lNXdZZ2F5bURMMzlGRHl6cVV2TkNnaVZDbFpyMk8yRzM4ZVlVX3c3OTVDS0JTRWNJSTBXSU9sVTFFZEZ5RUdfRTllSjFYYnR3?oc=5",
+      "category": "Company Query"
+    },
+    {
+      "source": "idiallo.com",
+      "feed_url": "https://idiallo.com/feed.rss",
+      "published": "2026-02-28T17:43:17+00:00",
+      "days_old": 0,
+      "title": "&ldquo;How old are you?&rdquo; Asked the OS",
+      "link": "https://idiallo.com/byte-size/how-old-are-you-asked-the-os?src=feed",
+      "category": "Direct RSS/Atom"
+    },
+    {
+      "source": "CN Blogger: 极客公园 AI (Google News query feed)",
+      "feed_url": "https://news.google.com/rss/search?q=%E6%9E%81%E5%AE%A2%E5%85%AC%E5%9B%AD+AI&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+      "published": "2026-02-28T16:46:48+00:00",
+      "days_old": 0,
+      "title": "小米 VisionGT 超跑亮相；DeepSeek V4 或下周亮相；宝可梦 30 周年玩偶引发抢购潮 - 极客公园",
+      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBFMEdFNkgxN1F4WTFESE82OTJZNnctcm42SkwzemIxOHhVc0JhVXpJM1pObDFqNU9wNG9ZQkg5MjhlYXVLVHJ0TF94Y0M?oc=5",
+      "category": "Google News (other)"
+    },
+    {
+      "source": "Company: tesla.com (Google News site feed)",
+      "feed_url": "https://news.google.com/rss/search?q=site%3Atesla.com&hl=en-US&gl=US&ceid=US:en",
+      "published": "2026-02-28T16:42:49+00:00",
+      "days_old": 0,
+      "title": "Internship, Audio & Sensor Software Engineer, Vehicle Engineering (Summer 2026) - Tesla",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOMUdTa3k5a3JHckdKa01fcUx1dm12UlRjbHRLM3Z3dnZNRm5DMG43N1RVQ1hYVEo5eGtRU2FtUGRUSGVyckRsSXA2aHV0RGRaSHkxV21qNDhYbFlwX0ZBcU9Ubk1yQndYTXZIX2wxMXlDdmhQNEk2cV9nT3NNYTVINFhvQXBWUWdnbnhLQkxIVG55SE5QOEZZdHFPSWpJaUhLQ2ZUWjhOenhVeUpBTWM1X1JRbVRpZ0pFOFFJN2p3?oc=5",
+      "category": "Company Query"
+    },
+    {
+      "source": "Company: amd.com (Google News site feed)",
+      "feed_url": "https://news.google.com/rss/search?q=site%3Aamd.com&hl=en-US&gl=US&ceid=US:en",
+      "published": "2026-02-28T16:31:59+00:00",
+      "days_old": 0,
+      "title": "Articles by Tony Moussa - AMD",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1JTGNZT01HVlBRdHFnVEtuYk5tNEFnbEczRDhJUHd1X05SeVluNkJFQ0FhTHhyODJFSFlQQWdPYUtFY3ctRHpydUNOWmVyWjU3N2thbVZJNXB6RXZDTm5ORkp5Y1hydw?oc=5",
+      "category": "Company Query"
+    }
+  ],
+  "failed_detail": [
+    {
+      "source": "utcc.utoronto.ca/~cks",
+      "feed_url": "https://utcc.utoronto.ca/~cks/space/blog/?atom",
+      "error": "failed:http://utcc.utoronto.ca/~cks/space/blog/?atom -> RuntimeError: HTTP 502 | http://utcc.utoronto.ca/~cks/space/blog/?atom -> RuntimeError: HTTP 502 | http://utcc.utoronto.ca/~cks/space/blog/?atom -> RuntimeError: HTTP 502 | https://utcc.utoronto.ca/~cks/space/blog/?atom -> SSLError: HTTPSConnectionPool(host='utcc.utoronto.ca', port=443): Max retries exceeded with url: /~cks/space/blog/?atom (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)'))) | https://utcc.utoronto.ca/~cks/space/blog/?atom -> SSLError: HTTPSConnectionPool(host='utcc.utoronto.ca', port=443): Max retries exceeded with url: /~cks/space/blog/?atom (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)'))) | https://utcc.utoronto.ca/~cks/space/blog/?atom -> SSLError: HTTPSConnectionPool(host='utcc.utoronto.ca', port=443): Max retries exceeded with url: /~cks/space/blog/?atom (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))"
+    },
+    {
+      "source": "rachelbythebay.com",
+      "feed_url": "https://rachelbythebay.com/w/atom.xml",
+      "error": "failed:https://rachelbythebay.com/w/atom.xml -> RuntimeError: HTTP 404 | https://rachelbythebay.com/w/atom.xml -> SSLError: HTTPSConnectionPool(host='rachelbythebay.com', port=443): Max retries exceeded with url: /w/atom.xml (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)'))) | https://rachelbythebay.com/w/atom.xml -> SSLError: HTTPSConnectionPool(host='rachelbythebay.com', port=443): Max retries exceeded with url: /w/atom.xml (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)'))) | http://rachelbythebay.com/w/atom.xml -> ReadTimeout: HTTPConnectionPool(host='127.0.0.1', port=16345): Read timed out. (read timeout=35) | http://rachelbythebay.com/w/atom.xml -> RuntimeError: HTTP 502 | http://rachelbythebay.com/w/atom.xml -> RuntimeError: HTTP 502"
+    },
+    {
+      "source": "tedunangst.com",
+      "feed_url": "https://www.tedunangst.com/flak/rss",
+      "error": "failed:https://www.tedunangst.com/flak/rss -> SSLError: HTTPSConnectionPool(host='www.tedunangst.com', port=443): Max retries exceeded with url: /flak/rss (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)'))) | https://www.tedunangst.com/flak/rss -> SSLError: HTTPSConnectionPool(host='www.tedunangst.com', port=443): Max retries exceeded with url: /flak/rss (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)'))) | https://www.tedunangst.com/flak/rss -> SSLError: HTTPSConnectionPool(host='www.tedunangst.com', port=443): Max retries exceeded with url: /flak/rss (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)'))) | http://www.tedunangst.com/flak/rss -> RuntimeError: HTTP 502 | http://www.tedunangst.com/flak/rss -> RuntimeError: HTTP 502 | http://www.tedunangst.com/flak/rss -> RuntimeError: HTTP 502"
+    },
+    {
+      "source": "OpenAI Research (Official RSS)",
+      "feed_url": "https://openai.com/research/rss.xml",
+      "error": "failed:https://openai.com/research/rss.xml -> RuntimeError: HTTP 404 | https://openai.com/research/rss.xml -> RuntimeError: HTTP 404 | https://openai.com/research/rss.xml -> RuntimeError: HTTP 404"
+    },
+    {
+      "source": "OpenAI Safety (Official RSS)",
+      "feed_url": "https://openai.com/safety/rss.xml",
+      "error": "failed:https://openai.com/safety/rss.xml -> RuntimeError: HTTP 404 | https://openai.com/safety/rss.xml -> RuntimeError: HTTP 404 | https://openai.com/safety/rss.xml -> RuntimeError: HTTP 404"
+    },
+    {
+      "source": "arXiv cs.CL (Official RSS)",
+      "feed_url": "https://export.arxiv.org/rss/cs.CL",
+      "error": "failed:https://export.arxiv.org/rss/cs.CL -> RuntimeError: no entries | https://export.arxiv.org/rss/cs.CL -> RuntimeError: no entries | https://export.arxiv.org/rss/cs.CL -> RuntimeError: no entries"
+    },
+    {
+      "source": "arXiv cs.CV (Official RSS)",
+      "feed_url": "https://export.arxiv.org/rss/cs.CV",
+      "error": "failed:https://export.arxiv.org/rss/cs.CV -> RuntimeError: no entries | https://export.arxiv.org/rss/cs.CV -> RuntimeError: no entries | https://export.arxiv.org/rss/cs.CV -> RuntimeError: no entries"
+    },
+    {
+      "source": "arXiv cs.RO (Official RSS)",
+      "feed_url": "https://export.arxiv.org/rss/cs.RO",
+      "error": "failed:https://export.arxiv.org/rss/cs.RO -> RuntimeError: no entries | https://export.arxiv.org/rss/cs.RO -> RuntimeError: no entries | https://export.arxiv.org/rss/cs.RO -> RuntimeError: no entries"
+    },
+    {
+      "source": "arXiv cs.IR (Official RSS)",
+      "feed_url": "https://export.arxiv.org/rss/cs.IR",
+      "error": "failed:https://export.arxiv.org/rss/cs.IR -> RuntimeError: no entries | https://export.arxiv.org/rss/cs.IR -> RuntimeError: no entries | https://export.arxiv.org/rss/cs.IR -> RuntimeError: no entries"
+    },
+    {
+      "source": "arXiv cs.NE (Official RSS)",
+      "feed_url": "https://export.arxiv.org/rss/cs.NE",
+      "error": "failed:https://export.arxiv.org/rss/cs.NE -> RuntimeError: no entries | https://export.arxiv.org/rss/cs.NE -> RuntimeError: no entries | https://export.arxiv.org/rss/cs.NE -> RuntimeError: no entries"
+    },
+    {
+      "source": "arXiv cs.SE (Official RSS)",
+      "feed_url": "https://export.arxiv.org/rss/cs.SE",
+      "error": "failed:https://export.arxiv.org/rss/cs.SE -> RuntimeError: no entries | https://export.arxiv.org/rss/cs.SE -> RuntimeError: no entries | https://export.arxiv.org/rss/cs.SE -> RuntimeError: no entries"
+    },
+    {
+      "source": "arXiv cs.HC (Official RSS)",
+      "feed_url": "https://export.arxiv.org/rss/cs.HC",
+      "error": "failed:https://export.arxiv.org/rss/cs.HC -> RuntimeError: no entries | https://export.arxiv.org/rss/cs.HC -> RuntimeError: no entries | https://export.arxiv.org/rss/cs.HC -> RuntimeError: no entries"
+    },
+    {
+      "source": "arXiv stat.ML (Official RSS)",
+      "feed_url": "https://export.arxiv.org/rss/stat.ML",
+      "error": "failed:https://export.arxiv.org/rss/stat.ML -> RuntimeError: no entries | https://export.arxiv.org/rss/stat.ML -> RuntimeError: no entries | https://export.arxiv.org/rss/stat.ML -> RuntimeError: no entries"
+    },
+    {
+      "source": "People: Loverat AI startup (Google News query feed)",
+      "feed_url": "https://news.google.com/rss/search?q=Loverat+AI+startup&hl=en-US&gl=US&ceid=US:en",
+      "error": "failed:https://news.google.com/rss/search?q=Loverat+AI+startup&hl=en-US&gl=US&ceid=US:en -> RuntimeError: no entries | https://news.google.com/rss/search?q=Loverat+AI+startup&hl=en-US&gl=US&ceid=US:en -> RuntimeError: no entries | https://news.google.com/rss/search?q=Loverat+AI+startup&hl=en-US&gl=US&ceid=US:en -> RuntimeError: no entries"
+    },
+    {
+      "source": "CN Blogger: 阾一峰 技术周刊 (Google News query feed)",
+      "feed_url": "https://news.google.com/rss/search?q=%E9%98%BE%E4%B8%80%E5%B3%B0+%E6%8A%80%E6%9C%AF%E5%91%A8%E5%88%8A&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+      "error": "failed:https://news.google.com/rss/search?q=%E9%98%BE%E4%B8%80%E5%B3%B0+%E6%8A%80%E6%9C%AF%E5%91%A8%E5%88%8A&hl=zh-CN&gl=CN&ceid=CN:zh-Hans -> RuntimeError: no entries | https://news.google.com/rss/search?q=%E9%98%BE%E4%B8%80%E5%B3%B0+%E6%8A%80%E6%9C%AF%E5%91%A8%E5%88%8A&hl=zh-CN&gl=CN&ceid=CN:zh-Hans -> RuntimeError: no entries | https://news.google.com/rss/search?q=%E9%98%BE%E4%B8%80%E5%B3%B0+%E6%8A%80%E6%9C%AF%E5%91%A8%E5%88%8A&hl=zh-CN&gl=CN&ceid=CN:zh-Hans -> RuntimeError: no entries"
+    },
+    {
+      "source": "CN Blogger: 刘未鹏 AI (Google News query feed)",
+      "feed_url": "https://news.google.com/rss/search?q=%E5%88%98%E6%9C%AA%E9%B9%8F+AI&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+      "error": "failed:https://news.google.com/rss/search?q=%E5%88%98%E6%9C%AA%E9%B9%8F+AI&hl=zh-CN&gl=CN&ceid=CN:zh-Hans -> RuntimeError: no entries | https://news.google.com/rss/search?q=%E5%88%98%E6%9C%AA%E9%B9%8F+AI&hl=zh-CN&gl=CN&ceid=CN:zh-Hans -> RuntimeError: no entries | https://news.google.com/rss/search?q=%E5%88%98%E6%9C%AA%E9%B9%8F+AI&hl=zh-CN&gl=CN&ceid=CN:zh-Hans -> RuntimeError: no entries"
+    },
+    {
+      "source": "CN Blogger: 代码随想录 AI (Google News query feed)",
+      "feed_url": "https://news.google.com/rss/search?q=%E4%BB%A3%E7%A0%81%E9%9A%8F%E6%83%B3%E5%BD%95+AI&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+      "error": "failed:https://news.google.com/rss/search?q=%E4%BB%A3%E7%A0%81%E9%9A%8F%E6%83%B3%E5%BD%95+AI&hl=zh-CN&gl=CN&ceid=CN:zh-Hans -> RuntimeError: no entries | https://news.google.com/rss/search?q=%E4%BB%A3%E7%A0%81%E9%9A%8F%E6%83%B3%E5%BD%95+AI&hl=zh-CN&gl=CN&ceid=CN:zh-Hans -> RuntimeError: no entries | https://news.google.com/rss/search?q=%E4%BB%A3%E7%A0%81%E9%9A%8F%E6%83%B3%E5%BD%95+AI&hl=zh-CN&gl=CN&ceid=CN:zh-Hans -> RuntimeError: no entries"
+    }
+  ]
+}

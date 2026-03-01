@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>X 资讯系统学习笔记（2026-03-01）</title>
+  <style>
+    :root {
+      --bg: #f7f6f2;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --line: #e5e7eb;
+      --accent: #0f766e;
+      --accent-soft: #ecfeff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #f7f6f2 0%, #f3f4f6 100%);
+      color: var(--text);
+      font: 16px/1.7 "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    }
+    .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 28px 18px 60px;
+    }
+    .hero, .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+    }
+    .hero {
+      padding: 22px 22px 18px;
+      margin-bottom: 16px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 30px;
+      line-height: 1.2;
+    }
+    h2 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      line-height: 1.3;
+    }
+    h3 {
+      margin: 0 0 8px;
+      font-size: 16px;
+      line-height: 1.4;
+    }
+    p { margin: 0 0 10px; }
+    .muted { color: var(--muted); }
+    .grid {
+      display: grid;
+      gap: 14px;
+      grid-template-columns: repeat(12, 1fr);
+    }
+    .c12 { grid-column: span 12; }
+    .c8 { grid-column: span 8; }
+    .c6 { grid-column: span 6; }
+    .c4 { grid-column: span 4; }
+    .card { padding: 16px; }
+    .badge {
+      display: inline-block;
+      padding: 2px 9px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: #0f766e;
+      border: 1px solid #a5f3fc;
+      font-size: 12px;
+      margin-right: 6px;
+      margin-bottom: 6px;
+    }
+    .logos {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 8px;
+    }
+    .logo {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #fff;
+      padding: 10px;
+      text-align: center;
+      min-height: 110px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 6px;
+    }
+    .logo img {
+      max-height: 52px;
+      max-width: 100%;
+      object-fit: contain;
+      margin: 0 auto;
+      display: block;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    th, td {
+      border-bottom: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+      font-size: 14px;
+    }
+    th:last-child, td:last-child { border-right: none; }
+    tr:last-child td { border-bottom: none; }
+    th { background: #f9fafb; font-weight: 600; }
+    ul { margin: 8px 0 0 20px; padding: 0; }
+    li { margin: 5px 0; }
+    .kpi {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+    }
+    .kpi .box {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 10px;
+      background: #fff;
+    }
+    .box .v {
+      font-size: 22px;
+      line-height: 1.1;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    a { color: #0b5cad; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .refs li { font-size: 13px; }
+    @media (max-width: 900px) {
+      .c8, .c6, .c4 { grid-column: span 12; }
+      .logos { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .kpi { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <h1>X 资讯系统学习笔记</h1>
+      <p class="muted">日期：2026-03-01 | 主题：学习 X 上同类 AI 资讯产品的工具链与方法论，并给出针对你当前系统的改进方案。</p>
+      <div>
+        <span class="badge">实地阅读站点</span>
+        <span class="badge">结构化对比</span>
+        <span class="badge">可执行改进</span>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="card c12">
+        <h2>1) 我学习了哪些对象</h2>
+        <div class="logos">
+          <div class="logo">
+            <img src="https://media.beehiiv.com/cdn-cgi/image/format%3Dauto%2Conerror%3Dredirect/uploads/asset/file/a2912fd2-b6d4-40c4-a4b1-0b035115b266/image__2_.png" alt="The Rundown AI Logo" />
+            <div>The Rundown AI</div>
+          </div>
+          <div class="logo">
+            <img src="https://substackcdn.com/image/fetch/%24s_%21GBEK%21%2Ce_trim%3A10%3Awhite/e_trim%3A10%3Atransparent/h_72%2Cc_limit%2Cf_auto%2Cq_auto%3Agood%2Cfl_progressive%3Asteep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd64d210e-a6ee-4809-a70d-d2a7028d1c38_1344x287.png" alt="Ben's Bites Logo" />
+            <div>Ben's Bites</div>
+          </div>
+          <div class="logo">
+            <img src="https://substackcdn.com/image/fetch/%24s_%211PJi%21%2Ce_trim%3A10%3Awhite/e_trim%3A10%3Atransparent/h_72%2Cc_limit%2Cf_auto%2Cq_auto%3Agood%2Cfl_progressive%3Asteep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa4fe1182-38af-4a5d-bacc-439c36225e87_5000x1200.png" alt="Latent.Space Logo" />
+            <div>Latent.Space</div>
+          </div>
+          <div class="logo">
+            <img src="https://i0.wp.com/jack-clark.net/wp-content/uploads/2025/08/DSC_5059.jpg?resize=500%2C763&ssl=1" alt="Jack Clark" />
+            <div>Import AI (Jack Clark)</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card c12">
+        <h2>2) 关键学习结论（先说人话）</h2>
+        <ul>
+          <li><strong>头部产品不是只做“新闻列表”</strong>，而是做“多层漏斗”：快讯 -> 指南 -> 工具库 -> 课程/社区。</li>
+          <li><strong>高信号产品都定义了自己的取舍边界</strong>（例如 Latent.Space 明确弱化法政话题，专注 AI Engineering）。</li>
+          <li><strong>研究向产品要有稳定方法论口号</strong>（Import AI 的“arXiv + readers feedback”非常清晰）。</li>
+          <li><strong>分发不是纯靠 X 算法</strong>，而是邮件主阵地 + 社区 + 播客 + 工作坊组合拳。</li>
+          <li><strong>你的系统已经有很强底座</strong>（daily + latest + source map + thought matching），下一步是“编排层升级”和“信任层升级”。</li>
+        </ul>
+      </section>
+
+      <section class="card c12">
+        <h2>3) 对标对象方法拆解</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>对象</th>
+              <th>内容定位</th>
+              <th>方法/工具</th>
+              <th>可学点</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>The Rundown AI</td>
+              <td>“5 分钟理解 AI + 怎么用”</td>
+              <td>文章、Guides、Trending Tools、Workshops、University、多栏目联动</td>
+              <td>把“看新闻”升级为“可执行学习路径”</td>
+            </tr>
+            <tr>
+              <td>Ben's Bites</td>
+              <td>AI builder 视角，新闻+工具+教程</td>
+              <td>每周二/四人工 vet 新闻，配社区与付费层，强调 founder 视角</td>
+              <td>“主编观点”带来的粘性与差异化</td>
+            </tr>
+            <tr>
+              <td>Latent.Space</td>
+              <td>AI Engineer 深度技术信号</td>
+              <td>Newsletter + Podcast + Discord + Summit；明确“强调/弱化”主题边界</td>
+              <td>明确边界，降低噪音，提高受众匹配</td>
+            </tr>
+            <tr>
+              <td>Import AI</td>
+              <td>研究前沿解释与政策/产业观察</td>
+              <td>“arXiv + 读者反馈”稳定生产范式</td>
+              <td>固定方法论标签 = 长期信任资产</td>
+            </tr>
+            <tr>
+              <td>TwitFast（工具层）</td>
+              <td>X 检索/创作辅助/下载</td>
+              <td>Tweet 搜索过滤、AI writer、翻译、多语言、self-host+API credit</td>
+              <td>把“发现层”工具化，降低采样成本</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="card c8">
+        <h2>4) 与你当前系统对比（实话版）</h2>
+        <h3>你当前的优势</h3>
+        <ul>
+          <li>有完整流水线：抓取 -> 摘要 -> 可视化 -> 发布。</li>
+          <li>有历史浏览能力（latest）与首发去重逻辑。</li>
+          <li>有 source map 与 thought matching，已经超出普通新闻页。</li>
+        </ul>
+        <h3>当前短板</h3>
+        <ul>
+          <li>“发现层”偏弱：对 X 一手动态的结构化采样还不够系统。</li>
+          <li>“信任层”偏弱：缺少来源质量评分、证据密度评分、重复信息惩罚。</li>
+          <li>“编排层”偏弱：还没形成像 Rundown 那样的多层内容漏斗。</li>
+        </ul>
+      </section>
+
+      <section class="card c4">
+        <h2>5) 关键指标启发</h2>
+        <div class="kpi">
+          <div class="box">
+            <div class="v">2M+</div>
+            <div class="muted">Rundown reader scale（官方页面）</div>
+          </div>
+          <div class="box">
+            <div class="v">50.2%</div>
+            <div class="muted">Rundown 平均打开率（广告页）</div>
+          </div>
+          <div class="box">
+            <div class="v">2x/week</div>
+            <div class="muted">Ben's Bites 固定节奏（Tue/Thu）</div>
+          </div>
+          <div class="box">
+            <div class="v">200k/10m</div>
+            <div class="muted">Latent.Space 跨渠道规模（about）</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card c12">
+        <h2>6) 面向你系统的改进方案（可执行）</h2>
+        <h3>A. 结构升级：从“日报页”变为“信息操作台”</h3>
+        <ul>
+          <li>新增三层入口：`Today Brief`（3分钟）、`Execution`（可落地教程）、`Deep Signals`（研究/政策/公司深度）。</li>
+          <li>latest 页面增加“为什么值得看”字段：影响范围、时效窗口、可行动性。</li>
+        </ul>
+        <h3>B. 发现升级：X 信号捕捉层</h3>
+        <ul>
+          <li>引入 X Lists 作为可维护白名单（公司、研究者、builder、法律/政策）。</li>
+          <li>采样策略：`List + keyword + recency + engagement`，并入当天 raw pool。</li>
+          <li>用 TwitFast/同类工具做“趋势发现”，但不做最终事实源；最终必须回链原文。</li>
+        </ul>
+        <h3>C. 信任升级：质量评分层</h3>
+        <ul>
+          <li>每条新闻计算 `source_quality_score`、`evidence_count`、`cross_source_confirmed`。</li>
+          <li>重复惩罚：同源重复内容只保留首发日，其余降权至“历史重复”抽屉。</li>
+          <li>在卡片上显式显示来源可信标签（Official/Research/Media/Opinion）。</li>
+        </ul>
+        <h3>D. 产品升级：从读到用</h3>
+        <ul>
+          <li>每天自动产出一条“创业者视角任务清单”：今天值得验证的 3 个方向。</li>
+          <li>对 thought matching 增加“相似度 + 证据链接 + 下一步实验建议”三联结构。</li>
+        </ul>
+      </section>
+
+      <section class="card c12">
+        <h2>7) 未来 14 天落地排期（建议）</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>阶段</th>
+              <th>目标</th>
+              <th>产物</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>D1-D3</td>
+              <td>接入 X List 抓样层（只做白名单）</td>
+              <td>`x_signal_raw.json` + 去重并表脚本</td>
+            </tr>
+            <tr>
+              <td>D4-D7</td>
+              <td>上线质量评分（信任层）</td>
+              <td>latest 卡片显示 source/evidence/confidence</td>
+            </tr>
+            <tr>
+              <td>D8-D10</td>
+              <td>上线 Today Brief / Execution / Deep 三层入口</td>
+              <td>latest 新导航与分区模板</td>
+            </tr>
+            <tr>
+              <td>D11-D14</td>
+              <td>thought matching 升级为“证据驱动建议”</td>
+              <td>agiao 面板新版 + A/B 对比记录</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="card c12">
+        <h2>8) X 上同类账号建议跟踪清单（学习用）</h2>
+        <ul>
+          <li><a href="https://x.com/TheRundownAI" target="_blank" rel="noopener">https://x.com/TheRundownAI</a>（大众化 AI 快讯分发）</li>
+          <li><a href="https://x.com/rowancheung" target="_blank" rel="noopener">https://x.com/rowancheung</a>（创始人视角与选题 framing）</li>
+          <li><a href="https://x.com/bentossell" target="_blank" rel="noopener">https://x.com/bentossell</a>（builder 导向工具流）</li>
+          <li><a href="https://x.com/latentspacepod" target="_blank" rel="noopener">https://x.com/latentspacepod</a>（AI engineering 深度）</li>
+          <li><a href="https://x.com/swyx" target="_blank" rel="noopener">https://x.com/swyx</a>（技术议程与生态观察）</li>
+          <li><a href="https://x.com/jackclarkSF" target="_blank" rel="noopener">https://x.com/jackclarkSF</a>（研究与政策连接）</li>
+        </ul>
+      </section>
+
+      <section class="card c12">
+        <h2>9) 参考来源</h2>
+        <ul class="refs">
+          <li><a href="https://twitfast.com/en/tweets" target="_blank" rel="noopener">TwitFast Search Tweets</a></li>
+          <li><a href="https://twitfast.com/en/self-hosted" target="_blank" rel="noopener">TwitFast Self-hosted</a></li>
+          <li><a href="https://chromewebstore.google.com/detail/twitfast-ai-tweet-generat/lpfcbccghhdjacibmeockllndjnpnnfa" target="_blank" rel="noopener">TwitFast Chrome Extension</a></li>
+          <li><a href="https://www.rundown.ai/" target="_blank" rel="noopener">The Rundown AI</a></li>
+          <li><a href="https://www.rundown.ai/advertise-with-us" target="_blank" rel="noopener">The Rundown AI Advertise</a></li>
+          <li><a href="https://www.therundown.ai/" target="_blank" rel="noopener">TheRundown.ai home</a></li>
+          <li><a href="https://www.bensbites.com/about" target="_blank" rel="noopener">Ben's Bites About</a></li>
+          <li><a href="https://www.latent.space/about" target="_blank" rel="noopener">Latent.Space About</a></li>
+          <li><a href="https://jack-clark.net/" target="_blank" rel="noopener">Import AI</a></li>
+          <li><a href="https://jack-clark.net/about/" target="_blank" rel="noopener">Import AI About</a></li>
+          <li><a href="https://www.creatorspotlight.com/p/superhuman" target="_blank" rel="noopener">Creator Spotlight: Superhuman</a></li>
+          <li><a href="https://www.beehiiv.com/blog/case-study-superhuman-ai" target="_blank" rel="noopener">beehiiv case study: Superhuman</a></li>
+          <li><a href="https://help.x.com/articles/76460" target="_blank" rel="noopener">How to use X Lists</a></li>
+          <li><a href="https://help.x.com/articles/20169276-i-m-having-trouble-with-lists" target="_blank" rel="noopener">Help with Lists</a></li>
+          <li><a href="https://docs.x.com/x-api/lists/manage-lists/introduction" target="_blank" rel="noopener">X API: Manage Lists</a></li>
+          <li><a href="https://ifttt.com/applets/uDT4gpyz-post-new-rss-feed-items-to-x-automatically" target="_blank" rel="noopener">IFTTT RSS -> X automation</a></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Validated Feed Additions 2026-03-01</title>
+  </head>
+  <body>
+    <outline text="Validated Additions" title="Validated Additions">
+      <outline type="rss" text="DeepMind Blog (research)" title="DeepMind Blog (research)" xmlUrl="https://deepmind.google/blog/rss.xml" htmlUrl="https://deepmind.google/blog/" />
+      <outline type="rss" text="Google Research Blog (research)" title="Google Research Blog (research)" xmlUrl="https://research.google/blog/rss/" htmlUrl="https://research.google/blog/" />
+      <outline type="rss" text="AWS ML Blog (business)" title="AWS ML Blog (business)" xmlUrl="https://aws.amazon.com/blogs/machine-learning/feed/" htmlUrl="https://aws.amazon.com/blogs/machine-learning/" />
+      <outline type="rss" text="NVIDIA Research (research)" title="NVIDIA Research (research)" xmlUrl="https://research.nvidia.com/rss.xml" htmlUrl="https://research.nvidia.com/" />
+      <outline type="rss" text="EU AI Act (law)" title="EU AI Act (law)" xmlUrl="https://artificialintelligenceact.eu/feed/" htmlUrl="https://artificialintelligenceact.eu/" />
+      <outline type="rss" text="MIT News AI (research)" title="MIT News AI (research)" xmlUrl="https://news.mit.edu/rss/topic/artificial-intelligence2" htmlUrl="https://news.mit.edu/topic/artificial-intelligence2" />
+      <outline type="rss" text="Nature AI (research)" title="Nature AI (research)" xmlUrl="https://www.nature.com/subjects/machine-learning.rss" htmlUrl="https://www.nature.com/subjects/machine-learning" />
+      <outline type="rss" text="ScienceDaily AI (research)" title="ScienceDaily AI (research)" xmlUrl="https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml" htmlUrl="https://www.sciencedaily.com/news/computers_math/artificial_intelligence/" />
+      <outline type="rss" text="36Kr (business_cn)" title="36Kr (business_cn)" xmlUrl="https://www.36kr.com/feed" htmlUrl="https://www.36kr.com/" />
+      <outline type="rss" text="Huxiu (business_cn)" title="Huxiu (business_cn)" xmlUrl="https://www.huxiu.com/rss/0.xml" htmlUrl="https://www.huxiu.com/" />
+      <outline type="rss" text="QbitAI (frontier_cn)" title="QbitAI (frontier_cn)" xmlUrl="https://www.qbitai.com/feed" htmlUrl="https://www.qbitai.com/" />
+      <outline type="rss" text="InfoQ China (dev_cn)" title="InfoQ China (dev_cn)" xmlUrl="https://www.infoq.cn/feed" htmlUrl="https://www.infoq.cn/" />
+    </outline>
+  </body>
+</opml>
