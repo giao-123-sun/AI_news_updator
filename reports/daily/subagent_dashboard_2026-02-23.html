@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>每日新闻可视化</title>
+  <style>
+    :root {
+      --bg: #f7f5ef;
+      --panel: #fffdf8;
+      --text: #1f2328;
+      --muted: #5f6b7a;
+      --accent: #0b6bcb;
+      --line: #e6ddcc;
+      --chip: #eef5ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: radial-gradient(circle at top right, #fff6dc 0, var(--bg) 45%);
+      color: var(--text);
+      line-height: 1.45;
+    }
+    .wrap {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 20px 16px 28px;
+    }
+    .hero {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+    }
+    .hero h1 { margin: 0 0 6px; font-size: 24px; }
+    .meta { color: var(--muted); font-size: 14px; }
+    .filters {
+      margin-top: 12px;
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 10px;
+    }
+    select, input {
+      width: 100%;
+      border: 1px solid var(--line);
+      background: white;
+      color: var(--text);
+      border-radius: 10px;
+      padding: 10px 12px;
+      font-size: 14px;
+    }
+    .sections {
+      margin-top: 16px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+    .section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px;
+    }
+    .section h2 {
+      margin: 0 0 10px;
+      font-size: 18px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 12px;
+    }
+    .card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .card-head {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .idx {
+      background: #f2ead8;
+      border-radius: 6px;
+      padding: 2px 7px;
+    }
+    .source { font-weight: 600; color: var(--accent); word-break: break-all; }
+    .event { margin: 0; font-weight: 600; }
+    .layman { margin: 0; color: #333; }
+    .summary-en { color: #444; font-size: 14px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+    .chip {
+      background: var(--chip);
+      border: 1px solid #dbeaff;
+      color: #27496d;
+      border-radius: 999px;
+      padding: 2px 8px;
+      font-size: 12px;
+    }
+    .link {
+      margin-top: auto;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .link:hover { text-decoration: underline; }
+    .muted { color: var(--muted); font-size: 13px; }
+    @media (max-width: 760px) {
+      .filters {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <h1>当日 AI/Tech 新闻可视化总览</h1>
+      <div class="meta">本地时间：2026-02-23 18:41:33 | 数据生成时间：2026-02-23 10:41:33 UTC | 模型：google/gemini-3-flash-preview | 条目数：<span id="visible-count">1</span> / 1</div>
+      <div class="filters">
+        <select id="source-filter">
+          <option value="">全部来源</option>
+          <option value="worksonmymachine.substack.com">worksonmymachine.substack.com</option>
+        </select>
+        <input id="search-input" type="text" placeholder="搜索：来源/事件/关键词/英文总结..." />
+      </div>
+    </section>
+
+    <section class="sections">
+      <section class="section">
+        <h2>TL;DR 摘要区</h2>
+        <p class="muted">直接看「事情 + 大白话」，让非技术读者快速理解。</p>
+        <div class="grid" id="tldr-grid">
+          
+            <article class="card tldr-card" data-source="worksonmymachine.substack.com" data-search="worksonmymachine.substack.com 文章《资本主义的大拉链》探讨了如何通过标准化技术接口（如csv或api）将碎片化的市场需求与自动化生产力进行大规模缝合。 打个比方：以前你想吃披萨得自己揉面找烤箱，现在有了外卖平台这个“拉链”，把想吃的人和能做的人瞬间对齐了。这篇文章讲的就是如何用ai和数据标准，把原本乱糟糟的生意需求像拉拉链一样快速对接起来。 [事件] 探讨在ai时代通过标准化数据协议实现市场供需的自动化对齐。
+[亮点] 提出“拉链”概念，即利用csv等通用格式作为不同商业逻辑间的万能转换器。
+[洞察] (the thompson rule) 这种“拉链”正在重塑科技生态的护城河：当ai能自动解析并缝合非标需求时，传统的垂直集成平台将失去垄断地位，真正的价值将向那些能定义“连接标准”并降低交易摩擦的轻资产协议层转移。 capitalism / standardization / market efficiency / ai automation / data interoperability the article discusses the &#x27;zipper&#x27; metaphor where standardized data formats and ai act as a bridge to align fragmented market demands with automated production capabilities.">
+              <div class="card-head">
+                <span class="idx">#1</span>
+                <span class="source">worksonmymachine.substack.com</span>
+              </div>
+              <p class="event">文章《资本主义的大拉链》探讨了如何通过标准化技术接口（如CSV或API）将碎片化的市场需求与自动化生产力进行大规模缝合。</p>
+              <p class="layman">打个比方：以前你想吃披萨得自己揉面找烤箱，现在有了外卖平台这个“拉链”，把想吃的人和能做的人瞬间对齐了。这篇文章讲的就是如何用AI和数据标准，把原本乱糟糟的生意需求像拉拉链一样快速对接起来。</p>
+              <div class="chips"><span class="chip">Capitalism</span><span class="chip">Standardization</span><span class="chip">Market Efficiency</span><span class="chip">AI Automation</span><span class="chip">Data Interoperability</span></div>
+              <a class="link" href="https://worksonmymachine.ai/p/the-great-zipper-of-capitalism" target="_blank" rel="noopener noreferrer">查看原文</a>
+            </article>
+            
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Hardcore 深度区</h2>
+        <p class="muted">根据 expert_zh 的换行结构渲染为：📌事件 / ✨亮点 / 🧠洞察。</p>
+        <div class="grid" id="deep-grid">
+          
+            <article class="card deep-card" data-source="worksonmymachine.substack.com" data-search="worksonmymachine.substack.com 文章《资本主义的大拉链》探讨了如何通过标准化技术接口（如csv或api）将碎片化的市场需求与自动化生产力进行大规模缝合。 打个比方：以前你想吃披萨得自己揉面找烤箱，现在有了外卖平台这个“拉链”，把想吃的人和能做的人瞬间对齐了。这篇文章讲的就是如何用ai和数据标准，把原本乱糟糟的生意需求像拉拉链一样快速对接起来。 [事件] 探讨在ai时代通过标准化数据协议实现市场供需的自动化对齐。
+[亮点] 提出“拉链”概念，即利用csv等通用格式作为不同商业逻辑间的万能转换器。
+[洞察] (the thompson rule) 这种“拉链”正在重塑科技生态的护城河：当ai能自动解析并缝合非标需求时，传统的垂直集成平台将失去垄断地位，真正的价值将向那些能定义“连接标准”并降低交易摩擦的轻资产协议层转移。 capitalism / standardization / market efficiency / ai automation / data interoperability the article discusses the &#x27;zipper&#x27; metaphor where standardized data formats and ai act as a bridge to align fragmented market demands with automated production capabilities.">
+              <div class="card-head">
+                <span class="idx">#1</span>
+                <span class="source">worksonmymachine.substack.com</span>
+              </div>
+              <p><strong>📌 事件：</strong>探讨在AI时代通过标准化数据协议实现市场供需的自动化对齐。</p>
+              <p><strong>✨ 亮点：</strong>提出“拉链”概念，即利用CSV等通用格式作为不同商业逻辑间的万能转换器。</p>
+              <p><strong>🧠 洞察：</strong>(The Thompson Rule) 这种“拉链”正在重塑科技生态的护城河：当AI能自动解析并缝合非标需求时，传统的垂直集成平台将失去垄断地位，真正的价值将向那些能定义“连接标准”并降低交易摩擦的轻资产协议层转移。</p>
+              <p class="summary-en"><strong>EN：</strong>The article discusses the &#x27;Zipper&#x27; metaphor where standardized data formats and AI act as a bridge to align fragmented market demands with automated production capabilities.</p>
+              <a class="link" href="https://worksonmymachine.ai/p/the-great-zipper-of-capitalism" target="_blank" rel="noopener noreferrer">查看原文</a>
+            </article>
+            
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script>
+    const sourceFilter = document.getElementById('source-filter');
+    const searchInput = document.getElementById('search-input');
+    const cards = [...document.querySelectorAll('.card')];
+    const visibleCount = document.getElementById('visible-count');
+
+    function applyFilters() {
+      const sourceValue = sourceFilter.value.trim().toLowerCase();
+      const searchValue = searchInput.value.trim().toLowerCase();
+      let visibleSources = new Set();
+
+      cards.forEach((card) => {
+        const source = (card.dataset.source || '').toLowerCase();
+        const search = (card.dataset.search || '').toLowerCase();
+        const sourceOk = !sourceValue || source === sourceValue;
+        const textOk = !searchValue || search.includes(searchValue);
+        const ok = sourceOk && textOk;
+        card.style.display = ok ? '' : 'none';
+        if (ok) visibleSources.add(source + '|' + (card.querySelector('.idx')?.textContent || ''));
+      });
+
+      // each item appears twice (tldr + deep), so divide by 2
+      const n = Math.floor(visibleSources.size);
+      visibleCount.textContent = String(n);
+    }
+
+    sourceFilter.addEventListener('change', applyFilters);
+    searchInput.addEventListener('input', applyFilters);
+    applyFilters();
+  </script>
+</body>
+</html>

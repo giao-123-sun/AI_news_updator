@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "generated_at_utc": "2026-02-24 15:57:27 UTC",
+    "model": "google/gemini-3-flash-preview",
+    "count": 5,
+    "fallback_count": 0,
+    "input_file": "D:\\test\\codex\\work1\\data\\raw\\news_from_92_resources_raw.json"
+  },
+  "records": [
+    {
+      "source": "worksonmymachine.substack.com",
+      "event_zh": "文章探讨了在AI时代如何通过解决数据格式不兼容（如CSV处理）等琐碎痛点，来构建尚未存在的新兴市场。",
+      "layman_zh": "打个比方：这就像是发明了一个“万能插头”，让原本互相不理睬的电器都能通电。它不是在修路，而是在修补路面上的小裂缝，让车流能跑向以前去不了的地方。",
+      "expert_zh": "[事件] 文章深入分析了AI如何通过自动化处理琐碎的工程障碍（如CSV转换）来连接碎片化的市场需求。\n[亮点] 提出“资本主义拉链”概念，强调解决微观摩擦是创造宏观增量的核心。\n[洞察] (The Mollick Rule) 该逻辑将原本需要人工反复调试的“数据清洗”工作流彻底自动化，其ROI在于将原本因成本过高而放弃的边缘业务，转化为具备规模效应的自动化资产，改变了开发者寻找产品市场匹配度（PMF）的路径。",
+      "keywords": [
+        "AI Automation",
+        "Data Interoperability",
+        "Market Creation",
+        "Product Strategy",
+        "CSV Processing"
+      ],
+      "summary_en": "The article explores how AI can act as a 'zipper' to bridge fragmented data workflows, enabling the creation of new markets by automating mundane engineering frictions.",
+      "title": "The Great Zipper of Capitalism",
+      "published": "2026-02-22T14:45:23+00:00",
+      "link": "https://worksonmymachine.ai/p/the-great-zipper-of-capitalism",
+      "status": "ok"
+    },
+    {
+      "source": "shkspr.mobi",
+      "event_zh": "欧盟IST咨询小组回顾了25年前提出的“环境智能”愿景，探讨普适计算在当今AI时代的实现程度。",
+      "layman_zh": "这就像是翻开一张25年前画的“未来生活”草图：那时候人们觉得电脑会像空气一样无处不在，不用你动手，家里的灯光和电器就能懂你的心思并自动服务，而不是像现在这样到处是满天飞的广告和垃圾信息。",
+      "expert_zh": "[事件] 欧盟ISTAG回顾1999年提出的“环境智能”愿景，反思普适计算与当前AI发展的偏差。\n[亮点] 强调从“以设备为中心”向“以环境感知为中心”的计算范式演进。\n[洞察] 按照Thompson的商业生态视角，当前的AI发展正处于“注意力经济”与“工具效率”的拉锯战中；早期的愿景是建立一个无缝集成的系统护城河，但现实中由于数据孤岛和商业变现压力，我们得到的更多是碎片化的智能插件，而非真正隐形且无处不在的数字基础设施。",
+      "keywords": [
+        "Ambient Intelligence",
+        "Ubiquitous Computing",
+        "ISTAG",
+        "欧盟科技愿景",
+        "环境智能",
+        "普适计算"
+      ],
+      "summary_en": "The article reflects on the 25th anniversary of the EU's 'Ambient Intelligence' vision, contrasting the original dream of seamless, ubiquitous computing with the current reality of fragmented AI and digital noise.",
+      "title": "How close are we to a vision for 2010?",
+      "published": "2026-02-22T12:34:58+00:00",
+      "link": "https://shkspr.mobi/blog/2026/02/how-close-are-we-to-a-vision-for-2010/",
+      "status": "ok"
+    },
+    {
+      "source": "derekthompson.org",
+      "event_zh": "《大西洋月刊》撰稿人 Derek Thompson 提出“口语化理论”，探讨社交媒体如何导致阅读衰退并重塑人类思维方式。",
+      "layman_zh": "打个比方：以前我们获取知识像是在图书馆里读厚厚的说明书（文字逻辑），现在就像是在菜市场听大家七嘴八舌地聊天（口语情绪）。这种转变让我们更在意谁说话好听、谁嗓门大，而不是谁说得更有道理。",
+      "expert_zh": "[事件] 社交媒体正在将人类文明从“文字逻辑”时代推向“次生口语化”时代。\n[亮点] 媒介形式从深度阅读向碎片化、情绪化的短视频和社交互动转型。\n[洞察] (The Mollick Rule) 这一转变彻底重塑了知识生产的流转效率：它用“共鸣”取代了“论证”，将人类的认知工作流从“逻辑推演”简化为“模式识别”。对于知识工作者而言，这意味着信息获取的ROI虽然在短期内因速度提升而增加，但长期来看，深度思考的护城河正在被这种碎片化的认知习惯瓦解。",
+      "keywords": [
+        "Orality Theory",
+        "Social Media",
+        "Cognitive Shift",
+        "Literacy Crisis",
+        "媒介理论",
+        "认知重塑"
+      ],
+      "summary_en": "The article explores the 'Orality Theory,' arguing that the shift from text-based culture to social media-driven interaction is fundamentally altering human cognition and the nature of public discourse.",
+      "title": "The Orality Theory of Everything",
+      "published": "2026-02-22T04:00:00+00:00",
+      "link": "https://www.theatlantic.com/ideas/2026/02/social-media-literacy-crisis/686076/?utm_source=feed",
+      "status": "ok"
+    },
+    {
+      "source": "nesbitt.io",
+      "event_zh": "技术博客总结了主流代码托管平台（如GitHub、GitLab等）中特定配置文件夹的功能与用途。",
+      "layman_zh": "这就像是给不同品牌的电器配了专门的“说明书插槽”：虽然都是电器，但如果你把GitHub的说明书放进GitLab的插槽里，机器就不知道该怎么自动干活了。",
+      "expert_zh": "[事件] 本文系统梳理了主流Git托管平台中以点开头的特定配置文件夹（如.github/）的作用。\n[亮点] 揭示了代码仓库从纯代码存储向“自包含自动化单元”演进的标准化路径。\n[洞察] 这种设计体现了典型的“约定优于配置”模式，它在开发者工作流中建立了一个隐形的标准化层，虽然增强了单一平台的粘性，但也通过这种结构化的元数据定义了现代DevOps的协作边界。",
+      "keywords": [
+        "Git Forge",
+        "Repository Structure",
+        "DevOps",
+        "GitHub Actions",
+        "CI/CD Configuration",
+        "Automation"
+      ],
+      "summary_en": "The article provides a comprehensive overview of platform-specific hidden folders like .github/ and .gitlab/, explaining how they govern automation and metadata across different git forges.",
+      "title": "Forge-Specific Repository Folders",
+      "published": "2026-02-22T02:00:00+00:00",
+      "link": "https://nesbitt.io/2026/02/22/forge-specific-repository-folders.html",
+      "status": "ok"
+    },
+    {
+      "source": "johndcook.com",
+      "event_zh": "John D. Cook 利用辅助验证数据（Certificate）成功计算并快速验证了第 1000 万个斐波那契数。",
+      "layman_zh": "这就像是你在算一道超级复杂的数学大题，旁边有人给了你一个“验算秘籍”。你不需要重新算一遍，只要对照这个秘籍扫一眼，就能立刻确定之前的超长答案是不是对的。",
+      "expert_zh": "[事件] 开发者通过引入辅助验证数据（Certificate）实现了超大规模斐波那契数列的高效计算与校验。\n[亮点] 利用辅助信息将验证复杂度与原始计算解耦，大幅缩短了结果确认的耗时。\n[洞察] 这体现了计算架构中“计算与验证分离”的逻辑：在处理海量数据流时，通过增加少量的元数据（辅助证明），可以将原本昂贵的全局重算转变为廉价的局部校验，这是构建高可靠分布式计算系统的核心思路。",
+      "keywords": [
+        "Fibonacci",
+        "Computational Verification",
+        "Certificate",
+        "Algorithm Efficiency",
+        "斐波那契数列",
+        "算法验证"
+      ],
+      "summary_en": "The author calculated the 10,000,000th Fibonacci number and demonstrated how auxiliary 'certificates' can significantly accelerate the verification process of large-scale mathematical computations.",
+      "title": "10,000,000th Fibonacci number",
+      "published": "2026-02-22T01:00:31+00:00",
+      "link": "https://www.johndcook.com/blog/2026/02/21/f10000000/",
+      "status": "ok"
+    }
+  ]
+}

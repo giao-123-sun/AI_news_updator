@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "generated_at_utc": "2026-02-23 10:41:33 UTC",
+    "model": "google/gemini-3-flash-preview",
+    "count": 1,
+    "fallback_count": 0,
+    "input_file": "D:\\test\\codex\\work1\\data\\raw\\news_from_92_resources_raw.json"
+  },
+  "records": [
+    {
+      "source": "worksonmymachine.substack.com",
+      "event_zh": "文章《资本主义的大拉链》探讨了如何通过标准化技术接口（如CSV或API）将碎片化的市场需求与自动化生产力进行大规模缝合。",
+      "layman_zh": "打个比方：以前你想吃披萨得自己揉面找烤箱，现在有了外卖平台这个“拉链”，把想吃的人和能做的人瞬间对齐了。这篇文章讲的就是如何用AI和数据标准，把原本乱糟糟的生意需求像拉拉链一样快速对接起来。",
+      "expert_zh": "[事件] 探讨在AI时代通过标准化数据协议实现市场供需的自动化对齐。\n[亮点] 提出“拉链”概念，即利用CSV等通用格式作为不同商业逻辑间的万能转换器。\n[洞察] (The Thompson Rule) 这种“拉链”正在重塑科技生态的护城河：当AI能自动解析并缝合非标需求时，传统的垂直集成平台将失去垄断地位，真正的价值将向那些能定义“连接标准”并降低交易摩擦的轻资产协议层转移。",
+      "keywords": [
+        "Capitalism",
+        "Standardization",
+        "Market Efficiency",
+        "AI Automation",
+        "Data Interoperability"
+      ],
+      "summary_en": "The article discusses the 'Zipper' metaphor where standardized data formats and AI act as a bridge to align fragmented market demands with automated production capabilities.",
+      "title": "The Great Zipper of Capitalism",
+      "published": "2026-02-22T14:45:23+00:00",
+      "link": "https://worksonmymachine.ai/p/the-great-zipper-of-capitalism",
+      "status": "ok"
+    }
+  ]
+}

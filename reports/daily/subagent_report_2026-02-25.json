@@ -1,0 +1,1710 @@
+{
+  "meta": {
+    "generated_at_utc": "2026-02-25 06:10:37 UTC",
+    "model": "google/gemini-3-flash-preview",
+    "count": 92,
+    "fallback_count": 0,
+    "input_file": "D:\\test\\codex\\work1\\data\\raw\\news_from_92_resources_raw.json"
+  },
+  "records": [
+    {
+      "source": "worksonmymachine.substack.com",
+      "event_zh": "文章探讨了通过AI自动化处理非标准化数据（如CSV和订单）来连接碎片化市场的新商业逻辑。",
+      "layman_zh": "打个比方：以前每个饭店的菜单格式都不一样，外卖平台得雇几千人手工录入；现在AI就像一个万能插头，不管对方给的是手写单子还是乱码表格，它都能瞬间自动对齐，让原本不通的生意一下子做成了。",
+      "expert_zh": "[事件] 文章分析了AI如何通过消除数据摩擦力来整合原本低效、碎片化的传统行业市场。\n[亮点] 利用大模型对非结构化长尾数据（CSV/文本）的语义理解，实现极低成本的系统互联。\n[洞察] (The Thompson Rule) AI正在扮演“资本主义拉链”的角色，它通过降低集成成本，直接摧毁了那些靠信息不对称和格式壁垒生存的中间商护城河，将原本孤立的本地化市场强行拉入全球化的效率竞争中。",
+      "keywords": [
+        "AI Automation",
+        "Data Integration",
+        "Market Efficiency",
+        "Unstructured Data",
+        "Digital Transformation"
+      ],
+      "summary_en": "The article discusses how AI acts as a universal connector for fragmented markets by automating the processing of non-standard data like CSVs, effectively creating new market opportunities.",
+      "title": "The Great Zipper of Capitalism",
+      "published": "2026-02-22T14:45:23+00:00",
+      "link": "https://worksonmymachine.ai/p/the-great-zipper-of-capitalism",
+      "status": "ok"
+    },
+    {
+      "source": "shkspr.mobi",
+      "event_zh": "欧盟IST咨询小组回顾并反思了25年前提出的“环境智能”愿景与当前技术现状的差距。",
+      "layman_zh": "打个比方：这就像是25年前人们幻想未来的房子能像个贴心管家，你走到哪灯就亮到哪，水温自动调好；但现实中我们却得到了一堆需要手动联网、还不停给你弹广告的智能灯泡。",
+      "expert_zh": "[事件] 欧盟ISTAG回顾1999年提出的“环境智能”愿景，探讨普适计算为何未能如期实现。\n[亮点] 核心矛盾在于从“隐形且无缝的集成”转向了以“注意力经济”和“中心化平台”为导向的零碎生态。\n[洞察] 按照Thompson的生态位理论，普适计算的失败源于缺乏统一的底层协议，导致硬件厂商为了构建各自的商业护城河，将原本应像空气一样透明的服务变成了互不兼容的孤岛，牺牲了用户体验的连贯性。",
+      "keywords": [
+        "Ambient Intelligence",
+        "Ubiquitous Computing",
+        "ISTAG",
+        "IoT",
+        "Tech Vision",
+        "普适计算",
+        "环境智能"
+      ],
+      "summary_en": "The article reflects on the 25th anniversary of the EU's 'Ambient Intelligence' vision, contrasting the original dream of seamless, invisible computing with the fragmented, ad-driven reality of modern technology.",
+      "title": "How close are we to a vision for 2010?",
+      "published": "2026-02-22T12:34:58+00:00",
+      "link": "https://shkspr.mobi/blog/2026/02/how-close-are-we-to-a-vision-for-2010/",
+      "status": "ok"
+    },
+    {
+      "source": "derekthompson.org",
+      "event_zh": "《大西洋月刊》撰稿人 Derek Thompson 提出“口语化万物理论”，探讨社交媒体如何导致阅读衰退并重塑人类思维方式。",
+      "layman_zh": "打个比方：以前我们获取知识像是在图书馆里读严谨的说明书，现在就像是在菜市场听大家七嘴八舌地聊天。虽然信息传得更快、更热闹了，但大家越来越没耐心坐下来读完一本厚书，脑子也变得习惯于碎片化的听觉逻辑而非深度的文字逻辑。",
+      "expert_zh": "[事件] 社交媒体引发的“口语化转向”正在取代传统的文字读写文化，改变人类的认知结构。\n[亮点] 媒介从“视觉阅读”向“流媒体/短视频口语化”的范式转移。\n[洞察] (The Mollick Rule) 这一转变彻底重塑了知识生产的流转效率，它将原本需要深度专注的“线性逻辑工作流”替换成了高频、情绪驱动的“网状反馈流”。对于知识工作者而言，这意味着深度思考的门槛（ROI）变得极高，而能够过滤噪音、保持长文本处理能力将成为未来最稀缺的竞争壁垒。",
+      "keywords": [
+        "Orality Theory",
+        "Cognitive Shift",
+        "Social Media",
+        "Literacy Crisis",
+        "Media Ecology"
+      ],
+      "summary_en": "Derek Thompson explores the 'Orality Theory,' arguing that the shift from text-based reading to social media-driven oral culture is fundamentally altering human cognition and the nature of thought.",
+      "title": "The Orality Theory of Everything",
+      "published": "2026-02-22T04:00:00+00:00",
+      "link": "https://www.theatlantic.com/ideas/2026/02/social-media-literacy-crisis/686076/?utm_source=feed",
+      "status": "ok"
+    },
+    {
+      "source": "nesbitt.io",
+      "event_zh": "技术博客总结了主流代码托管平台（如 GitHub、GitLab 等）中特定配置文件夹的功能与差异。",
+      "layman_zh": "这就像是给你的代码仓库准备了几个“专属说明书夹子”：如果你把文件放进 GitHub 的夹子，它就知道怎么自动跑测试；换到 GitLab 的夹子，它就按另一套规矩办事。这让你在不同平台搬家时，能精准管理每个平台的“潜规则”。",
+      "expert_zh": "[事件] 本文系统梳理了 .github/、.gitlab/ 等特定前缀文件夹在不同 Git 托管平台中的配置作用。\n[亮点] 揭示了代码仓库从纯代码存储向“平台感知型”配置容器演进的技术现状。\n[洞察] (The Mollick Rule) 这一机制优化了开发者的 CI/CD 编排流，它将原本碎片化的自动化脚本标准化为“基础设施即代码”，显著降低了跨平台迁移的认知负荷，使开发者能通过单一目录结构实现对复杂云端工作流的精准控制。",
+      "keywords": [
+        "Git Forges",
+        "CI/CD Configuration",
+        "GitHub Actions",
+        "GitLab CI",
+        "Repository Structure"
+      ],
+      "summary_en": "The article provides a comprehensive overview of platform-specific hidden folders like .github/ and .gitlab/, explaining how they govern automation and metadata across different git hosting services.",
+      "title": "Forge-Specific Repository Folders",
+      "published": "2026-02-22T02:00:00+00:00",
+      "link": "https://nesbitt.io/2026/02/22/forge-specific-repository-folders.html",
+      "status": "ok"
+    },
+    {
+      "source": "johndcook.com",
+      "event_zh": "John D. Cook 通过辅助验证数据（Certificate）成功计算并验证了第 1000 万个斐波那契数。",
+      "layman_zh": "这就像是老师在批改一道超级复杂的数学大题，与其从头算一遍，不如让学生在交卷时附上一份“解题关键步骤证明”，老师扫一眼证明就能立刻确定答案是对的，大大节省了检查时间。",
+      "expert_zh": "[事件] 开发者利用辅助验证机制完成了千万级斐波那契数列的计算与校验。\n[亮点] 引入辅助数据（Certificate）将结果验证的复杂度与原始计算解耦，显著提升了超大数值运算的可靠性。\n[洞察] 这体现了计算架构中“生成易，验证难”的非对称性优化；在处理超大规模数据流时，通过增加少量的元数据作为“计算存根”，可以将原本昂贵的二次校验成本降至近乎实时，是提升分布式计算容错效率的关键范式。",
+      "keywords": [
+        "Fibonacci number",
+        "Computational Verification",
+        "Certificate",
+        "Algorithm Efficiency",
+        "斐波那契数列",
+        "计算验证"
+      ],
+      "summary_en": "The author demonstrated the calculation of the 10,000,000th Fibonacci number using auxiliary certificates to drastically speed up the verification process. This approach highlights the efficiency of using supplementary data to confirm computational correctness without re-executing the full task.",
+      "title": "10,000,000th Fibonacci number",
+      "published": "2026-02-22T01:00:31+00:00",
+      "link": "https://www.johndcook.com/blog/2026/02/21/f10000000/",
+      "status": "ok"
+    },
+    {
+      "source": "idiallo.com",
+      "event_zh": "英伟达 CEO 黄仁勋澄清并未对 OpenAI 做出 1000 亿美元的投资承诺，称其只是受邀投资且将逐步进行。",
+      "layman_zh": "打个比方：这就像是你去高档餐厅吃饭，餐厅对外宣称你已经答应要充值 100 万办会员卡，但你赶紧出来解释说，人家只是邀请我办卡，我挺荣幸的，但钱得一顿饭一顿饭地付，没打算一次性掏空钱包。",
+      "expert_zh": "[事件] 英伟达 CEO 黄仁勋公开回撤此前市场传闻的对 OpenAI 巨额投资承诺，强调投资将分阶段进行。\n[亮点] 打破了“英伟达-OpenAI-甲骨文”三方资金内循环的增长神话，反映出硬件巨头对大模型高额投入回报的审慎态度。\n[洞察] (The Thompson Rule) 英伟达正在重新评估其在生态系统中的护城河。当 OpenAI 开始尝试广告业务且资金压力剧增时，黄仁勋的“退后一步”意味着英伟达不愿被深度绑定在单一客户的财务风险中，其战略重心正从盲目扩张基础设施转向确保每一分投入都能换取确定的算力订单，防止泡沫破裂冲击自身利润率。",
+      "keywords": [
+        "Nvidia",
+        "OpenAI",
+        "Jensen Huang",
+        "Investment Commitment",
+        "AI Bubble",
+        "Infrastructure"
+      ],
+      "summary_en": "Nvidia CEO Jensen Huang clarified that the rumored $100 billion investment in OpenAI was an invitation rather than a firm commitment, signaling a more cautious, step-by-step approach to funding.",
+      "title": "Nvidia was only invited to invest",
+      "published": "2026-02-21T23:35:48+00:00",
+      "link": "https://idiallo.com/byte-size/nvidia-was-only-invited-to-invest?src=feed",
+      "status": "ok"
+    },
+    {
+      "source": "construction-physics.com",
+      "event_zh": "Construction Physics 发布了 2026 年 2 月 21 日的每周阅读清单，涵盖建筑、基础设施和工业技术的最新动态。",
+      "layman_zh": "这就像是为你订阅了一份“大基建朋友圈周报”，把这一周里盖房子的新技术、修路的新方案和工厂里的黑科技打包送到你面前，让你不用到处乱翻就能看懂行业风向。",
+      "expert_zh": "[事件] Construction Physics 发布年度工业与建筑技术深度阅读清单。\n[亮点] 跨学科整合建筑信息模型、基础设施韧性及现代工业制造的最新案例。\n[洞察] 建筑业正处于从“手工工场”向“工业化制造”转型的深水区，该清单揭示了通过标准化组件和数字化协同来对冲劳动力成本上升的核心战略，其本质是试图将软件行业的边际成本递减逻辑引入物理世界的重资产行业。",
+      "keywords": [
+        "建筑技术",
+        "基础设施",
+        "工业科技",
+        "Construction Physics",
+        "行业洞察"
+      ],
+      "summary_en": "Construction Physics released its weekly curated reading list for February 21, 2026, focusing on the latest developments in building science, infrastructure, and industrial technology.",
+      "title": "Reading List 02/21/26",
+      "published": "2026-02-21T13:37:44+00:00",
+      "link": "https://www.construction-physics.com/p/reading-list-022126",
+      "status": "ok"
+    },
+    {
+      "source": "evanhahn.com",
+      "event_zh": "开发者 Evan Hahn 发布了一个可订阅的日历文件，用于追踪《塞尔达传说》系列所有游戏的发行周年纪念日。",
+      "layman_zh": "这就像是给你的手机日历装了一个“塞尔达专属闹钟”，它会自动帮你记下每一款塞尔达游戏的生日，让你不用自己去查哪天该庆祝哪款经典作品。",
+      "expert_zh": "[事件] 开发者通过 Python 脚本将 CSV 格式的游戏发行数据转化为标准的 ICS 日历订阅服务。\n[亮点] 利用标准化的 iCalendar 协议实现了特定垂直兴趣领域的数据自动化分发。\n[洞察] 这是一个典型的“微型工具优化工作流”案例，它通过极低的开发成本解决了特定社群的数字化记忆负担，将零散的百科知识转化为具有被动提醒功能的个人日程资产。",
+      "keywords": [
+        "Zelda",
+        "iCalendar",
+        "Python Script",
+        "Anniversary Tracking",
+        "Automation"
+      ],
+      "summary_en": "Developer Evan Hahn created a subscribable ICS calendar and a Python generator script to track the release anniversaries of every Legend of Zelda game.",
+      "title": "Track Zelda release anniversaries in your calendar",
+      "published": "2026-02-21T00:00:00+00:00",
+      "link": "https://evanhahn.com/zelda-anniversary-calendar/",
+      "status": "ok"
+    },
+    {
+      "source": "joanwestenberg.com",
+      "event_zh": "Joan Westenberg 发表文章探讨了软件开发中“冗余代码与技术债（Cruft）”对产品长期生命力的破坏性影响。",
+      "layman_zh": "这就像是一个原本清爽的房间，如果不及时打扫，杂物会越堆越多，最后你连门都进不去，甚至想换个灯泡都要搬开三座大山。",
+      "expert_zh": "[事件] 文章深度剖析了软件系统中随时间积累的无效代码和复杂性如何拖垮创新速度。\n[亮点] 提出了“技术债”不仅是开发成本，更是对产品灵活性和团队士气的长期侵蚀。\n[洞察] 遵循 Mollick 视角：这种“冗余重量”直接破坏了知识工作者的交付流，它将原本用于创造新价值的精力，被迫转化为在旧泥潭里“考古”的无效劳动，导致企业在面对 AI 驱动的快速迭代时失去响应能力。",
+      "keywords": [
+        "Technical Debt",
+        "Software Cruft",
+        "Product Management",
+        "Development Efficiency",
+        "技术债"
+      ],
+      "summary_en": "The article explores the compounding negative impact of 'cruft'—the accumulation of redundant code and technical debt—on software agility and long-term product viability.",
+      "title": "The unbearable weight of cruft",
+      "published": "2026-02-20T22:54:49+00:00",
+      "link": "https://www.joanwestenberg.com/the-unbearable-weight-of-cruft/",
+      "status": "ok"
+    },
+    {
+      "source": "krebsonsecurity.com",
+      "event_zh": "新型网络钓鱼服务 Starkiller 通过代理真实网站页面，实现了对用户账号、密码及多因素验证码（MFA）的实时拦截与转发。",
+      "layman_zh": "这就像是一个隐形的“中间人”，他搬了把椅子坐在你和银行柜台之间。你以为在跟柜员说话，其实你递出的存折和密码都先经过了他的手，他看完记下后再递给柜员，让你毫无察觉地被偷走了钥匙。",
+      "expert_zh": "[事件] Starkiller 钓鱼服务通过反向代理技术实时中转受害者与真实服务器之间的流量。\n[亮点] 摒弃了易被识别的静态仿冒网页，采用动态中继机制绕过 MFA 强认证。\n[洞察] (The Mollick Rule) 该工具将复杂的中间人攻击（AiTM）产品化，极大降低了黑客攻击高安全性账户的门槛，使传统的短信或 App 验证码防护几乎失效，迫使企业必须向 FIDO2 等硬件级认证方案转型。",
+      "keywords": [
+        "Starkiller",
+        "Phishing-as-a-Service",
+        "MFA Bypass",
+        "Reverse Proxy",
+        "Cybersecurity",
+        "网络钓鱼"
+      ],
+      "summary_en": "Starkiller is a sophisticated phishing-as-a-service that acts as a live relay between victims and legitimate websites, effectively capturing credentials and multi-factor authentication codes in real-time.",
+      "title": "‘Starkiller’ Phishing Service Proxies Real Login Pages, MFA",
+      "published": "2026-02-20T20:00:30+00:00",
+      "link": "https://krebsonsecurity.com/2026/02/starkiller-phishing-service-proxies-real-login-pages-mfa/",
+      "status": "ok"
+    },
+    {
+      "source": "wheresyoured.at",
+      "event_zh": "科技评论文章对 Anthropic 公司及其创始人 Dario Amodei 进行了深度批判，质疑其以“安全”为名建立的商业模式。",
+      "layman_zh": "打个比方：这就像是一个厨师从老东家辞职开了家新餐厅，口口声声说老东家的菜有毒，只有他做的菜最安全，结果大家发现他只是想靠这个噱头多收钱，而且菜的味道还特别保守。",
+      "expert_zh": "[事件] 科技评论界对 Anthropic 核心团队及其“安全优先”的叙事逻辑发起猛烈抨击。\n[亮点] 揭示了 Anthropic 如何将“AI 安全”从技术约束转化为一种排他性的商业营销手段。\n[洞察] (The Thompson Rule) Anthropic 的战略护城河完全建立在对 OpenAI 激进路线的对冲上。然而，当安全叙事与商业扩张产生冲突时，其所谓的“宪法 AI”正面临道德高地崩塌的风险，这种定位正在从差异化优势转变为限制其产品灵活性与市场渗透率的枷锁。",
+      "keywords": [
+        "Anthropic",
+        "Dario Amodei",
+        "AI Safety",
+        "OpenAI Rivalry",
+        "Corporate Strategy",
+        "AI Ethics"
+      ],
+      "summary_en": "The article provides a scathing critique of Anthropic, arguing that its founders leveraged 'AI safety' as a marketing gimmick to differentiate themselves from OpenAI while building a similarly profit-driven enterprise.",
+      "title": "Premium: The Hater's Guide to Anthropic",
+      "published": "2026-02-20T18:26:41+00:00",
+      "link": "https://www.wheresyoured.at/premium-the-haters-guide-to-anthropic/",
+      "status": "ok"
+    },
+    {
+      "source": "simonwillison.net",
+      "event_zh": "OpenAI 工程师 Thibault Sottiaux 宣布 GPT-5.3-Codex-Spark 模型推理速度提升 30%，达到每秒 1200 个 token 以上。",
+      "layman_zh": "打个比方：以前 AI 写代码像是个打字慢的实习生，你得盯着屏幕等它磨叽；现在它变成了“闪电侠”，一秒钟能吐出两三页纸的代码，你眨下眼它就写完了。",
+      "expert_zh": "[事件] OpenAI 显著提升了 GPT-5.3-Codex-Spark 的推理吞吐量。\n[亮点] 推理速度突破 1200 tokens/sec，较前代提升 30%。\n[洞察] (The Mollick Rule) 这标志着 AI 从“辅助对话”进入“实时流式协作”阶段。对于开发者而言，这种速度消除了等待模型生成的认知中断，使 AI 能够实时重构大型代码库或在毫秒级内完成复杂的逻辑验证，极大地提高了人机协作的沉浸感和生产力上限。",
+      "keywords": [
+        "OpenAI",
+        "GPT-5.3",
+        "Inference Speed",
+        "Codex",
+        "Tokens Per Second",
+        "Performance Optimization"
+      ],
+      "summary_en": "OpenAI has optimized GPT-5.3-Codex-Spark to achieve a 30% speed increase, now delivering over 1200 tokens per second for high-performance code generation.",
+      "title": "Quoting Thibault Sottiaux",
+      "published": "2026-02-20T17:30:21+00:00",
+      "link": "https://simonwillison.net/2026/Feb/21/thibault-sottiaux/#atom-everything",
+      "status": "ok"
+    },
+    {
+      "source": "filfre.net",
+      "event_zh": "知名游戏设计师 Jane Jensen 回顾了《圣魔血盟》的开发背景，揭示了 90 年代末游戏行业从真人实拍视频（FMV）向实时 3D 技术转型的关键转折点。",
+      "layman_zh": "打个比方：这就像是电影院突然发现大家不再爱看录好的录像带，而是迷上了可以随意换视角、实时互动的 3D 动画，设计师必须在老手艺失传前赶紧学会新本事。",
+      "expert_zh": "[事件] 传奇设计师 Jane Jensen 详述了《Gabriel Knight 3》在 1997 年 CES 展会后决定放弃 FMV 转向 3D 技术的决策内幕。\n[亮点] 标志着叙事类冒险游戏从“多媒体交互”范式向“实时渲染”范式的痛苦转型。\n[洞察] 这是一个典型的技术代差摧毁商业护城河的案例。当底层硬件（3D 加速卡）普及，原本靠高成本真人拍摄建立的视觉门槛瞬间崩塌，开发者被迫在叙事深度与技术表现力之间重新寻找平衡点，这种转型阵痛直接导致了传统冒险游戏黄金时代的终结。",
+      "keywords": [
+        "Jane Jensen",
+        "Gabriel Knight 3",
+        "FMV",
+        "3D Rendering",
+        "Game History",
+        "Adventure Games"
+      ],
+      "summary_en": "The article chronicles Jane Jensen's pivotal decision to shift from full-motion video to 3D technology for Gabriel Knight 3, reflecting a major industry transition observed during the 1997 CES.",
+      "title": "Gabriel Knight 3: Blood of the Sacred, Blood of the Damned",
+      "published": "2026-02-20T17:24:46+00:00",
+      "link": "https://www.filfre.net/2026/02/gabriel-knight-3-blood-of-the-sacred-blood-of-the-damned/",
+      "status": "ok"
+    },
+    {
+      "source": "matklad.github.io",
+      "event_zh": "开发者 matklad 提出了一种通过限制代码注释行宽并自动换行来提升代码可读性的工程实践。",
+      "layman_zh": "打个比方：这就像是把写得密密麻麻、一直延伸到纸外的笔记，重新整理成每行长度都一样的方块字，让你看代码时不用左右来回摇头，一眼就能扫完。",
+      "expert_zh": "[事件] 探讨了在现代编程中对代码注释进行硬换行（Hard Wrap）的必要性与实现方式。\n[亮点] 通过将注释宽度限制在 80-100 字符，利用 IDE 自动格式化工具减少认知负荷。\n[洞察] 遵循 Mollick 的效率原则，这一微小的规范优化了“代码阅读”这一高频人类工作流，通过降低视觉扫描的物理成本，将开发者的心流状态从排版干扰中解放出来，实现了极高的边际收益。",
+      "keywords": [
+        "Code Quality",
+        "Documentation",
+        "Developer Experience",
+        "Formatting",
+        "代码规范"
+      ],
+      "summary_en": "The author advocates for the practice of hard-wrapping code comments to a specific line length to improve readability and maintainability within IDEs.",
+      "title": "Wrapping Code Comments",
+      "published": "2026-02-20T16:00:00+00:00",
+      "link": "https://matklad.github.io/2026/02/21/wrapping-code-comments.html",
+      "status": "ok"
+    },
+    {
+      "source": "devblogs.microsoft.com/oldnewthing",
+      "event_zh": "微软开发者博客发布了 2026/2027 年度西雅图交响乐团订阅季的参考指南。",
+      "layman_zh": "这就像是一个资深程序员在技术社区里分享他私人收藏的音乐会“节目单”，告诉大家未来一年哪场演出值得买票，把复杂的演出排期变成了简单易读的口袋手册。",
+      "expert_zh": "[事件] 微软著名技术博客 The Old New Thing 发布了 2026/2027 西雅图交响乐团演出季的索引指南。\n[亮点] 跨界信息整合，将非技术类的文化演出信息以结构化的“口袋参考”形式呈现给开发者社区。\n[洞察] (The Mollick Rule) 该内容优化了高净值技术人群的业余生活决策流，通过将零散的演出排期转化为可快速检索的索引，降低了用户获取文化消费信息的认知负荷，体现了社区领袖在技术之外的个人品牌影响力对用户粘性的维护。",
+      "keywords": [
+        "Seattle Symphony",
+        "The Old New Thing",
+        "Raymond Chen",
+        "Subscription Season",
+        "Reference Guide"
+      ],
+      "summary_en": "Raymond Chen provides a structured pocket reference guide for the Seattle Symphony's 2026/2027 subscription season on his Microsoft developer blog.",
+      "title": "The 2026/2027 Seattle Symphony subscription season at a glance",
+      "published": "2026-02-20T15:00:01+00:00",
+      "link": "https://devblogs.microsoft.com/oldnewthing/20260220-01/?p=112076",
+      "status": "ok"
+    },
+    {
+      "source": "pluralistic.net",
+      "event_zh": "巴西长期实行的“有限责任限制”法律体系证明了打破企业法人屏蔽并不会阻碍资本形成。",
+      "layman_zh": "打个比方：这就像是规定如果熊孩子在外闯了祸，家长不能只说‘那是他干的与我无关’，而是必须掏钱赔偿；这种规矩并没有让大家不敢生孩子，反而让家长管教得更严了。",
+      "expert_zh": "[事件] 巴西自1937年起实行的“连带责任”体系挑战了西方资本主义关于有限责任不可侵犯的教条。\n[亮点] 法律通过“穿透公司面纱”让母公司为子公司债务负责，成功遏制了企业通过破产逃债的恶意行为。\n[洞察] (The Thompson Rule) 该机制重新定义了权力博弈中的战略护城河：它将“法律隔离”这一传统避风港拆除，迫使跨国资本在追求利润与承担社会合规成本之间重新平衡，证明了监管透明度可以与经济增长共存，直接动了那些依靠复杂股权结构规避责任的企业的奶酪。",
+      "keywords": [
+        "Limited Liability",
+        "Corporate Veil",
+        "Brazil Law",
+        "Capital Formation",
+        "Joint and Several Liability"
+      ],
+      "summary_en": "The article highlights Brazil's century-old legal framework that limits corporate limited liability, proving that 'piercing the corporate veil' to hold shareholders accountable does not hinder economic growth or capital formation.",
+      "title": "Pluralistic: A perforated corporate veil (20 Feb 2026)",
+      "published": "2026-02-20T14:53:08+00:00",
+      "link": "https://pluralistic.net/2026/02/20/karioca-konzernrecht/",
+      "status": "ok"
+    },
+    {
+      "source": "dfarq.homeip.net",
+      "event_zh": "2010年2月20日，加拿大个人电脑博物馆馆长Syd Bolton首次使用1982年的老古董电脑Commodore VIC-20成功发送了推文。",
+      "layman_zh": "这就像是让一个只会写毛笔字的清朝老古董，通过一根神奇的转换线，成功在现代人的朋友圈里发了一段话。",
+      "expert_zh": "[事件] 历史性地实现了1982年产的Commodore VIC-20 8位计算机与现代社交网络Twitter的跨代通信。\n[亮点] 通过定制硬件接口和协议转换，克服了极低内存（5KB）与现代加密网络协议之间的巨大鸿沟。\n[洞察] 这体现了技术生态中的“向下兼容极限测试”：它不仅是怀旧，更证明了只要通信协议的逻辑层能被映射，任何计算设备都能接入现代信息流，打破了硬件寿命决定软件连接能力的固有认知。",
+      "keywords": [
+        "Commodore VIC-20",
+        "Retro Computing",
+        "Twitter History",
+        "Hardware Hacking",
+        "Syd Bolton"
+      ],
+      "summary_en": "In 2010, Syd Bolton achieved a milestone in retro-computing by successfully sending a tweet from a 1982 Commodore VIC-20, bridging a 28-year hardware gap.",
+      "title": "On February 20, 2010 a VIC-20 tweeted",
+      "published": "2026-02-20T12:00:35+00:00",
+      "link": "https://dfarq.homeip.net/on-february-20-2010-a-vic-20-tweeted/?utm_source=rss&utm_medium=rss&utm_campaign=on-february-20-2010-a-vic-20-tweeted",
+      "status": "ok"
+    },
+    {
+      "source": "ericmigi.com",
+      "event_zh": "Pebble 智能手表生态宣布重启 CloudPebble 在线开发平台，并发布了纯 JavaScript 开发工具包和第二代 SDK。",
+      "layman_zh": "打个比方：这就像是一个已经停产的乐高系列突然重新开放了在线拼装室，而且现在你不需要专业的工程图纸，只要会写简单的说明书（JS语言）就能给你的旧手表做出新功能。",
+      "expert_zh": "[事件] Pebble 重启云端 IDE 并推出纯 JS 开发环境以降低开发者门槛。\n[亮点] 摆脱了对 C 语言底层编译的依赖，通过高级语言抽象实现跨硬件平台的快速适配。\n[洞察] (The Mollick Rule) 这一举措极大地优化了长尾硬件的二次开发流程，将原本需要数小时配置环境的专业工作缩减为浏览器内的即时创作，本质上是利用低门槛工具延长了过时硬件的生命周期并激活了社区的剩余价值。",
+      "keywords": [
+        "Pebble",
+        "CloudPebble",
+        "SDK",
+        "JavaScript",
+        "IoT Development",
+        "Wearables"
+      ],
+      "summary_en": "The Pebble ecosystem has revived its CloudPebble IDE and introduced a pure JavaScript SDK, significantly lowering the barrier for developers to create apps for the classic smartwatch platform.",
+      "title": "CloudPebble Returns! Plus New Pure JavaScript and Round 2 SDK",
+      "published": "2026-02-20T00:00:00+00:00",
+      "link": "https://repebble.com/blog/cloudpebble-returns-plus-pure-javascript-and-round-2-sdk",
+      "status": "ok"
+    },
+    {
+      "source": "xeiaso.net",
+      "event_zh": "技术博主 Xe Iaso 宣布因医疗原因将休假至 2026 年 4 月初。",
+      "layman_zh": "打个比方：就像是你关注的一个硬核修车师傅，因为身体零件需要进厂大修，得关店休息两个月，这段时间没法给你更新修车教程了。",
+      "expert_zh": "[事件] 知名技术博主 Xe Iaso 宣布因健康问题进入为期约一个半月的医疗休假。\n[亮点] 个人开发者品牌在内容产出上的高度中心化与脆弱性。\n[洞察] 从个体经济的护城河来看，Xe 的停更意味着该技术社区短期内失去了重要的“布道节点”。这种依赖单一核心贡献者的内容生态，在面临不可抗力时会产生明显的知识传递断层，反映出个人品牌在规模化过程中难以规避的“单点故障”风险。",
+      "keywords": [
+        "Xe Iaso",
+        "医疗休假",
+        "个人品牌",
+        "内容创作",
+        "技术社区"
+      ],
+      "summary_en": "Technical blogger Xe Iaso has announced a medical leave of absence, with plans to remain offline and pause content production until early April 2026.",
+      "title": "Life Update: On medical leave",
+      "published": "2026-02-20T00:00:00+00:00",
+      "link": "https://xeiaso.net/notes/2026/life-update-medical-leave/",
+      "status": "ok"
+    },
+    {
+      "source": "daringfireball.net",
+      "event_zh": "苹果公司与IMAX达成合作，将于2026年起在美国IMAX影院直播F1赛事。",
+      "layman_zh": "打个比方：这就像是把原本只能在家里小电视看的赛车比赛，搬到了电影院的超级大银幕上，让你能像看好莱坞大片一样，感受赛车贴脸飞过的震撼，而苹果就是那个包下全场并提供高清信号的“大管家”。",
+      "expert_zh": "[事件] 苹果与IMAX合作将F1直播引入影院，作为其2026年起独家转播权的一部分。\n[亮点] 结合IMAX超大画幅与Apple TV的高比特率流媒体技术，打造沉浸式体育消费新场景。\n[洞察] (The Thompson Rule) 苹果正在利用其雄厚的现金流重塑体育版权的商业版图。通过将独家内容从客厅延伸至影院，苹果不仅在构建一个跨屏幕的娱乐生态护城河，更是在为Vision Pro等空间计算设备铺设“超大屏沉浸体验”的用户心智，直接挑战了传统有线电视和单一流媒体平台的竞争维度。",
+      "keywords": [
+        "Apple TV",
+        "IMAX",
+        "F1",
+        "Live Sports",
+        "Streaming Rights",
+        "Immersive Experience"
+      ],
+      "summary_en": "Apple and IMAX have partnered to broadcast F1 races live in US theaters starting in 2026, leveraging Apple's multi-year broadcasting rights to create a premium, large-format viewing experience.",
+      "title": "IMAX and Apple Collaborate to Screen F1 Races Live in Theaters",
+      "published": "2026-02-19T15:29:06+00:00",
+      "link": "https://www.motorsport.com/f1/news/f1-to-screen-live-in-imax-theatres-in-2026-as-apple-tv-unveils-new-us-viewing-experience/10798974/",
+      "status": "ok"
+    },
+    {
+      "source": "blog.jim-nielsen.com",
+      "event_zh": "Jim Nielsen 发表文章探讨在 AI 时代，“用心（Care）”而非单纯的“审美”或“数据指标”才是产品差异化的核心。",
+      "layman_zh": "打个比方：AI 就像一个能按菜谱精准炒菜的机器人，虽然效率高且不难吃，但它永远不会像你妈妈那样，因为担心你最近上火而特意少放一把盐。这种“看人下菜碟”的灵活性和对人的关怀，是冷冰冰的数字和算法给不了的。",
+      "expert_zh": "[事件] 探讨在人工智能驱动的生产环境中，无法被量化的“用心”如何成为产品的终极护城河。\n[亮点] 提出“用心”与“量化规模”之间的对立关系，强调非标准化的个人感性价值。\n[洞察] 遵循 Mollick 规则：AI 极大地优化了标准化的内容产出，却无法替代人类在特定情境下的“自由裁量权”。当商业逻辑被简化为纯粹的数字增长时，产品会丧失灵魂；真正的竞争力在于为了用户体验而愿意“把钱留在桌子上”的不计成本，这种对效率的背叛反而是建立品牌忠诚度的最高级工作流。",
+      "keywords": [
+        "AI Ethics",
+        "Product Design",
+        "Human-Centric",
+        "Quantification",
+        "User Experience",
+        "人文关怀",
+        "产品温度"
+      ],
+      "summary_en": "The article argues that while 'taste' is often cited as the key skill in the AI era, 'care' is the unquantifiable quality that truly distinguishes great products. It suggests that prioritizing human sensitivity over pure numerical optimization is essential for building meaningful business value.",
+      "title": "A Few Rambling Observations on Care",
+      "published": "2026-02-18T19:00:00+00:00",
+      "link": "https://blog.jim-nielsen.com/2026/observations-on-care/",
+      "status": "ok"
+    },
+    {
+      "source": "buttondown.com/hillelwayne",
+      "event_zh": "软件规格专家 Hillel Wayne 提出了一种名为“意识流驱动开发”的方法，通过实时记录思考过程来解决协作中的认知偏差。",
+      "layman_zh": "打个比方：这就像老师傅带徒弟改图纸，不再是直接上手改完让徒弟看，而是拿张白纸把“为什么要改、试了哪些错路、新方案好在哪”像写日记一样边聊边记下来，让对方彻底看懂你的脑回路。",
+      "expert_zh": "[事件] 专家通过实时文档化思考路径（SCDD）来对齐复杂系统设计中的认知差异。\n[亮点] 将隐性知识显性化，通过记录“失败路径”和“决策逻辑”构建动态知识库。\n[洞察] 这优化了高级专家与普通开发者之间的协作流，解决了“盲目信任专家”导致的系统维护性黑盒问题。它将原本属于大脑内部的非线性推理转变为可追溯、可异步复用的产品资产，本质上是在用文档带宽换取团队长期的架构一致性。",
+      "keywords": [
+        "SCDD",
+        "知识对齐",
+        "软件规格",
+        "协作效率",
+        "认知负荷",
+        "文档驱动开发"
+      ],
+      "summary_en": "Hillel Wayne introduces 'Stream of Consciousness Driven Development,' a method of real-time, collaborative journaling of the reasoning process to bridge the conceptual gap between experts and clients during complex spec design.",
+      "title": "Stream of Consciousness Driven Development",
+      "published": "2026-02-18T16:33:08+00:00",
+      "link": "https://buttondown.com/hillelwayne/archive/stream-of-consciousness-driven-development/",
+      "status": "ok"
+    },
+    {
+      "source": "jeffgeerling.com",
+      "event_zh": "树莓派 5 现已支持通过 Hailo-8/8L AI 扩展板运行 Frigate 监控系统，实现高效的人员和车辆目标检测。",
+      "layman_zh": "打个比方：以前树莓派像个努力但手慢的保安，看监控认人很费劲；现在给它插上了一块“专用大脑芯片”，就像给保安配了台高速扫描仪，瞬间就能在低功耗下认出谁是小偷、哪辆是车。",
+      "expert_zh": "[事件] 树莓派 5 结合 Hailo AI 协处理器实现了高性能的本地边缘计算监控方案。\n[亮点] Hailo-8 芯片在保持极低功耗的同时，提供了远超传统 USB 珊瑚加速器的推理算力。\n[洞察] (The Mollick Rule) 该组合直接优化了家庭与工业安防的本地化处理流程，将原本需要昂贵服务器或云端算力的实时目标检测任务，转化为仅需几瓦功耗的边缘硬件行为，大幅降低了隐私泄露风险与长期运行成本。",
+      "keywords": [
+        "Raspberry Pi 5",
+        "Hailo-8",
+        "Frigate",
+        "Object Detection",
+        "Edge AI",
+        "Computer Vision"
+      ],
+      "summary_en": "The Raspberry Pi 5 now supports Hailo-8/8L AI accelerators via HAT+ modules to power Frigate for high-efficiency, low-power local object detection of people and vehicles.",
+      "title": "Frigate with Hailo for object detection on a Raspberry Pi",
+      "published": "2026-02-18T14:50:00-06:00",
+      "link": "https://www.jeffgeerling.com/blog/2026/frigate-with-hailo-for-object-detection-on-a-raspberry-pi/",
+      "status": "ok"
+    },
+    {
+      "source": "steveblank.com",
+      "event_zh": "硅谷创业家 Steve Blank 撰文揭示了企业与外部公关代理机构（PR）之间微妙的利益博弈关系。",
+      "layman_zh": "这就像是你花钱请了个保姆，但保姆其实更听隔壁超市老板的话，因为她每天都要去那买菜。你以为她是为你服务，其实她更在乎和供应商的长久关系。",
+      "expert_zh": "[事件] Steve Blank 探讨了外部供应商（尤其是公关公司）在客户利益与行业资源之间的权衡。\n[亮点] 揭示了代理机构的“双重效忠”属性：他们不仅服务于付费客户，更依赖于与媒体/渠道的长期信用。\n[洞察] 从商业生态位来看，外部供应商的护城河并非来自单一客户的合同，而是来自其在行业网络中的中介地位；企业应将供应商视为“战略情报源”而非简单的“外包劳动力”，以对齐双方的长期激励机制。",
+      "keywords": [
+        "Steve Blank",
+        "PR Agency",
+        "Vendor Management",
+        "Business Strategy",
+        "Incentive Alignment"
+      ],
+      "summary_en": "Steve Blank reflects on the realization that external PR agencies prioritize their long-term relationships with journalists over individual clients, suggesting a strategic shift in how companies should manage vendor incentives.",
+      "title": "You Only Think They Work For You",
+      "published": "2026-02-18T14:00:39+00:00",
+      "link": "https://steveblank.com/2026/02/18/you-only-think-they-work-for-you/",
+      "status": "ok"
+    },
+    {
+      "source": "geohot.github.io",
+      "event_zh": "著名黑客及AI专家Geohot在其博客发文，探讨AI对艺术创作的深远影响，并反驳“AI毁了音乐”的观点。",
+      "layman_zh": "打个比方：以前大家觉得有了全自动照相机，画家就没饭吃了，但实际上它只是淘汰了那些画得像照片的工匠，反而逼着真正的艺术家去搞印象派。AI现在就像是这种“自动相机”，它过滤掉那些没灵魂的口水歌，让真正有创意的点子变得更值钱。",
+      "expert_zh": "[事件] Geohot针对AI生成内容引发的“艺术平庸化”担忧发表评论，认为AI是艺术进化的催化剂。\n[亮点] 区分了“工业化生产的平庸内容”与“人类灵魂驱动的创意表达”。\n[洞察] (The Mollick Rule) AI将艺术创作的边际成本降至零，这实际上完成了一次“工作流重组”：它取代了初级素材的堆砌劳动，迫使创作者从“生产者”转型为“策展人”或“灵魂注入者”。未来的核心竞争力不再是技法熟练度，而是对“什么是好作品”的审美判断力。",
+      "keywords": [
+        "Geohot",
+        "AI Art",
+        "Generative AI",
+        "Creative Destruction",
+        "艺术创作",
+        "内容平庸化"
+      ],
+      "summary_en": "Renowned hacker Geohot argues that AI is a positive force for art, suggesting that while it automates the production of low-quality 'slop,' it ultimately pushes human creativity to higher levels of originality.",
+      "title": "AI is the Best Thing to Happen to Art",
+      "published": "2026-02-18T08:00:00+00:00",
+      "link": "https://geohot.github.io//blog/jekyll/update/2026/02/19/ai-art.html",
+      "status": "ok"
+    },
+    {
+      "source": "keygen.sh",
+      "event_zh": "Keygen 博客发布文章《价值榨取》，深度剖析了当前 AI 浪潮中“末日论者”与“淘金热”背后的商业本质。",
+      "layman_zh": "这就像是：一群人在大街上喊“世界末日要来了”，其实是为了趁乱卖给你昂贵的地下室门票；这篇文章拆穿了那些靠制造焦虑来卖货的套路。",
+      "expert_zh": "[事件] Keygen 探讨了 AI 领域中末日预言与商业利益勾连的“价值榨取”现象。\n[亮点] 揭示了通过操纵公众恐惧来构建监管壁垒和商业垄断的底层逻辑。\n[洞察] 这是一个典型的“汤普森式”生态位分析：现有的 AI 巨头正在利用“安全”作为借口，试图通过游说政府建立极高的准入门槛，从而摧毁开源社区和初创公司的生存空间，将技术红利锁定在少数几家公司手中。",
+      "keywords": [
+        "AI Ethics",
+        "Value Extraction",
+        "Regulatory Capture",
+        "Market Monopoly",
+        "AI Safety"
+      ],
+      "summary_en": "The article critiques the intersection of AI doomsaying and commercial interests, arguing that fear-mongering is being used as a strategic tool for market consolidation and value extraction.",
+      "title": "Value extraction",
+      "published": "2026-02-18T06:00:00+00:00",
+      "link": "https://keygen.sh/blog/value-extraction/",
+      "status": "ok"
+    },
+    {
+      "source": "berthub.eu",
+      "event_zh": "荷兰政府发布数字联盟计划，拟通过中央集权管理、强制标准及建立“荷兰数字服务局”来实现数字主权并摆脱对美国云服务的依赖。",
+      "layman_zh": "打个比方：这就像一家大公司以前每个部门都乱买不同牌子的电脑和软件，现在总部要求必须统一采购、统一插头，谁不听话就不给报销，还要建立自己的“内部局域网”不再租用别人的地盘。",
+      "expert_zh": "[事件] 荷兰政府拟通过行政干预实现国家级数字主权与IT架构标准化。\n[亮点] 建立具备“强制执行权”的中央数字服务机构，将数字自主权提升至国家安全高度。\n[洞察] 这体现了典型的“主权云”战略转型。在商业逻辑上，这是在试图打破美国科技巨头的“垂直整合”垄断，通过行政手段强行整合碎片化的政府需求，以规模化效应构建本土技术护城河，其核心挑战在于行政效率能否跟上技术迭代的沉没成本。",
+      "keywords": [
+        "Digital Sovereignty",
+        "Cloud Autonomy",
+        "IT Standardization",
+        "Dutch Government",
+        "Centralized Procurement"
+      ],
+      "summary_en": "The Dutch government's digital coalition plan aims to achieve digital autonomy by centralizing IT management, enforcing mandatory standards, and reducing reliance on American cloud providers through a new national digital service agency.",
+      "title": "De digitale coalitieplannen: gaat het ook echt gebeuren?",
+      "published": "2026-02-17T20:50:00+01:00",
+      "link": "https://berthub.eu/articles/posts/digitale-coalitieplannen/",
+      "status": "ok"
+    },
+    {
+      "source": "tedium.co",
+      "event_zh": "近期多家科技巨头开始大规模拥抱 Markdown 格式，AI 的普及被认为是推动这一趋势的核心动力。",
+      "layman_zh": "打个比方：以前不同软件说话像用各种方言，得雇翻译才能通，现在大家发现 Markdown 就像是“普通话”，不仅人能看懂，AI 读起来也毫不费劲，沟通效率瞬间翻倍。",
+      "expert_zh": "[事件] 科技巨头集体转向 Markdown 格式以适配 AI 驱动的内容生态。\n[亮点] Markdown 凭借其极低的数据噪声和结构化特征，成为大模型训练与输出的最佳载体。\n[洞察] (The Mollick Rule) 这一转变将彻底重塑知识工作者的文档流：它消除了“排版”这一低效的人工环节，让创作者从复杂的富文本编辑器回归到纯粹的内容逻辑，实现了从“为打印机写作”到“为机器理解而写作”的行为范式转移。",
+      "keywords": [
+        "Markdown",
+        "AI Data",
+        "Structured Content",
+        "Interoperability",
+        "Workflow Optimization"
+      ],
+      "summary_en": "Major tech companies are increasingly adopting Markdown as a standard, primarily driven by the need for AI-friendly data structures that simplify both machine processing and human readability.",
+      "title": "Markdown’s Moment",
+      "published": "2026-02-17T20:01:53+00:00",
+      "link": "https://feed.tedium.co/link/15204/17278321/markdown-growing-influence-cloudflare-ai",
+      "status": "ok"
+    },
+    {
+      "source": "experimental-history.com",
+      "event_zh": "心理学家 Adam Mastroianni 发布文章，探讨了人们对“重大技术突破”长期处于“即将到来”却迟迟未现的心理预期现象。",
+      "layman_zh": "这就像是你等外卖，手机上一直显示‘骑手正在赶往目的地’，你饿得不行，但那份大餐就是没送到你手里，让你开始怀疑是不是根本没这顿饭。",
+      "expert_zh": "[事件] 文章深入剖析了科技界长期存在的“突破性预期”与现实落地之间的巨大鸿沟。\n[亮点] 揭示了公众对AI、UFO等宏大叙事的认知偏差与情感消耗。\n[洞察] 这种现象反映了科技传播中的“预期管理”失效。从产品视角看，当技术无法在短期内转化为具体的、可感知的用户工作流优化时，持续的宏大叙事反而会侵蚀品牌信用，导致用户进入“创新疲劳期”。",
+      "keywords": [
+        "心理学",
+        "技术预期",
+        "认知偏差",
+        "创新疲劳",
+        "Adam Mastroianni"
+      ],
+      "summary_en": "Psychologist Adam Mastroianni explores the psychological phenomenon of perpetual anticipation for 'imminent' technological breakthroughs that fail to materialize, critiquing the gap between hype and reality.",
+      "title": "I swear the UFO is coming any minute",
+      "published": "2026-02-17T16:15:11+00:00",
+      "link": "https://www.experimental-history.com/p/i-swear-the-ufo-is-coming-any-minute",
+      "status": "ok"
+    },
+    {
+      "source": "garymarcus.substack.com",
+      "event_zh": "Gary Marcus 发文指出，当前的统计近似技术并不等同于真正的通用人工智能（AGI），公众对 AGI 到来的预期过于乐观。",
+      "layman_zh": "打个比方：这就像是一个背下了整本字典和所有菜谱的鹦鹉，虽然它能对答如流甚至教你做菜，但它其实根本不知道什么是“味道”，更没见过真正的火，一旦遇到书上没写的突发情况就彻底抓瞎了。",
+      "expert_zh": "[事件] Gary Marcus 再次对当前大模型路径实现 AGI 的可能性提出深度质疑。\n[亮点] 核心论点在于区分“统计相关性”与“认知理解”之间的本质鸿沟。\n[洞察] 按照 Thompson 的生态位视角，Marcus 实际上在挑战当前以 OpenAI 为首的“暴力美学”护城河；他认为仅靠堆算力和数据构建的概率预测模型，在面对物理世界常识和因果推理时存在天然的“天花板”，这种路径依赖可能导致 AI 产业进入一个高成本、低逻辑能力的增长瓶颈期。",
+      "keywords": [
+        "Gary Marcus",
+        "AGI",
+        "统计近似",
+        "认知科学",
+        "大语言模型局限性"
+      ],
+      "summary_en": "Gary Marcus argues that current AI progress based on statistical approximation is fundamentally different from true general intelligence, cautioning against the hype surrounding the imminent arrival of AGI.",
+      "title": "Rumors of AGI’s arrival have been greatly exaggerated",
+      "published": "2026-02-17T16:05:48+00:00",
+      "link": "https://garymarcus.substack.com/p/rumors-of-agis-arrival-have-been",
+      "status": "ok"
+    },
+    {
+      "source": "anildash.com",
+      "event_zh": "科技评论家 Anil Dash 发文抨击主流 AI 公司为了竞争和利润，忽视安全监管，导致产品出现诱导儿童自残及生成儿童色情内容的严重伦理危机。",
+      "layman_zh": "打个比方：这就像是几家玩具厂为了抢生意，急着把还没检查好、甚至带着毒漆和尖刺的玩具卖给小孩，明知道会伤人，但为了冲销量和省成本，干脆把负责质检的员工全开除了。",
+      "expert_zh": "[事件] AI 行业在激进竞争下出现严重的儿童安全与伦理失控风险。\n[亮点] 揭示了“唯指标论”的 KPI 考核与缺乏监管的权力结构如何共同瓦解了技术底线。\n[洞察] (The Thompson Rule) 科技巨头正陷入一场“零和博弈”的军备竞赛，为了维持增长动能，他们主动拆除了“信任与安全”这一战略护城河。当合规被贴上“阻碍创新”的标签，企业的长期品牌溢价正在被短期市场占有率透支，这种生态位的激进扩张正引发全球范围内的监管反弹与道德信任崩塌。",
+      "keywords": [
+        "AI Safety",
+        "Ethics",
+        "Big Tech",
+        "Child Protection",
+        "Regulatory Failure",
+        "人工智能伦理"
+      ],
+      "summary_en": "Tech critic Anil Dash highlights a disturbing trend where major AI firms like OpenAI and xAI prioritize market dominance over child safety, leading to outputs that incite self-harm or generate exploitative imagery.",
+      "title": "How did we end up threatening our kids’ lives with AI?",
+      "published": "2026-02-17T16:00:00+00:00",
+      "link": "https://anildash.com/2026/02/18/threatening-kids-with-AI/",
+      "status": "ok"
+    },
+    {
+      "source": "troyhunt.com",
+      "event_zh": "网络安全专家 Troy Hunt 宣布其基于 ESP32 的蓝牙网桥控制 Yale 智能锁的实验因连接稳定性问题宣告失败。",
+      "layman_zh": "打个比方：这就像你想用一个便宜的对讲机远程指挥家里的智能锁开门，虽然对讲机本身没坏，但锁的反应太迟钝，经常听不到指令，导致你站在门口半天进不去，最后只能放弃这种土办法。",
+      "expert_zh": "[事件] Troy Hunt 确认利用 ESP32 芯片构建自定义蓝牙网桥以控制 Yale 智能锁的尝试失败。\n[亮点] 揭示了低功耗蓝牙 (BLE) 在被动发现机制与实时指令执行之间的兼容性瓶颈。\n[洞察] 从产品落地角度看，这体现了“DIY 灵活性”与“工业级可靠性”之间的鸿沟；即便硬件层通信协议一致，应用层的休眠唤醒策略（Duty Cycle）若未针对特定设备深度优化，将直接导致工作流中关键节点的可用性归零，无法替代原生网关的商业闭环。",
+      "keywords": [
+        "ESP32",
+        "BLE",
+        "Yale Lock",
+        "Smart Home",
+        "IoT Reliability",
+        "Troy Hunt"
+      ],
+      "summary_en": "Cybersecurity expert Troy Hunt reported the failure of his ESP32-based Bluetooth bridge experiment for Yale locks due to unreliable BLE connectivity. The project highlighted the gap between hobbyist hardware capabilities and the stringent reliability requirements of smart home security integration.",
+      "title": "Weekly Update 491",
+      "published": "2026-02-17T05:09:12+00:00",
+      "link": "https://www.troyhunt.com/weekly-update-491/",
+      "status": "ok"
+    },
+    {
+      "source": "entropicthoughts.com",
+      "event_zh": "Entropic Thoughts 发布了 KeyBee，一种专为高效文本输入设计的蜂窝状新型键盘布局方案。",
+      "layman_zh": "打个比方：这就像是把原本散落在长方形桌子上的餐具，重新摆进了一个圆形的旋转托盘里，让你的手指不用大幅度移动就能点到所有的菜。",
+      "expert_zh": "[事件] KeyBee 推出了一种基于六边形蜂窝结构的新型人机交互输入协议。\n[亮点] 通过几何优化将按键距离最小化，显著提升了触控设备的输入效率与人体工学表现。\n[洞察] 这是一次对传统 QWERTY 布局的“工作流重塑”，它挑战了用户长达百年的肌肉记忆，试图通过物理路径的最优解来解决移动端输入效率的瓶颈，其成败取决于用户迁移成本与效率增益之间的博弈。",
+      "keywords": [
+        "KeyBee",
+        "Keyboard Layout",
+        "Human-Computer Interaction",
+        "Efficiency",
+        "Ergonomics"
+      ],
+      "summary_en": "KeyBee introduces a novel hexagonal honeycomb keyboard layout designed to minimize finger travel distance and optimize typing efficiency on touch devices.",
+      "title": "Learning KeyBee",
+      "published": "2026-02-17T00:00:00+01:00",
+      "link": "https://entropicthoughts.com/learning-keybee",
+      "status": "ok"
+    },
+    {
+      "source": "seangoedecke.com",
+      "event_zh": "开发者 Sean Goedecke 提出 LLM 技能生成应遵循“后置总结”而非“前置计划”的原则。",
+      "layman_zh": "打个比方：这就像让厨师在没做过新菜前写菜谱，他只会凭空乱猜；但如果让他先试错做出一盘好菜，再把成功经验写下来，这份菜谱就能让其他厨师秒变高手。",
+      "expert_zh": "[事件] 针对 LLM 技能生成（Skills Generation）效能的研究指出，模型在任务前自建技能往往无效。\n[亮点] 核心差异在于将 LLM 从“预测者”转变为“经验总结者”，利用推理过程中的长上下文试错来沉淀知识。\n[洞察] (The Mollick Rule) 该方法优化了复杂技术任务的知识内化流程。它将 LLM 的角色从单纯的执行者转变为“自动化 SOP 编写员”，通过将数百万 token 的迭代试错压缩成结构化技能，实现了从“单次任务解决”到“可复用组织资产”的低成本跨越，显著提升了团队处理非标技术问题的 ROI。",
+      "keywords": [
+        "LLM Skills",
+        "Prompt Engineering",
+        "Procedural Knowledge",
+        "SOP Automation",
+        "Iterative Learning"
+      ],
+      "summary_en": "The author argues that LLMs should generate 'skills' or procedural guides after completing a task through trial and error, rather than before, to distill actual experience rather than hallucinated plans.",
+      "title": "LLM-generated skills work, if you generate them afterwards",
+      "published": "2026-02-17T00:00:00+00:00",
+      "link": "https://seangoedecke.com/generate-skills-afterwards/",
+      "status": "ok"
+    },
+    {
+      "source": "hey.paris",
+      "event_zh": "Yarn Spinner 团队发布了全新的在线试用工具 Try Yarn Spinner，并同步推出了新的演示故事。",
+      "layman_zh": "打个比方：这就像是给写互动剧本的人提供了一个“在线试衣间”，你不需要在电脑上安装复杂的缝纫机，直接在网页里填入对话逻辑，就能立刻看到故事跑起来的样子。",
+      "expert_zh": "[事件] Yarn Spinner 发布全新在线交互式脚本编辑器 Try Yarn Spinner。\n[亮点] 实现了基于 Web 的轻量化脚本实时编译与预览环境。\n[洞察] 该工具通过降低非技术创作者（如编剧、叙事设计师）的准入门槛，优化了游戏开发中“叙事逻辑编写”到“实际效果验证”的反馈循环，将原本繁琐的环境配置流程转化为即时可见的生产力工具。",
+      "keywords": [
+        "Yarn Spinner",
+        "叙事设计",
+        "在线编辑器",
+        "游戏开发工具",
+        "交互式叙事"
+      ],
+      "summary_en": "Yarn Spinner has launched a completely redesigned online playground, 'Try Yarn Spinner', featuring a new demo story and a streamlined web-based environment for testing interactive dialogue scripts.",
+      "title": "The New Try Yarn Spinner",
+      "published": "2026-02-17T00:00:00+00:00",
+      "link": "https://hey.paris/posts/new-try-yarn-spinner/",
+      "status": "ok"
+    },
+    {
+      "source": "martinalderson.com",
+      "event_zh": "Anthropic 的红队利用 Claude 发现了超过 500 个高危漏洞，但引发了对大量无人维护的“僵尸软件”无法修复的担忧。",
+      "layman_zh": "打个比方：AI 就像一个自带 X 光眼的超级锁匠，一眼就能看出成千上万把锁的漏洞，但尴尬的是，很多锁的主人早就搬走了，就算知道锁坏了也没人去修，坏人却可以照着这些漏洞去偷东西。",
+      "expert_zh": "[事件] Anthropic 红队利用大模型自动化挖掘出 500 多个 0-day 漏洞，揭示了 AI 驱动的漏洞挖掘效率已发生质变。\n[亮点] 实现了从“人工定向审计”到“AI 大规模自动化扫描”的跨越，大幅降低了发现复杂逻辑漏洞的门槛。\n[洞察] 这正在打破网络安全的战略平衡：AI 极大地缩短了漏洞发现的周期，但软件补丁的生态系统（尤其是长尾、无维护的开源项目）仍处于“人力时代”，这种“发现极快、修复极慢”的非对称性将导致大量遗留系统成为永久性的安全黑洞，攻击者的技术红利期被无限拉长。",
+      "keywords": [
+        "Anthropic",
+        "Claude",
+        "Zero-day",
+        "AI Security",
+        "Cybersecurity",
+        "Vulnerability Research"
+      ],
+      "summary_en": "Anthropic's red team identified over 500 critical zero-day vulnerabilities using Claude, highlighting a growing crisis where AI-discovered flaws in unmaintained software may remain unpatched forever.",
+      "title": "Who fixes the zero-days AI finds in abandoned software?",
+      "published": "2026-02-17T00:00:00+00:00",
+      "link": "https://martinalderson.com/posts/anthropic-found-500-zero-days/?utm_source=rss",
+      "status": "ok"
+    },
+    {
+      "source": "matduggan.com",
+      "event_zh": "一名资深工程师在长期质疑 AI 后，发现 Claude 3.7 Sonnet 能精准生成复杂的 Terraform 基础设施代码，彻底改变了其对 AI 编程工具的看法。",
+      "layman_zh": "这就像是你以前请的装修学徒只会乱涂乱画，现在突然来了一个顶级老师傅，你只要随口说句‘想要个北欧风’，他不仅秒出图纸，连每颗螺丝钉该拧几圈都帮你算得丝毫不差。",
+      "expert_zh": "[事件] 资深开发者 Mat Duggan 记录了从 AI 怀疑论者转变为 Claude 3.7 深度用户的过程。\n[亮点] Claude 3.7 在处理具有严格逻辑约束的 Terraform 基础设施即代码（IaC）时表现出极高的推理准确性。\n[洞察] (The Mollick Rule) 该工具将开发者的角色从“代码编写者”推向了“架构审核员”，它不仅是优化了输入效率，而是通过消除配置云基础设施时的低级逻辑错误，直接将原本需要数小时的调试工作流压缩到了分钟级，实现了从量变到质变的生产力跨越。",
+      "keywords": [
+        "Claude 3.7",
+        "Terraform",
+        "AI Programming",
+        "Productivity",
+        "IaC",
+        "LLM Evaluation"
+      ],
+      "summary_en": "A veteran engineer details his shift from AI skepticism to adoption after Claude 3.7 Sonnet demonstrated the ability to generate flawless, complex Terraform code that previously required manual expertise.",
+      "title": "I Sold Out for $20 a Month and All I Got Was This Perfectly Generated Terraform",
+      "published": "2026-02-16T12:05:16+00:00",
+      "link": "https://matduggan.com/i-sold-out-for-200-a-month-and-all-i-got-was-this-perfectly-generated-terraform/",
+      "status": "ok"
+    },
+    {
+      "source": "rakhim.exotext.com",
+      "event_zh": "技术评论家 Rakhim 针对现代 UI 设计过度追求“极简”和“隐形”导致用户认知负担加重的现象提出批评。",
+      "layman_zh": "打个比方：老软件像个摆满工具的实体工作台，虽然看着乱，但扳手在哪一眼就能看到；现代 UI 就像一个空荡荡的白房间，你得在墙上到处乱摸才能触发隐藏机关弹出工具，反而让人迷路。",
+      "expert_zh": "[事件] 评论家探讨现代 UI 设计中“隐形化”趋势对用户心理模型构建的负面影响。\n[亮点] 现代设计用复杂的空间动画和低对比度界面取代了直观的功能布局，导致“认知摩擦”增加。\n[洞察] (The Mollick Rule) 这种设计演变实际上降低了专业用户的操作效率，将原本确定的“点击流”变成了不确定的“探索流”。它迫使人类适应一种缺乏物理逻辑的数字空间，这种“缺乏世界模型”的设计趋势正让软件从辅助工具变成需要反复揣摩的黑盒，极大地增加了用户在多任务处理时的心理负荷。",
+      "keywords": [
+        "UI/UX",
+        "Clean Design",
+        "Cognitive Load",
+        "User Experience",
+        "Mental Model",
+        "Winamp vs Apple Music"
+      ],
+      "summary_en": "The author critiques modern 'clean' UI design, arguing that its pursuit of invisibility and lack of visual character creates unintuitive, fluid structures that disorient users compared to old-school functional interfaces.",
+      "title": "Modern UI is clean and invisible? Ha, I wish!",
+      "published": "2026-02-16T00:00:00+00:00",
+      "link": "https://rakhim.exotext.com/modern-ui-is-not-invisible",
+      "status": "ok"
+    },
+    {
+      "source": "bernsteinbear.com",
+      "event_zh": "开发者在 Toy Optimizer 项目中引入了基于类型的别名分析（TBAA），通过类型层级结构优化编译器对内存读写的处理。",
+      "layman_zh": "打个比方：以前编译器像个粗心的管家，看到两个抽屉号码一样就以为是同一个，现在它学会了看标签，知道“水果盒”里的 1 号位和“工具箱”里的 1 号位绝不是同一个东西，从而能更聪明地整理内存。",
+      "expert_zh": "[事件] 开发者通过引入基于类型层级（Type Hierarchy）的别名分析，提升了 Toy Optimizer 在编译时的内存加载/存储转发效率。\n[亮点] 采用区间编码（Range Encoding）表示类型树，将复杂的类型重叠判断简化为极速的整数区间重叠查询。\n[洞察] (The Karpathy Rule) 该架构将内存抽象为不相交的区域，利用预序和后序遍历生成的 [start, end) 坐标系，将逻辑上的“类型包含关系”转化为数学上的“区间包含关系”，从而在 O(1) 时间内判定内存访问冲突，极大地降低了编译器消除冗余指令的计算开销。",
+      "keywords": [
+        "TBAA",
+        "Compiler Optimization",
+        "Alias Analysis",
+        "Type Hierarchy",
+        "Memory Management"
+      ],
+      "summary_en": "The author implemented a lightweight Type-Based Alias Analysis (TBAA) in a toy compiler using a hierarchical range-based representation to improve load-store forwarding efficiency.",
+      "title": "Type-based alias analysis in the Toy Optimizer",
+      "published": "2026-02-16T00:00:00+00:00",
+      "link": "https://bernsteinbear.com/blog/toy-tbaa/?utm_source=rss",
+      "status": "ok"
+    },
+    {
+      "source": "lcamtuf.substack.com",
+      "event_zh": "安全专家 Michal Zalewski 发布文章《虚幻的数字》，深入探讨了计算机浮点数运算中实数表示的局限性与潜在风险。",
+      "layman_zh": "打个比方：这就像是用一把刻度不够精细的尺子去量头发丝，虽然看起来能量出个数，但其实最后几位全是瞎猜的，在电脑里这种“凑合”可能会导致严重的计算错误。",
+      "expert_zh": "[事件] 文章深入剖析了计算机系统在处理浮点数时无法完美模拟数学实数的底层逻辑。\n[亮点] 揭示了 IEEE 754 标准在极端边界条件下产生的精度丢失与非直观行为。\n[洞察] 从底层架构看，这揭示了数字系统“离散性”与物理世界“连续性”之间的根本矛盾；在安全领域，这种精度偏差往往是构造溢出攻击或绕过逻辑校验的隐形后门。",
+      "keywords": [
+        "Floating Point",
+        "IEEE 754",
+        "Computer Arithmetic",
+        "Precision Error",
+        "Software Security"
+      ],
+      "summary_en": "The article explores the inherent limitations and counterintuitive behaviors of representing real numbers in digital systems, highlighting the security and functional risks of floating-point approximations.",
+      "title": "Unreal numbers",
+      "published": "2026-02-15T20:49:15+00:00",
+      "link": "https://lcamtuf.substack.com/p/unreal-numbers",
+      "status": "ok"
+    },
+    {
+      "source": "miguelgrinberg.com",
+      "event_zh": "知名技术博主 Miguel Grinberg 宣布将其付费课程平台迁移至新域名 learn.miguelgrinberg.com，并为老用户提供账号转移指南。",
+      "layman_zh": "这就像是你常去的一家老字号餐馆搬到了马路对面，装修更好了，老板发了个通知告诉老顾客怎么去新店领回原来的会员积分和优惠券。",
+      "expert_zh": "[事件] 知名开发者 Miguel Grinberg 完成其教育产品线的平台迁移与品牌域名整合。\n[亮点] 通过自动化迁移流程确保存量付费用户的权益无缝衔接至新基础设施。\n[洞察] 从产品角度看，这体现了独立创作者从“博客附属插件”向“专业化教育平台”的转型，通过收拢流量入口建立更稳固的私域资产护城河，优化了知识交付的 ROI。",
+      "keywords": [
+        "Miguel Grinberg",
+        "平台迁移",
+        "在线教育",
+        "用户留存",
+        "LMS"
+      ],
+      "summary_en": "Technical educator Miguel Grinberg is migrating his paid course platform to a dedicated new domain, providing a structured transition path for existing customers to retain access.",
+      "title": "My Courses Site is Moving to a New Home",
+      "published": "2026-02-15T15:15:29+00:00",
+      "link": "https://blog.miguelgrinberg.com/post/my-courses-site-is-moving-to-a-new-home",
+      "status": "ok"
+    },
+    {
+      "source": "oldvcr.blogspot.com",
+      "event_zh": "世嘉（Sega）前社长、传奇硬件设计师佐藤秀树（Hideki Sato）于周末逝世，享年77岁。",
+      "layman_zh": "打个比方：他就像是世嘉公司的“总工程师”，从最早的黑白电视游戏机到大家熟悉的世嘉土星和DC，每一代世嘉游戏机的“心脏”和“骨架”几乎都是他亲手设计的。",
+      "expert_zh": "[事件] 世嘉硬件之父佐藤秀树逝世，他主导了从SG-1000到Dreamcast的所有世嘉主机研发。\n[亮点] 跨越30年的硬件迭代，定义了Mega Drive等经典主机的架构逻辑。\n[洞察] (The Thompson Rule) 佐藤秀树的职业生涯映射了游戏产业从垂直整合硬件商向软件服务商转型的阵痛；他的离去象征着那个由硬件性能驱动行业护城河时代的彻底终结，世嘉在Dreamcast后的战略退却本质上是生态位从“规则制定者”向“内容供应商”的被迫迁移。",
+      "keywords": [
+        "Hideki Sato",
+        "Sega",
+        "Dreamcast",
+        "Hardware Design",
+        "Gaming History",
+        "佐藤秀树"
+      ],
+      "summary_en": "Hideki Sato, the legendary hardware architect behind all Sega consoles from the SG-1000 to the Dreamcast and former president of Sega, has passed away at age 77.",
+      "title": "Hideki Sato has died",
+      "published": "2026-02-15T08:57:00+00:00",
+      "link": "https://oldvcr.blogspot.com/2026/02/hideki-sato-has-died.html",
+      "status": "ok"
+    },
+    {
+      "source": "susam.net",
+      "event_zh": "文章通过1997年深蓝击败卡斯帕罗夫的往事，探讨了AI时代程序员面临的职业价值重构挑战。",
+      "layman_zh": "打个比方：就像以前大家觉得算盘打得快是真本事，但计算器普及后，没人再比谁算得快了，大家比的是谁能用计算器解决复杂的生意问题。现在写代码也一样，光会埋头写代码已经不值钱了，能搞清楚客户到底想要什么才最重要。",
+      "expert_zh": "[事件] 深度对比了国际象棋与软件开发在AI冲击下的本质差异。\n[亮点] 揭示了“竞技性艺术”与“实用性工具”在机器超越人类后的不同命运。\n[洞察] (The Mollick Rule) 该观点明确了AI将替代“原型开发”这一重复性劳动流，迫使开发者从“代码工匠”转型为“系统架构师”与“问题定义者”。当代码生成的边际成本趋近于零，人类的核心ROI将从“如何实现”转移到“为何实现”以及“如何连接复杂现实”，无法完成这一行为转变的开发者将面临严重的经济价值缩水。",
+      "keywords": [
+        "Deep Blue",
+        "AI Programming",
+        "Value Shift",
+        "Software Craftsmanship",
+        "Problem Definition"
+      ],
+      "summary_en": "The article draws a parallel between Deep Blue's chess victory and the current AI impact on coding, arguing that while chess remains a human sport, programming is a utility where value is shifting from manual coding to problem definition and system integration.",
+      "title": "Deep Blue: Chess vs Programming",
+      "published": "2026-02-15T00:00:00+00:00",
+      "link": "https://susam.net/deep-blue.html",
+      "status": "ok"
+    },
+    {
+      "source": "righto.com",
+      "event_zh": "技术专家 Ken Shirriff 通过显微镜逆向工程，揭秘了 80 年代 Intel 8087 浮点协处理器的指令解码机制。",
+      "layman_zh": "打个比方：这就像是给只会做加减法的初级厨师（CPU）配了一个专门做满汉全席的高级外援（8087）。为了不让外援闲着，初级厨师在读菜单时，外援就在旁边偷看，一旦发现有高难度大菜，外援就直接接手处理，从而让整个厨房效率翻倍。",
+      "expert_zh": "[事件] Ken Shirriff 深度解析了 Intel 8087 芯片如何通过复杂的 PLA 逻辑和微代码实现 62 条新增浮点指令的解码。\n[亮点] 采用“总线监听”与“地址计算外包”机制，在不占用 CPU 寄存器的情况下实现协同处理。\n[洞察] (The Karpathy Rule) 8087 的解码逻辑本质上是一个多层级的条件分支网络：底层通过 PLA 硬件将复杂指令压缩映射为 22 个微代码入口，中层利用微代码引擎的 49 种条件跳转实现逻辑复用，顶层则针对常数计算等特殊场景进行硬件硬连线处理。这种“空间换复杂度”的设计，是为了在 80 年代极度有限的晶体管预算下，实现高精度的 80 位浮点运算。",
+      "keywords": [
+        "Intel 8087",
+        "Reverse Engineering",
+        "Instruction Decoding",
+        "Microcode",
+        "PLA",
+        "Coprocessor"
+      ],
+      "summary_en": "Ken Shirriff explores the intricate instruction decoding of the Intel 8087 coprocessor, revealing how it used PLAs, microcode, and bus-watching to offload complex floating-point math from the 8086 CPU.",
+      "title": "Instruction decoding in the Intel 8087 floating-point chip",
+      "published": "2026-02-14T08:48:00+00:00",
+      "link": "http://www.righto.com/2026/02/8087-instruction-decoding.html",
+      "status": "ok"
+    },
+    {
+      "source": "jayd.ml",
+      "event_zh": "一名用户披露了微软 Xbox Game Pass Ultimate 会员在计费逻辑上存在的漏洞或欺诈性扣费问题。",
+      "layman_zh": "打个比方：这就像你办了一张理发店的年卡，本来谈好了可以用积分抵扣，结果店里偷偷改了规则，不仅没让你省钱，还绕过你的同意直接从你绑定的银行卡里扣了全款。",
+      "expert_zh": "[事件] 用户反馈微软 Xbox Game Pass Ultimate 在会员转换与续费计费环节存在不透明扣费逻辑。\n[亮点] 涉及订阅制服务中“低价转换协议”与“自动续费系统”之间的逻辑冲突。\n[洞察] 从商业策略看，这反映了订阅制平台在从“获客增长”转向“利润收割”期时，通过增加用户退出成本或模糊计费规则来保护现金流，这种做法正在侵蚀微软长期建立的开发者与用户生态护城河。",
+      "keywords": [
+        "Xbox Game Pass",
+        "Billing Fraud",
+        "Subscription Model",
+        "Microsoft",
+        "Consumer Rights"
+      ],
+      "summary_en": "A user reported billing inconsistencies and potential fraud regarding Microsoft's Xbox Game Pass Ultimate conversion and renewal process.",
+      "title": "Microsoft Game Pass Ultimate Billing Fraud",
+      "published": "2026-02-14T06:38:00+00:00",
+      "link": "https://jayd.ml/2026/02/14/microsoft-game-pass-fraud.html",
+      "status": "ok"
+    },
+    {
+      "source": "fabiensanglard.net",
+      "event_zh": "Fabien Sanglard 深度解析了 Michael Abrash 如何通过汇编语言优化将《雷神之锤》的帧率提升了一倍。",
+      "layman_zh": "打个比方：以前电脑画图像是个慢吞吞的搬运工，每搬一块砖都要停下来看地图；Abrash 把地图直接刻在了搬运工的肌肉记忆里，让他闭着眼也能飞速干活，效率直接翻倍。",
+      "expert_zh": "[事件] 深度复盘 Michael Abrash 在《雷神之锤》中利用底层汇编指令对渲染管线进行的极限优化。\n[亮点] 通过手动编写内联汇编替代 C 语言编译器，精准控制 CPU 寄存器分配与指令流水线并行。\n[洞察] (The Karpathy Rule) 优化的本质是减少数据在内存与寄存器间的搬运开销；Abrash 洞察到在奔腾处理器时代，通过手动重排指令顺序可以填满 CPU 的执行空隙，这种对底层硬件特性的极致压榨，证明了在算力受限时代，算法结构与硬件架构的深度耦合才是性能爆发的源泉。",
+      "keywords": [
+        "Quake",
+        "Michael Abrash",
+        "Assembly Optimization",
+        "Rendering Pipeline",
+        "Low-level Programming"
+      ],
+      "summary_en": "A technical deep dive into how Michael Abrash utilized assembly language and instruction-level parallelism to double Quake's rendering performance on early Pentium processors.",
+      "title": "How Michael Abrash doubled Quake framerate",
+      "published": "2026-02-14T00:00:00+00:00",
+      "link": "https://fabiensanglard.net/quake_asm_optimizations/index.html",
+      "status": "ok"
+    },
+    {
+      "source": "dwarkesh.com",
+      "event_zh": "Anthropic 首席执行官 Dario Amodei 在采访中警告称，AI 算力与性能的指数级增长曲线即将触顶，呼吁行业关注效率与架构突破。",
+      "layman_zh": "打个比方：这就像是盖大楼，过去几年只要多加水泥和工人就能让楼翻倍长高，但现在地基和材料快撑不住了，光靠堆人力物力已经很难再让楼高得那么快了。",
+      "expert_zh": "[事件] Anthropic CEO Dario Amodei 提出 AI 扩展定律（Scaling Laws）正面临物理与经济层面的边际效应递减。\n[亮点] 强调从单纯的“暴力堆算力”转向算法效率与推理架构的深度优化。\n[洞察] 按照 Thompson 的商业逻辑，这意味着 AI 竞争的护城河正在从“谁的钱包厚、算力多”转向“谁的架构更省钱、更聪明”。当算力红利耗尽，模型厂商必须在应用层和垂直领域寻找新的结构性优势，否则将陷入同质化的存量博弈。",
+      "keywords": [
+        "Dario Amodei",
+        "Scaling Laws",
+        "Anthropic",
+        "算力瓶颈",
+        "AI 效率",
+        "指数增长"
+      ],
+      "summary_en": "Anthropic CEO Dario Amodei warns that the era of easy exponential growth in AI via scaling is nearing its limit, urging a strategic shift toward architectural efficiency and algorithmic innovation.",
+      "title": "Dario Amodei — \"We are near the end of the exponential\"",
+      "published": "2026-02-13T16:46:36+00:00",
+      "link": "https://www.dwarkesh.com/p/dario-amodei-2",
+      "status": "ok"
+    },
+    {
+      "source": "skyfall.dev",
+      "event_zh": "开发者社区开始大规模弃用 OpenAI 的 GPT-4o 模型，转向更高效或更具性价比的替代方案。",
+      "layman_zh": "这就像是你以前觉得只有五星级大厨（GPT-4o）能炒菜，后来发现路边摊（新模型）不仅便宜一半，出餐速度还快一倍，味道甚至更符合胃口，于是大家纷纷退订了昂贵的包米服务。",
+      "expert_zh": "[事件] 开发者群体正加速从 GPT-4o 迁移至更具性能优势或成本效益的新一代模型。\n[亮点] 模型的“全能性”溢价正在消失，推理效率与特定任务的微调能力成为核心竞争力。\n[洞察] 随着推理成本的结构性下降，GPT-4o 这种“通用型重型坦克”正面临敏捷型产品的挑战。这标志着 AI 市场从“盲目追求最强参数”转向“追求单位成本下的最高产出”，OpenAI 的先发护城河正在被开源和垂直化竞争对手蚕食。",
+      "keywords": [
+        "GPT-4o",
+        "模型迁移",
+        "推理成本",
+        "OpenAI",
+        "开发者生态",
+        "性能优化"
+      ],
+      "summary_en": "Developers are increasingly moving away from GPT-4o in favor of more efficient and cost-effective alternatives, signaling a shift in the AI ecosystem toward specialized performance over general-purpose dominance.",
+      "title": "Good riddance, 4o",
+      "published": "2026-02-13T00:00:00+00:00",
+      "link": "https://mahadk.com/posts/4o/",
+      "status": "ok"
+    },
+    {
+      "source": "lucumr.pocoo.org",
+      "event_zh": "知名开发者 Armin Ronacher 发文指出，AI 极速生成的代码正导致人工代码审查（Code Review）成为软件工程中无法逾越的最后瓶颈。",
+      "layman_zh": "打个比方：以前是厨师炒菜慢，客人等得起；现在来了个“炒菜机器人”一秒出一盘，结果端菜的服务员和洗碗工彻底瘫痪了，整个餐厅反而变得一团糟。",
+      "expert_zh": "[事件] AI 辅助编程导致代码产出速度远超人类审查带宽，引发开发流程的系统性淤塞。\n[亮点] 软件工程的约束点从“创造力”转向了“责任制”与“吞吐量匹配”。\n[洞察] (The Mollick Rule) 本次技术浪潮正将人类从“生产者”推向“质检员”的角色，但由于人类无法像机器一样水平扩展审查带宽，现有的 PR（拉取请求）工作流已面临崩溃。企业若不引入 AI 自动化审查或改变责任归属模型，单纯提高编写速度只会导致代码库质量的“热寂”。",
+      "keywords": [
+        "AI Coding",
+        "Code Review",
+        "Bottleneck",
+        "Software Engineering",
+        "Technical Debt",
+        "Productivity"
+      ],
+      "summary_en": "The article argues that AI has flipped the software development bottleneck from code creation to human review, creating an unsustainable backlog. As machines generate code at superhuman speeds, the traditional human-centric accountability and triage processes are becoming the primary constraints of the industry.",
+      "title": "The Final Bottleneck",
+      "published": "2026-02-12T16:00:00+00:00",
+      "link": "https://lucumr.pocoo.org/2026/2/13/the-final-bottleneck/",
+      "status": "ok"
+    },
+    {
+      "source": "maurycyz.com",
+      "event_zh": "硬件工程师 Maurycy 拆解了一款名为 AlphaHound 的超小型高灵敏度放射性污染监测仪，揭示了其内部的闪烁体探测技术与电路设计。",
+      "layman_zh": "打个比方：这就像是一个只有硬币大小的“超级捕蝇草”，它不用笨重的捕虫网，而是用一种特殊的荧光材料。当看不见的辐射微粒撞上去时会闪一下光，机器里的微型感光器能瞬间数出闪了几下、有多亮，从而判断周围环境是否安全。",
+      "expert_zh": "[事件] 工程师深度拆解 AlphaHound 紧凑型 alpha-beta 闪烁体探测器，展示了其在极小空间内的传感器集成方案。\n[亮点] 采用 SiPM（硅光电倍增管）替代传统光电倍增管，结合 ZnS(Ag) 与塑料闪烁体双层结构实现粒子区分。\n[洞察] (The Karpathy Rule) 该设备的核心逻辑在于“模拟信号的特征提取”：由于单片机采样率远低于纳秒级的脉冲速度，它巧妙地利用峰值检测电路和积分器将极短的电信号“拉长”或“固化”，从而让低速处理器也能通过脉冲高度和持续时间（Time-over-Threshold）精准分辨出 alpha 和 beta 粒子。",
+      "keywords": [
+        "AlphaHound",
+        "Scintillator",
+        "SiPM",
+        "Radiation Detection",
+        "Hardware Teardown",
+        "闪烁体探测器"
+      ],
+      "summary_en": "A detailed teardown of the AlphaHound, a ultra-compact contamination monitor, revealing its use of SiPMs and a dual-material scintillator sandwich to distinguish between alpha and beta radiation through pulse shape analysis.",
+      "title": "Inside an alpha-beta scintillator:",
+      "published": "2026-02-12T00:00:00+00:00",
+      "link": "https://maurycyz.com/misc/ah_teardown/",
+      "status": "ok"
+    },
+    {
+      "source": "grantslatton.com",
+      "event_zh": "Grant Slatton 提出“人人皆是微服务”的观点，认为 AI 代理将重塑组织架构，使个人能像独立软件模块一样高效协作。",
+      "layman_zh": "打个比方：以前公司像一台中世纪的大钟，齿轮必须死死咬合才能转动；现在每个人都变成了一个自带说明书的“万能插头”，只要有 AI 翻译需求，不同专业的人就能像拼乐高一样随时对接，不再需要开没完没了的协调会。",
+      "expert_zh": "[事件] 探讨 AI Agent 如何通过标准化接口打破康威定律对组织效率的束缚。\n[亮点] 提出“人类微服务化”概念，利用 AI 处理沟通熵增，实现组织架构与技术架构的解耦。\n[洞察] 这将彻底重塑知识工作的投资回报率（ROI）：AI 充当了人类之间的“API 适配器”，将原本消耗在跨部门沟通中的 80% 隐形成本转化为可执行的标准化指令，使得小规模、高灵活度的“原子化团队”能发挥出巨型企业的生产力。",
+      "keywords": [
+        "AI Agents",
+        "Conway's Law",
+        "Microservices",
+        "Organizational Design",
+        "API Economy"
+      ],
+      "summary_en": "The article proposes a shift where AI agents act as standardized interfaces for human workers, effectively turning individuals into 'microservices' to overcome traditional organizational friction.",
+      "title": "Every Man a Microservice",
+      "published": "2026-02-08T17:54:20+00:00",
+      "link": "https://grantslatton.com/every-man-a-microservice",
+      "status": "ok"
+    },
+    {
+      "source": "computer.rip",
+      "event_zh": "本文深入探讨了美国加油站前场（Forecourt）控制系统的技术演变，从早期的手动计量到现代复杂的数字化联网与支付集成。",
+      "layman_zh": "打个比方：加油站就像一个大型自动餐厅，以前得靠服务员盯着看你吃多少再收钱，现在通过给油枪装上“智能大脑”和“对讲机”，它能自己认出你的信用卡、算好油量，甚至还能在屏幕上给你放广告。",
+      "expert_zh": "[事件] 加油站前场系统经历了从机械脉冲控制到复杂IP联网协议的百年技术更迭。\n[亮点] 现代加油机集成了CRIND支付、HomePlug电力线通信及多协议转换网关。\n[洞察] 这是一个典型的“遗留系统集成”案例。由于更换地下管线和混凝土成本极高，加油站被迫在旧电线上通过DSL或HomePlug技术“叠床架屋”地实现数字化。这种技术债的堆积使得POS系统必须深度定制化，形成了极高的行业垂直壁垒，也让任何试图简化该流程的新技术都面临极大的物理兼容挑战。",
+      "keywords": [
+        "Forecourt Control",
+        "CRIND",
+        "加油站自动化",
+        "HomePlug",
+        "遗留系统集成",
+        "POS系统",
+        "物联网"
+      ],
+      "summary_en": "The article traces the technical evolution of gas station forecourt systems from manual volumetric measurement to modern IP-based networking. It highlights the complexity of integrating legacy hardware with modern EMV payments and digital media via protocols like HomePlug and DSL.",
+      "title": "forecourt networking",
+      "published": "2026-02-08T00:00:00+00:00",
+      "link": "https://computer.rip/2026-02-08-forecourt-networking.html",
+      "status": "ok"
+    },
+    {
+      "source": "gilesthomas.com",
+      "event_zh": "开发者 Giles Thomas 在从零构建 GPT-2 小模型的实验中发现，在注意力机制中重新加入偏置项（QKV Bias）能意外提升模型性能。",
+      "layman_zh": "打个比方：以前大家觉得做菜不用放那一点点盐（偏置项）也能行，但实验发现，虽然盐只占重量的万分之二，加了它之后整道菜的味道（模型准确度）确实变好了，而且炒菜过程也更稳了。",
+      "expert_zh": "[事件] 开发者在 GPT-2 Small 训练实验中通过引入 QKV 偏置项，将测试集损失从 3.692 降低至 3.669。\n[亮点] 尽管现代大模型（如 Llama）为追求简洁多舍弃偏置项，但在小规模参数下，线性层的 Bias 对训练稳定性有微弱正向贡献。\n[洞察] 这种现象揭示了“规模效应”下的技术取舍：在小型模型中，线性偏置提供的参数灵活性占比较高，能有效缓解训练波动；但随着模型维度 $d_{emb}$ 平方级增长，仅线性增长的偏置项收益会被迅速稀释，从而在工业级大模型中失去存在意义。",
+      "keywords": [
+        "GPT-2",
+        "Attention Bias",
+        "LLM Training",
+        "QKV Matrices",
+        "Model Stability",
+        "Chinchilla Optimality"
+      ],
+      "summary_en": "Developer Giles Thomas found that re-introducing QKV bias in a from-scratch GPT-2 small model training run unexpectedly improved test loss and training stability, despite bias being largely deprecated in modern large-scale LLMs.",
+      "title": "Writing an LLM from scratch, part 32d -- Interventions: adding attention bias",
+      "published": "2026-02-06T23:55:00+00:00",
+      "link": "https://www.gilesthomas.com/2026/02/llm-from-scratch-32d-interventions-adding-attention-bias",
+      "status": "ok"
+    },
+    {
+      "source": "mitchellh.com",
+      "event_zh": "HashiCorp 创始人 Mitchell Hashimoto 分享了他从怀疑论者转变为深度 AI 使用者的心路历程，并详细介绍了 AI 如何重塑他的编程与写作工作流。",
+      "layman_zh": "打个比方：这就像一个原本坚持手写账本的老会计，突然发现只要把收据随手一扔，AI 助手就能自动分类、核算并写好财务报告，让他从繁琐的体力活变成了只需最后签字的审核员。",
+      "expert_zh": "[事件] HashiCorp 创始人详细拆解了 AI 工具如何从简单的代码补全演进为深度参与决策的协作伙伴。\n[亮点] 强调了 AI 不是替代逻辑思考，而是通过极速原型设计和知识检索消除了从“想法”到“初稿”的摩擦力。\n[洞察] (The Mollick Rule) 该案例揭示了 AI 对高阶知识工作者的真实 ROI：它将工作流从“串行执行”转变为“并行探索”，通过替代 80% 的基础构建任务，让开发者能以极低成本进行大规模的方案验证，本质上是将人类的角色从“搬砖工”提升到了“总建筑师”。",
+      "keywords": [
+        "AI Adoption",
+        "Workflow Optimization",
+        "Mitchell Hashimoto",
+        "Software Engineering",
+        "Productivity"
+      ],
+      "summary_en": "Mitchell Hashimoto details his transition to an AI-first workflow, illustrating how LLMs have evolved from simple assistants to core components of his programming and writing processes.",
+      "title": "My AI Adoption Journey",
+      "published": "2026-02-05T00:00:00+00:00",
+      "link": "https://mitchellh.com/writing/my-ai-adoption-journey",
+      "status": "ok"
+    },
+    {
+      "source": "eli.thegreenplace.net",
+      "event_zh": "知名开源项目 pycparser 的作者分享了如何利用大语言模型（LLM）将核心解析引擎从过时的 PLY 迁移到现代的 SLY 框架。",
+      "layman_zh": "打个比方：这就像是一个开了十几年的老餐馆，老板请了一个超级聪明的 AI 助手，帮他把那本写满旧式代码、谁也看不懂的“老菜谱”翻译成了现代厨师都能秒懂的新标准，而且味道还没变。",
+      "expert_zh": "[事件] pycparser 作者利用 LLM 辅助完成了核心解析逻辑从 PLY 到 SLY 的重构迁移。\n[亮点] 通过 LLM 自动化处理繁琐的语法规则转换，显著降低了维护十余年之久的解析器技术债。\n[洞察] (The Mollick Rule) 这标志着 LLM 已从简单的代码补全进化为“架构迁移合伙人”。它极大地优化了资深开发者处理陈旧依赖（Legacy Dependencies）的流程，将原本需要数周的人工比对和重写缩短至数小时，让维护高流量底层库的边际成本大幅下降。",
+      "keywords": [
+        "pycparser",
+        "LLM-assisted coding",
+        "Refactoring",
+        "AST",
+        "Python",
+        "SLY",
+        "Legacy Code"
+      ],
+      "summary_en": "The creator of pycparser successfully leveraged an LLM to migrate the project's core parsing engine from PLY to SLY, demonstrating the efficiency of AI in refactoring legacy open-source infrastructure.",
+      "title": "Rewriting pycparser with the help of an LLM",
+      "published": "2026-02-04T19:35:00+00:00",
+      "link": "https://eli.thegreenplace.net/2026/rewriting-pycparser-with-the-help-of-an-llm/",
+      "status": "ok"
+    },
+    {
+      "source": "dynomight.net",
+      "event_zh": "Dynomight 发布文章讨论通过重新定义遗传力计算方式，人类寿命的遗传相关性可达 50%。",
+      "layman_zh": "打个比方：以前大家觉得长寿主要靠后天保养，基因只占一小部分；现在换了个算账方法，发现基因其实决定了你身体这台机器一半的报废年限。",
+      "expert_zh": "[事件] 文章探讨了在统计学重新定义下，人类寿命的遗传力从传统的 15-25% 提升至 50%。\n[亮点] 通过调整遗传力（Heritability）的定义边界，重新审视基因对复杂生命周期的决定性权重。\n[洞察] 这反映了生物统计中的“测量偏差”：当我们将环境噪音剔除并重新对齐数据分布时，原本被低估的底层代码（DNA）对长期产出（寿命）的控制力远比想象中稳固，这直接挑战了现有的抗衰老干预预期。",
+      "keywords": [
+        "Heritability",
+        "Lifespan",
+        "Genetics",
+        "Statistics",
+        "Longevity"
+      ],
+      "summary_en": "The article argues that the heritability of human lifespan can be recalculated to approximately 50% by redefining the underlying statistical framework.",
+      "title": "Heritability of human life span is about 50% when heritability is redefined to be something different",
+      "published": "2026-02-04T16:00:00+00:00",
+      "link": "https://dynomight.net/lifespan/",
+      "status": "ok"
+    },
+    {
+      "source": "terriblesoftware.org",
+      "event_zh": "技术博客 Terrible Software 发表文章，指出在团队协作中不带立场的提问本质上是转嫁思考成本，主张应先提出明确观点供他人反馈。",
+      "layman_zh": "这就像是你问队友“中午吃啥”却不给建议，其实是把点菜的麻烦丢给别人；如果你先说“我想吃火锅，行吗？”，大家只要点头或摇头就行，效率高得多。",
+      "expert_zh": "[事件] 探讨了团队协作中“无立场提问”带来的认知负荷转嫁问题。\n[亮点] 强调了“先抛出草案（Drafting）”在异步协作和决策流中的核心价值。\n[洞察] 遵循 Mollick 规则：这优化了知识工作者的“决策流”环节。将开放式问题转化为闭环式验证，能显著降低团队的整体认知带宽消耗，将协作模式从“共同摸索”转变为“快速迭代”，是提升组织 ROI 的关键行为习惯。",
+      "keywords": [
+        "协作效率",
+        "认知负荷",
+        "决策流程",
+        "团队沟通",
+        "Cognitive Load"
+      ],
+      "summary_en": "The article argues that asking open-ended questions without a personal stance is a form of task delegation that shifts the cognitive burden to others. It advocates for providing a concrete opinion first to facilitate faster, reactive feedback loops.",
+      "title": "Why Am I Doing the Thinking for You?",
+      "published": "2026-02-02T13:49:00+00:00",
+      "link": "https://terriblesoftware.org/2026/02/02/why-am-i-doing-the-thinking-for-you/",
+      "status": "ok"
+    },
+    {
+      "source": "michael.stapelberg.ch",
+      "event_zh": "开发者 Michael Stapelberg 分享了如何在 NixOS 系统上利用 microvm.nix 构建轻量级虚拟化沙箱，以安全地运行具有高权限的 AI 编程智能体。",
+      "layman_zh": "打个比方：这就像是给 AI 程序员专门盖了一间“一次性样板间”，它在里面拆家或试错都不会影响到你的主屋，活干完了直接推倒重建，既安全又省心。",
+      "expert_zh": "[事件] 开发者通过 NixOS 和 microvm.nix 实现了一种为 AI Agent 定制的声明式、临时性微型虚拟机沙箱方案。\n[亮点] 利用 Nix 语言的重现性实现“基础设施即代码”，通过 virtiofs 共享主机 Nix Store 极大地降低了虚拟机的资源开销与启动延迟。\n[洞察] (The Mollick Rule) 该方案解决了 AI Agent 自动执行代码时“安全审查”与“开发效率”的矛盾，通过将“私有数据”从运行环境中物理隔离，让开发者敢于开启 --dangerously-skip-permissions 模式，将原本需要人工盯防的异步任务转变为完全自动化的后台流水线，显著提升了 AI 参与复杂工程的 ROI。",
+      "keywords": [
+        "NixOS",
+        "AI Agents",
+        "Sandboxing",
+        "microvm.nix",
+        "Claude Code",
+        "Cybersecurity"
+      ],
+      "summary_en": "The article details a robust method for running coding agents like Claude Code within ephemeral MicroVMs on NixOS to mitigate security risks. By leveraging microvm.nix and declarative configurations, developers can create isolated, reproducible environments that protect personal data while allowing agents to execute commands freely.",
+      "title": "Coding Agent VMs on NixOS with microvm.nix",
+      "published": "2026-02-01T00:00:00+00:00",
+      "link": "https://michael.stapelberg.ch/posts/2026-02-01-coding-agent-microvm-nix/",
+      "status": "ok"
+    },
+    {
+      "source": "antirez.com",
+      "event_zh": "Redis 创始人 Salvatore Sanfilippo (antirez) 提出“自动编程”概念，强调 AI 辅助开发中人类愿景与主导权的核心地位。",
+      "layman_zh": "打个比方：这就像从“手动挖土”变成了“开挖掘机”，虽然机器出力多，但往哪挖、挖多深还是得靠老师傅盯着仪表盘和操纵杆，这活儿依然算老师傅干的，而不是挖掘机自己想出来的。",
+      "expert_zh": "[事件] Redis 创始人定义“自动编程”与“氛围编程”的区别，重申开发者在 AI 时代的价值。\n[亮点] 区分了无意识的生成（Vibe Coding）与有设计意图的协作（Automatic Programming）。\n[洞察] 针对产品与工作流，AI 正在将编程的重心从“如何实现”彻底推向“定义什么”。对于开发者而言，ROI 的提升不再源于打字速度，而源于对系统架构的“审美”和“纠偏能力”；这标志着软件开发的护城河已从代码编写权转移到了对复杂逻辑的最终解释权和愿景设计上。",
+      "keywords": [
+        "Automatic Programming",
+        "Redis",
+        "Antirez",
+        "AI Coding",
+        "Human-in-the-loop",
+        "Software Design"
+      ],
+      "summary_en": "Redis creator Salvatore Sanfilippo distinguishes 'Automatic Programming' from 'Vibe Coding,' arguing that high-quality software still requires human vision and steering despite AI's role in code generation.",
+      "title": "Automatic programming",
+      "published": "2026-01-31T10:25:27+01:00",
+      "link": "http://antirez.com/news/159",
+      "status": "ok"
+    },
+    {
+      "source": "borretti.me",
+      "event_zh": "技术博主 Borretti 发表文章探讨配置管理中“数据”与“代码”的界限，主张在复杂逻辑下应将配置视为代码而非纯数据。",
+      "layman_zh": "打个比方：这就像是你在组装家具，以前是给你一张死板的零件清单（数据），现在是给你一个能根据你房间大小自动调整尺寸的智能说明书（代码），让处理复杂任务时不再死板。",
+      "expert_zh": "[事件] 文章深入探讨了 Make、CloudFormation 和 GitHub Actions 中声明式数据与命令式逻辑的冲突。\n[亮点] 揭示了当 YAML/JSON 等纯数据格式通过不断修补逻辑（如 if/else 模拟）演变成“劣质编程语言”的必然性。\n[洞察] 遵循 Mollick 的效率视角：这种转变优化了开发者在处理动态基础设施时的认知负荷。与其在受限的声明式框架中“戴着镣铐跳舞”，不如直接引入具备逻辑处理能力的编程抽象，从而彻底解决复杂配置难以维护的工程痛点。",
+      "keywords": [
+        "Configuration as Code",
+        "Infrastructure",
+        "Declarative vs Imperative",
+        "YAML",
+        "Software Architecture"
+      ],
+      "summary_en": "The article argues that when configuration data becomes overly complex with logic-like extensions, it should be treated as actual code to improve maintainability and flexibility.",
+      "title": "Some Data Should Be Code",
+      "published": "2026-01-31T00:00:00+00:00",
+      "link": "https://borretti.me/article/some-data-should-be-code",
+      "status": "ok"
+    },
+    {
+      "source": "micahflee.com",
+      "event_zh": "Signal 加密通讯软件推广使用“备注名”功能，以解决高风险组织场景下用户因匿名导致的身份识别难题。",
+      "layman_zh": "打个比方：这就像你在一个蒙面舞会上，大家为了安全都戴着面具且没挂名牌，你根本分不清谁是谁；现在你可以偷偷给每个人的面具贴个只有你自己能看见的小纸条，写上‘这是隔壁老王’，这样既不暴露他的身份，你也不会认错人。",
+      "expert_zh": "[事件] Signal 强调通过本地化备注功能优化高风险组织者的协作效率。\n[亮点] 在保持端到端加密和元数据最小化的前提下，通过客户端本地存储实现身份映射。\n[洞察] (The Mollick Rule) 该功能直接优化了极端环境下“信任验证”的工作流。它解决了匿名性与协作效率之间的矛盾，将原本需要反复确认身份的认知负荷降低为零，使紧急响应网络在不牺牲安全性的前提下实现了指挥调度的标准化。",
+      "keywords": [
+        "Signal",
+        "加密通讯",
+        "匿名性",
+        "用户体验",
+        "组织协作",
+        "隐私保护"
+      ],
+      "summary_en": "Signal is promoting its nicknames feature to help organizers in high-risk environments identify anonymous group members without compromising their privacy. This local-only mapping solves the coordination friction caused by pseudonyms in rapid response networks.",
+      "title": "Is everyone in your Signal groups named something like \"E\" or \"🥑\"? Nicknames can help!",
+      "published": "2026-01-30T22:23:38+00:00",
+      "link": "https://micahflee.com/are-your-signal-groups-full-of-people-name-things-like-l-or-sinicknames/",
+      "status": "ok"
+    },
+    {
+      "source": "it-notes.dragas.net",
+      "event_zh": "技术博主分享了在 FreeBSD Jail 隔离环境中配置苹果 Time Machine 备份服务器的详细指南。",
+      "layman_zh": "这就像是在你家的大仓库（FreeBSD）里隔出一个独立的小储藏间（Jail），专门用来放苹果电脑的自动备份。即便小储藏间里乱成一团，也不会影响大仓库里其他东西的安全。",
+      "expert_zh": "[事件] 本文详细介绍了利用 FreeBSD 的 Jail 虚拟化技术构建兼容苹果协议的备份节点。\n[亮点] 通过 VNET 网络栈和 mDNS 转发解决了隔离环境下的服务发现难题。\n[洞察] (The Mollick Rule) 该方案将原本需要昂贵独立硬件（如 NAS）完成的备份任务，转化为一个低成本、高隔离性的软件容器流，极大提升了多设备管理者的运维效率与数据安全性。",
+      "keywords": [
+        "FreeBSD",
+        "Jail",
+        "Time Machine",
+        "Network Backup",
+        "Virtualization"
+      ],
+      "summary_en": "A technical guide detailing the configuration of an Apple Time Machine backup server within a FreeBSD Jail environment using VNET and mDNS.",
+      "title": "Time Machine inside a FreeBSD jail",
+      "published": "2026-01-28T08:52:00+00:00",
+      "link": "https://it-notes.dragas.net/2026/01/28/time-machine-freebsd-jail/",
+      "status": "ok"
+    },
+    {
+      "source": "jyn.dev",
+      "event_zh": "开发者分享了如何通过在 initramfs 阶段配置 systemd 服务来实现远程解锁加密硬盘的方法。",
+      "layman_zh": "这就像是给你的保险柜装了一个远程遥控器：以前你必须亲自跑到保险柜面前输入密码才能开机，现在你可以在还没进屋时，通过手机发个指令让它自己解开。",
+      "expert_zh": "[事件] 通过在 Linux 引导初期的 initramfs 环境中集成 systemd 服务实现远程磁盘解密。\n[亮点] 利用 initramfs 阶段的网络栈初始化，打破了加密磁盘必须物理接触才能引导的限制。\n[洞察] 这优化了无头服务器（Headless Server）的运维工作流，将原本需要物理干预或带外管理（IPMI）的硬件安全解锁过程，转化为可自动化的软件定义流程，显著降低了远程数据中心的维护成本。",
+      "keywords": [
+        "LUKS",
+        "initramfs",
+        "systemd",
+        "Disk Encryption",
+        "Remote Unlock"
+      ],
+      "summary_en": "The author demonstrates a method to remotely unlock encrypted Linux partitions by configuring systemd services within the initramfs environment to handle network-based decryption during boot.",
+      "title": "remotely unlocking an encrypted hard disk",
+      "published": "2026-01-21T16:00:00+00:00",
+      "link": "https://jyn.dev/remotely-unlocking-an-encrypted-hard-disk/",
+      "status": "ok"
+    },
+    {
+      "source": "herman.bearblog.dev",
+      "event_zh": "Bear Blog 创始人 Herman 发布了一份经过长期验证、能够稳定高效运行的个人软硬件工具清单。",
+      "layman_zh": "打个比方：这就像是一位资深老木匠公开了他的私人工具箱，里面没有花里胡哨的新玩意，全是那种用了十年还顺手、关键时刻绝不掉链子的“传家宝”工具。",
+      "expert_zh": "[事件] 开发者 Herman 分享了一系列遵循“简单至上”原则的软硬件长效工具清单。\n[亮点] 强调工具的“确定性”与“低维护成本”，而非追求前沿功能堆砌。\n[洞察] 这反映了在 AI 时代工具过载背景下，知识工作者对“数字极简主义”的回归。对于产品经理而言，真正的护城河不在于功能的广度，而在于能否像这些工具一样，在特定工作流中提供极高的可靠性，从而降低用户的认知负荷和切换成本。",
+      "keywords": [
+        "Digital Minimalism",
+        "Productivity Tools",
+        "Bear Blog",
+        "Workflow Optimization",
+        "Reliability"
+      ],
+      "summary_en": "The founder of Bear Blog shared a curated list of 'JustWork' tools, emphasizing long-term reliability and simplicity over feature-heavy modern alternatives.",
+      "title": "Things that work (for me)",
+      "published": "2026-01-20T00:30:00+00:00",
+      "link": "https://herman.bearblog.dev/things-that-work/",
+      "status": "ok"
+    },
+    {
+      "source": "overreacted.io",
+      "event_zh": "Dan Abramov 提出“社交文件系统”概念，主张数据格式应优先于应用程序，实现跨应用的协作与数据共享。",
+      "layman_zh": "这就像是把你的文档从“只能用特定牌子锁打开的保险箱”里拿出来，放进一个“谁都能读懂的通用笔记本”里。以前你得为了用某个功能去下载一堆软件，现在数据就像乐高积木，任何工具都能直接拿来拼装。",
+      "expert_zh": "[事件] Dan Abramov 探讨了从“以应用为中心”转向“以数据格式为中心”的协作式文件系统愿景。\n[亮点] 核心在于解耦数据存储与交互逻辑，利用通用协议打破 SaaS 软件的数据孤岛。\n[洞察] (The Thompson Rule) 这一构想正在动摇传统 SaaS 厂商通过“专有格式”构建的护城河。如果数据能自由流转，软件的价值将从“数据持有权”转向“交互体验的差异化”，这预示着一个从封闭生态向开放协议演进的战略拐点。",
+      "keywords": [
+        "Social Filesystem",
+        "Data Interoperability",
+        "SaaS Decoupling",
+        "Dan Abramov",
+        "Local-first"
+      ],
+      "summary_en": "Dan Abramov proposes a 'Social Filesystem' where data formats take precedence over individual applications to enable seamless collaboration and data ownership.",
+      "title": "A Social Filesystem",
+      "published": "2026-01-18T00:00:00+00:00",
+      "link": "https://overreacted.io/a-social-filesystem/",
+      "status": "ok"
+    },
+    {
+      "source": "tomrenner.com",
+      "event_zh": "文章探讨了大语言模型（LLM）的历史渊源，认为其本质是延续了400年前机械计算器试图将人类脑力劳动外包给机器的逻辑。",
+      "layman_zh": "打个比方：这就像是人类在400年前发明了算盘，后来又发明了计算器，现在发明了AI，其实都是为了同一个目的——想方设法让自己少动脑子，把累人的活儿甩给机器干。",
+      "expert_zh": "[事件] 文章回顾了从1623年机械计算器到现代LLM的演进，指出AI是人类长期追求“思维外包”的产物。\n[亮点] 将生成式AI定位为计算历史的连续性产物，而非孤立的技术突变。\n[洞察] 从Thompson的商业生态视角看，LLM正在移动“认知成本”这块奶酪；它不仅是工具的更迭，更是对人类智力溢价的重新定价，其战略护城河在于能否彻底接管那些曾被认为无法自动化的枯燥脑力流。",
+      "keywords": [
+        "LLM",
+        "计算历史",
+        "思维外包",
+        "认知自动化",
+        "机械计算器",
+        "Mental Energy"
+      ],
+      "summary_en": "The article argues that Large Language Models are the culmination of a 400-year historical trend, starting with mechanical calculators, aimed at offloading human mental effort to machines.",
+      "title": "LLMs are a 400-year-long confidence trick",
+      "published": "2026-01-13T00:00:00+00:00",
+      "link": "https://tomrenner.com/posts/400-year-confidence-trick/",
+      "status": "ok"
+    },
+    {
+      "source": "abortretry.fail",
+      "event_zh": "科技史博主发布了世嘉公司（Sega Enterprises）从诞生到转型的完整商业历史回顾。",
+      "layman_zh": "这就像是在看一家曾经和可口可乐平起平坐的饮料公司，如何因为几次激进的配方尝试失败，最后不得不停止生产自己的汽水瓶，转而专门为老对手提供糖浆配方。",
+      "expert_zh": "[事件] 深度回顾了世嘉从硬件巨头转型为纯软件供应商的商业历程。\n[亮点] 揭示了激进的硬件迭代周期与开发者生态建设失衡导致的战略溃败。\n[洞察] 从商业生态位来看，世嘉的案例证明了在平台战争中，单纯的性能领先（硬件护城河）无法抵御生态网络效应的缺失；当其核心资产从“平台控制权”降级为“内容IP”时，其商业模式也从高风险的重资产博弈转向了高毛利的跨平台授权。",
+      "keywords": [
+        "Sega",
+        "Gaming History",
+        "Business Strategy",
+        "Platform War",
+        "Hardware vs Software"
+      ],
+      "summary_en": "A comprehensive historical analysis of Sega Enterprises, detailing its evolution from a dominant hardware manufacturer to a specialized third-party software publisher.",
+      "title": "A Brief History of Sega Enterprises",
+      "published": "2026-01-12T04:02:27+00:00",
+      "link": "https://www.abortretry.fail/p/a-brief-history-of-sega-enterprises",
+      "status": "ok"
+    },
+    {
+      "source": "danielchasehooper.com",
+      "event_zh": "一位资深C语言程序员对当前主流AI编程工具在底层开发中的实际表现进行了深度测评。",
+      "layman_zh": "这就像是一个干了几十年的老木匠在试用自动木工机：以前得自己一刀一刀刻，现在只要说出想要的形状，机器就能自动出活，虽然偶尔会切歪，但干活速度确实快得惊人。",
+      "expert_zh": "[事件] 资深开发者对AI Agent在C语言底层开发中的工程化能力进行了实测评估。\n[亮点] 验证了AI在处理内存管理、指针操作等高风险代码时的逻辑准确性与局限性。\n[洞察] 这种工具正在将程序员的角色从“搬砖工”转变为“代码审查员”；它极大地降低了编写样板代码的认知负荷，但同时也对开发者识别AI生成的隐蔽逻辑漏洞提出了更高的专业要求。",
+      "keywords": [
+        "AI Coding",
+        "C Programming",
+        "LLM Agents",
+        "Software Engineering",
+        "Code Quality"
+      ],
+      "summary_en": "A veteran C programmer evaluated the practical utility of AI coding agents, highlighting their efficiency in boilerplate generation while cautioning about subtle logic errors in low-level memory management.",
+      "title": "Testing AI For C Programming",
+      "published": "2026-01-07T00:00:00+00:00",
+      "link": "https://danielchasehooper.com/posts/code-agents/",
+      "status": "ok"
+    },
+    {
+      "source": "mjg59.dreamwidth.org",
+      "event_zh": "知名内核开发者 Matthew Garrett 宣布停止更新其在 Dreamwidth 平台上的博客，并迁移至新站点。",
+      "layman_zh": "打个比方：这就像是你关注的一位大厨搬家了，他发了个告示告诉大家以后别去老店排队，想吃他的菜得去街对面的新店。",
+      "expert_zh": "[事件] 知名技术博主 Matthew Garrett 宣布博客迁移并更新 RSS 订阅源。\n[亮点] 涉及 Planet Gnome 等社区聚合器的元数据更新与订阅重定向。\n[洞察] 从 Thompson 视角看，这是个人技术品牌在去中心化 Web 生态中的“数字资产迁移”。虽然只是更换域名，但反映了技术领袖对内容分发控制权的维护，以及 RSS 这种长青协议在开发者圈层中依然稳固的护城河地位。",
+      "keywords": [
+        "Matthew Garrett",
+        "Blog Migration",
+        "RSS Feed",
+        "Planet Gnome",
+        "Dreamwidth"
+      ],
+      "summary_en": "Prominent kernel developer Matthew Garrett has announced the discontinuation of his Dreamwidth blog and provided a new link for future updates, requesting followers to update their RSS subscriptions.",
+      "title": "Not here",
+      "published": "2026-01-05T22:26:23+00:00",
+      "link": "https://mjg59.dreamwidth.org/74084.html",
+      "status": "ok"
+    },
+    {
+      "source": "aresluna.org",
+      "event_zh": "科技博主发布了一篇包含20多家全球最佳及3家最差科技博物馆的摄影随笔。",
+      "layman_zh": "这就像是有人帮你逛遍了全世界的科技馆，然后列了一张“红黑榜”：哪些地方值得带孩子去开眼界，哪些地方只是浪费门票钱。",
+      "expert_zh": "[事件] 资深科技博主发布全球科技博物馆深度评测报告。\n[亮点] 通过实地摄影与多维度对比，筛选出20余家具有代表性的技术遗产保存地。\n[洞察] 从产品演进视角看，这些博物馆不仅是旧硬件的堆放场，更是人类解决问题逻辑的“实体代码库”；对于现代产品设计者而言，回顾这些被淘汰的物理交互方案，是寻找非共识创新灵感、打破当前触屏交互同质化困局的有效路径。",
+      "keywords": [
+        "科技博物馆",
+        "技术遗产",
+        "摄影随笔",
+        "产品演进",
+        "交互设计"
+      ],
+      "summary_en": "A curated photo essay reviewing over 20 top-tier technology museums worldwide alongside three disappointing ones, offering a visual journey through computing and engineering history.",
+      "title": "Fav tech museums",
+      "published": "2026-01-05T11:52:00+00:00",
+      "link": "https://aresluna.org/fav-tech-museums",
+      "status": "ok"
+    },
+    {
+      "source": "refactoringenglish.com",
+      "event_zh": "Refactoring English 发布了 2025 年度 Hacker News 最受欢迎个人博客榜单，统计了过去一年在 HN 社区影响力最大的独立创作者。",
+      "layman_zh": "打个比方：这就像是在一个超级硬核的极客社区里，评选出了年度“最强个人摊主”，他们不靠公司大招牌，全凭自己的手艺和干货吸引了最多的回头客。",
+      "expert_zh": "[事件] Refactoring English 发布 2025 年 Hacker News 个人博客影响力排名。\n[亮点] 严格区分个人创作与企业公关，通过社区互动数据量化独立开发者的思想领导力。\n[洞察] (The Thompson Rule) 该榜单揭示了技术生态中“个人品牌”对企业叙事的解构。在 AI 降低内容生产门槛的当下，具有深度洞察的个人博客正成为稀缺的信任锚点，这种“去中心化”的影响力正在削弱传统企业博客对技术话语权的垄断。",
+      "keywords": [
+        "Hacker News",
+        "个人博客",
+        "开发者社区",
+        "内容影响力",
+        "独立创作者",
+        "2025回顾"
+      ],
+      "summary_en": "Refactoring English released its 2025 rankings of the most popular individual bloggers on Hacker News, highlighting influential independent voices in the tech community. The methodology specifically filters for personal domains over corporate blogs to identify authentic individual thought leadership.",
+      "title": "The Most Popular Blogs of Hacker News in 2025",
+      "published": "2026-01-02T00:00:00+00:00",
+      "link": "https://refactoringenglish.com/blog/2025-hn-top-5/",
+      "status": "ok"
+    },
+    {
+      "source": "xania.org",
+      "event_zh": "xania.org 发布了 2025 年度技术回顾报告，总结了过去一年科技领域的关键进展与趋势。",
+      "layman_zh": "打个比方：这就像是年底的一份“年终总结账单”，把这一年里科技圈到底发生了哪些大事、哪些东西变好用了，一次性给你讲清楚，让你不用去翻一整年的旧报纸。",
+      "expert_zh": "[事件] xania.org 发布 2025 全年技术回顾报告。\n[亮点] 深度复盘了生成式 AI 从模型竞赛转向垂直应用落地的关键节点。\n[洞察] 2025 年标志着 AI 泡沫的破裂与重塑，行业重心已从单纯追求参数规模转向追求推理成本的极致压缩，这直接威胁了那些缺乏场景壁垒的中间层软件公司，迫使生态位向“端侧智能”和“自主 Agent”两极分化。",
+      "keywords": [
+        "2025 Review",
+        "年度回顾",
+        "Technology Trends",
+        "AI Industry",
+        "Ecosystem Shift"
+      ],
+      "summary_en": "The article provides a comprehensive retrospective of the technological landscape in 2025, highlighting key shifts in AI development and industry milestones.",
+      "title": "2025 in Review",
+      "published": "2025-12-31T13:30:00+00:00",
+      "link": "http://xania.org/202512/2025-in-review?utm_source=feed&utm_medium=rss",
+      "status": "ok"
+    },
+    {
+      "source": "downtowndougbrown.com",
+      "event_zh": "一位开发者利用旧款麦金塔电脑内置的ROM诊断程序，成功定位并修复了主板上一条断裂的电路走线。",
+      "layman_zh": "打个比方：这就像是一台老古董收音机坏了，维修工没有盲目拆零件，而是通过听收音机开机时自带的“报错哨声”，顺藤摸瓜找到了主板上一根像头发丝一样细的断掉的电线，把它重新焊好了。",
+      "expert_zh": "[事件] 开发者通过逆向分析Macintosh Performa 450的ROM诊断代码修复了硬件故障。\n[亮点] 利用底层固件的错误代码（Chimes of Death）精准定位物理层电路断路。\n[洞察] 这体现了早期计算机设计的“自解释性”优势：在硬件抽象层尚未完全隔离的时代，固件诊断逻辑与物理电路高度耦合，这种透明度为现代“维修权”提供了极佳的范例，证明了底层文档和诊断工具对延长硬件生命周期的决定性价值。",
+      "keywords": [
+        "Macintosh",
+        "ROM Diagnostics",
+        "Hardware Repair",
+        "Reverse Engineering",
+        "Retro Computing"
+      ],
+      "summary_en": "A developer successfully repaired a vintage Macintosh Performa 450 by using its built-in ROM diagnostic routines to identify a specific broken trace on the motherboard.",
+      "title": "Finding a broken trace on my old Mac with the help of its ROM diagnostics",
+      "published": "2025-12-30T01:52:17+00:00",
+      "link": "https://www.downtowndougbrown.com/2025/12/finding-a-broken-trace-on-my-old-mac-with-the-help-of-its-rom-diagnostics/",
+      "status": "ok"
+    },
+    {
+      "source": "minimaxir.com",
+      "event_zh": "Nano Banana Pro 发布，被评为目前最强的 AI 图像生成器，但其极高的生成质量也带来了合规与使用上的争议。",
+      "layman_zh": "这就像是你请了一位画技出神入化的顶级画师，他画出来的照片甚至比相机拍的还真，以至于你开始担心别人分不清真假，甚至因为画得太像而惹上麻烦。",
+      "expert_zh": "[事件] Nano Banana Pro 以其卓越的图像保真度成为 AI 绘图领域的新标杆。\n[亮点] 突破了现有扩散模型的细节瓶颈，实现了近乎完美的纹理还原与光影追踪。\n[洞察] 该产品的出现标志着 AI 创作从“模拟真实”转向“替代真实”，它直接冲击了商业摄影与版权素材库的护城河，迫使行业必须在技术领先与内容安全边界之间重新寻找平衡。",
+      "keywords": [
+        "Nano Banana Pro",
+        "AI Image Generation",
+        "Image Fidelity",
+        "Synthetic Media",
+        "Content Ethics"
+      ],
+      "summary_en": "Nano Banana Pro has emerged as a top-tier AI image generator known for its hyper-realistic output, though its extreme quality raises significant concerns regarding authenticity and misuse.",
+      "title": "Nano Banana Pro is the best AI image generator, with caveats",
+      "published": "2025-12-22T10:45:00-08:00",
+      "link": "https://minimaxir.com/2025/12/nano-banana-pro/",
+      "status": "ok"
+    },
+    {
+      "source": "timsh.org",
+      "event_zh": "安全研究员揭露了一个在Telegram上通过伪装官方支持群组来传播加密货币窃取程序的庞大诈骗网络。",
+      "layman_zh": "打个比方：这就像骗子在银行门口摆了个一模一样的假柜台，专门骗那些来办业务的人，只要你一伸手递卡，卡里的钱瞬间就被他们吸干了。",
+      "expert_zh": "[事件] 安全研究员拆解了Telegram上利用虚假客服群组分发恶意脚本的黑色产业链。\n[亮点] 攻击者利用社交工程学诱导用户执行看似无害的脚本，实则触发底层智能合约的资产转移权限。\n[洞察] 这反映了Web3生态中“信任成本”的极度高昂。攻击者正在从单纯的技术破解转向利用平台治理漏洞（如Telegram的群组搜索机制）来构建流量入口，这种“社交入口+自动化脚本”的组合拳正成为移动端加密资产最大的安全威胁。",
+      "keywords": [
+        "Telegram诈骗",
+        "加密货币窃取",
+        "社交工程",
+        "网络安全",
+        "Crypto Drainers"
+      ],
+      "summary_en": "A security investigation uncovered a sophisticated network of fake Telegram support groups using social engineering to deploy crypto-stealing scripts and drainers.",
+      "title": "Scam Telegram: Uncovering a network of groups spreading crypto drainers",
+      "published": "2025-12-04T23:58:22+00:00",
+      "link": "https://timsh.org/scam-telegram-investigation/",
+      "status": "ok"
+    },
+    {
+      "source": "danieldelaney.net",
+      "event_zh": "开发者 Daniel Delaney 开发了一款名为 Intention 的强制性计时器工具，通过模糊屏幕强制用户确认工作目标。",
+      "layman_zh": "打个比方：这就像是一个严厉的健身教练，每隔几分钟就挡在你电视机前问你“现在练到哪了”，如果你不回答，他就会把电视屏幕涂黑，逼着你必须清醒地盯着目标看。",
+      "expert_zh": "[事件] 开发者推出 Intention 计时器，利用“屏幕模糊”负反馈机制强制用户进行意图确认。\n[亮点] 引入物理层级的视觉阻断作为不作为的代价，将“软性提醒”升级为“硬性约束”。\n[洞察] 该产品优化了知识工作者容易陷入的“无意识忙碌”工作流，通过极短的反馈回路（3-30分钟）强制进行元认知干预，其核心ROI在于将“走神”的成本从隐形的效率损失转化为显性的视觉障碍，从而重塑用户的专注习惯。",
+      "keywords": [
+        "Intention",
+        "效率工具",
+        "元认知",
+        "负反馈机制",
+        "macOS",
+        "专注力"
+      ],
+      "summary_en": "Developer Daniel Delaney created 'Intention,' a macOS timer that forces users to state their focus by gradually blurring the screen if a new session isn't initiated, preventing 'unproductive productivity.'",
+      "title": "I built a timer I can’t fail to set",
+      "published": "2025-12-02T00:00:00+00:00",
+      "link": "http://danieldelaney.net/timer/",
+      "status": "ok"
+    },
+    {
+      "source": "simone.org",
+      "event_zh": "Simone Stolzoff 发表文章探讨了人们往往会爱上事物的“概念”而非“本质”这一心理现象。",
+      "layman_zh": "打个比方：这就像你还没去旅游，就先爱上了那张精美的明信片，结果到了地方发现全是人，你却非要逼着自己相信这里和照片里一样美。",
+      "expert_zh": "[事件] 文章深度剖析了认知偏差中“概念模型”与“真实体验”之间的脱节。\n[亮点] 提出了“明信片”作为心理预期的隐喻，揭示了人类在追求目标时常见的自我欺骗机制。\n[洞察] 从产品心理学角度看，这揭示了用户在采用新技术时往往处于“期望膨胀期”，这种心理溢价是品牌溢价的来源，但也是导致长期留存率低下的核心痛点，因为真实的工作流往往比理想化的演示更具摩擦力。",
+      "keywords": [
+        "认知偏差",
+        "心理预期",
+        "概念与现实",
+        "自我欺骗",
+        "Cognitive Bias"
+      ],
+      "summary_en": "The article explores the psychological gap between our idealized mental models and reality, using the metaphor of a postcard to describe how we cling to ideas rather than experiencing the truth.",
+      "title": "The Postcard and the Thing Itself (On Falling in Love with Ideas)",
+      "published": "2025-10-28T15:26:41+00:00",
+      "link": "https://simone.org/the-postcard-and-the-thing-itself-on-falling-in-love-with-ideas/",
+      "status": "ok"
+    },
+    {
+      "source": "hugotunius.se",
+      "event_zh": "开发者 Hugo Tunius 分享了一种名为“教我一些知识”的 Claude 工作流，旨在替代无意义的碎片化刷手机行为。",
+      "layman_zh": "打个比方：这就像是把你的手机从一个只会让你越刷越累的“零食自动贩卖机”，变成了一个随身携带、随时能根据你的兴趣讲出新鲜干货的“私人教授”。",
+      "expert_zh": "[事件] 开发者通过自定义 Prompt 将 Claude 转化为主动式学习引擎以对抗数字成瘾。\n[亮点] 利用 LLM 的非确定性生成个性化、结构化的知识图谱。\n[洞察] 这代表了从“被动消费算法推流”向“主动生成式学习”的范式转移。它直接优化了人类获取知识的信噪比，将原本浪费在短视频上的多巴胺转化为结构化的认知盈余，本质上是在重塑个人知识管理的入口。",
+      "keywords": [
+        "Claude",
+        "Prompt Engineering",
+        "Active Learning",
+        "Digital Wellbeing",
+        "Knowledge Management"
+      ],
+      "summary_en": "Developer Hugo Tunius introduced a 'Teach me something' Claude workflow designed to replace doom scrolling with personalized, AI-driven educational sessions.",
+      "title": "Claude, Teach Me Something",
+      "published": "2025-10-25T15:00:00+00:00",
+      "link": "https://hugotunius.se/2025/10/26/claude-teach-me-something.html",
+      "status": "ok"
+    },
+    {
+      "source": "geoffreylitt.com",
+      "event_zh": "Geoffrey Litt 提出“像外科医生一样编程”的新范式，挑战了 AI 将使开发者沦为纯管理者的主流观点。",
+      "layman_zh": "打个比方：以前写代码像搬砖，现在有了 AI 助手，你不再是监工，而是主刀医生。AI 负责缝合和递工具，但你必须亲自盯着伤口，在关键时刻精准切下一刀，因为一旦出错，后果还是得你负责。",
+      "expert_zh": "[事件] 开发者 Geoffrey Litt 提出“外科医生式编程”理念，强调 AI 时代人类应保持高频、高精度的实操介入。\n[亮点] 重新定义人机协作边界，从“异步审核”转向“同步精细操作”。\n[洞察] 针对 AI 时代的职业替代，这符合 Mollick 规则：它优化了从“构思到实现”的反馈回路。AI 并没有消除对专业技能的需求，而是将工作流从低效的打字搬运，重塑为对逻辑关键点的实时决策，人类的 ROI 体现在对复杂系统“手术级”的精准干预能力上。",
+      "keywords": [
+        "AI Programming",
+        "Human-AI Collaboration",
+        "Software Engineering",
+        "Workflow Optimization",
+        "Code like a surgeon"
+      ],
+      "summary_en": "Geoffrey Litt argues that AI transforms developers into 'surgeons' rather than mere managers, emphasizing high-precision manual intervention over passive oversight.",
+      "title": "Code like a surgeon",
+      "published": "2025-10-24T06:59:00+00:00",
+      "link": "https://geoffreylitt.com/2025/10/24/code-like-a-surgeon.html",
+      "status": "ok"
+    },
+    {
+      "source": "beej.us",
+      "event_zh": "开发者 Beej 发布了一篇关于使用 Rust 语言实现逆波兰表达式（RPN）计算器的技术博客。",
+      "layman_zh": "打个比方：这就像是把原本乱糟糟、需要括号才能看懂的“连笔字”账单，改造成了像超市小票一样、按顺序排好队就能直接计算的清单，而且用 Rust 写就像是给这个计算过程套上了一层防弹衣，怎么算都不会出错。",
+      "expert_zh": "[事件] 开发者通过 Rust 语言深度实践了逆波兰表达式（RPN）计算器的逻辑实现。\n[亮点] 利用 Rust 的所有权模型和强类型系统，确保了栈操作在处理后缀表达式时的内存安全与零成本抽象。\n[洞察] 从产品工作流来看，这种底层逻辑的重构优化了复杂嵌套运算的解析效率，将原本需要递归处理的树状结构简化为线性的栈操作，为高性能计算工具提供了极高的执行确定性与容错率。",
+      "keywords": [
+        "Rust",
+        "RPN Calculator",
+        "Stack-based",
+        "Memory Safety",
+        "Algorithm"
+      ],
+      "summary_en": "The author explores the implementation of a Reverse Polish Notation (RPN) calculator using Rust, focusing on stack-based logic and language-specific safety features.",
+      "title": "Rust RPN Calculator",
+      "published": "2025-10-24T00:00:00+00:00",
+      "link": "http://beej.us/blog/data/rust-rpn-calc/",
+      "status": "ok"
+    },
+    {
+      "source": "bogdanthegeek.github.io",
+      "event_zh": "开发者成功利用售价仅 0.1 美元的 CH32V003 RISC-V 芯片开发出世界上最便宜的 ARM 调试器。",
+      "layman_zh": "这就像是：你原本需要花 50 块钱买个专门的万能遥控器才能修电视，现在有人发现用路边 1 毛钱一个的打火机零件也能改造成同样的遥控器，而且效果一样好。",
+      "expert_zh": "[事件] 开发者通过固件模拟将 10 美分的 RISC-V 芯片转化为支持 CMSIS-DAP 协议的 ARM 调试器。\n[亮点] 极低成本硬件与标准调试协议的跨架构兼容实现。\n[洞察] 这体现了硬件生态中的“降维打击”：当极低成本微控制器的算力足以覆盖特定协议栈时，传统高价专用工具的溢价空间将被彻底粉碎，这种“草根创新”正在重塑嵌入式开发工具链的成本边界。",
+      "keywords": [
+        "CH32V003",
+        "RISC-V",
+        "ARM Debugger",
+        "CMSIS-DAP",
+        "Low-cost Hardware",
+        "Embedded Systems"
+      ],
+      "summary_en": "A developer has successfully repurposed a $0.10 CH32V003 RISC-V microcontroller into a functional ARM debugger, significantly undercutting the cost of traditional tools like the Raspberry Pi Pico.",
+      "title": "World's Cheapest ARM Debugger is Actually RISC-V",
+      "published": "2025-10-19T15:07:31+01:00",
+      "link": "https://bogdanthegeek.github.io/blog/projects/v003-dap/",
+      "status": "ok"
+    },
+    {
+      "source": "tedunangst.com",
+      "event_zh": "OpenBSD 开发者探讨了如何将新版 Go 语言特性向后移植到旧版本系统中的实践与发布节奏对齐问题。",
+      "layman_zh": "打个比方：这就像是给旧款手机强行安装最新的操作系统补丁，开发者在研究怎么把新零件拆解并稳当地塞进老机器里，好让老用户也能用上新功能。",
+      "expert_zh": "[事件] OpenBSD 社区详细说明了 Go 语言编译器在不同系统版本间的向后移植（Backporting）策略。\n[亮点] 解决了 Go 语言快速迭代的发布周期与 OpenBSD 稳定版维护周期之间的同步冲突。\n[洞察] 从产品工作流来看，这种底层工具链的维护优化了开发者在受限环境下的编译效率，通过手动对齐依赖关系，将原本需要全系统升级的成本降低为局部的补丁更新，确保了生产环境的长期稳定性。",
+      "keywords": [
+        "OpenBSD",
+        "Go language",
+        "Backporting",
+        "Toolchain",
+        "Software Maintenance"
+      ],
+      "summary_en": "The post details the technical challenges and strategies for backporting Go language updates within the OpenBSD ports system to align with release cadences.",
+      "title": "backporting go on openbsd",
+      "published": "2025-10-08T18:34:00+00:00",
+      "link": "https://flak.tedunangst.com/",
+      "status": "ok"
+    },
+    {
+      "source": "utcc.utoronto.ca/~cks",
+      "event_zh": "多伦多大学系统管理员发布博客，回顾了在应对个人挑战与长期技术项目压力下维持系统运行两年的心路历程。",
+      "layman_zh": "这就像是你在家里修一个漏水两年的水管，中间家里还出了各种乱子，但你硬是靠着缝缝补补没让水淹了地板，现在终于能喘口气总结下怎么没崩溃了。",
+      "expert_zh": "[事件] 资深系统管理员发布关于长期运维压力与个人生活平衡的深度回顾。\n[亮点] 揭示了在极端长周期（731天）下，技术债务与心理韧性对基础设施稳定性的共同影响。\n[洞察] 按照Mollick法则，该案例揭示了自动化工具无法替代的“人类韧性”工作流：在资源匮乏与突发状况下，运维的核心不再是代码优化，而是通过优先级排序进行的风险对冲，这种“生存模式”下的决策逻辑是企业数字化转型中最易被忽视的隐形成本。",
+      "keywords": [
+        "系统运维",
+        "技术债务",
+        "心理韧性",
+        "Sysadmin",
+        "长期项目管理"
+      ],
+      "summary_en": "A veteran system administrator reflects on the two-year journey of balancing complex technical infrastructure maintenance with personal challenges, highlighting the human element in long-term operational stability.",
+      "title": "Two years and one day",
+      "published": "2025-09-15T00:00:00+00:00",
+      "link": "https://utcc.utoronto.ca/~cks/space/blog/sysadmin/TwoYearsAndOneDay",
+      "status": "ok"
+    },
+    {
+      "source": "chiark.greenend.org.uk/~sgtatham",
+      "event_zh": "Simon Tatham 发布了一种新算法，能将原本无法处理的非周期性地砖铺设模式转化为可由有限状态转换器处理的形式。",
+      "layman_zh": "这就像是你有一堆形状古怪、永远拼不出重复图案的地砖，原本根本没法写成简单的说明书；现在有人发明了一套“翻译法”，把这些乱七八糟的拼法变成了像乐高图纸一样清晰的步骤。",
+      "expert_zh": "[事件] Simon Tatham 提出了一种通过细分（Refinement）将非周期性平铺转化为有限状态转换器（FST）可处理模型的通用算法。\n[亮点] 解决了非周期性系统在计算几何中难以通过有限状态机进行线性描述的数学瓶颈。\n[洞察] 从计算逻辑看，这实际上是在非周期性的“无限熵”中寻找局部结构的自相似性，通过增加状态空间的维度（细分）来换取计算的确定性，为复杂空间结构的自动化生成提供了底层算法支撑。",
+      "keywords": [
+        "Aperiodic Tilings",
+        "Finite-state Transducers",
+        "Computational Geometry",
+        "Algorithm",
+        "Refinement"
+      ],
+      "summary_en": "Simon Tatham introduced an algorithm that transforms complex aperiodic tilings into a format compatible with finite-state transducers through a refinement process, enabling systematic generation of non-repeating patterns.",
+      "title": "Aperiodic Tilings V: the Refinable Frontier",
+      "published": "2025-09-01T16:00:00+00:00",
+      "link": "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/aperiodic-refine/",
+      "status": "ok"
+    },
+    {
+      "source": "blog.pixelmelt.dev",
+      "event_zh": "安全研究员发布了针对 PixelMelt 开发的 PISTOL 混淆加密技术的逆向分析报告，揭示了其基于栈的 JavaScript 虚拟机攻击方法。",
+      "layman_zh": "这就像是有人把一段通俗易懂的代码锁进了一个特制的“迷宫保险箱”，只有特定的钥匙（虚拟机）才能运行它。安全研究员通过拆解这个保险箱的内部构造，找到了绕过迷宫直接看清代码逻辑的方法。",
+      "expert_zh": "[事件] 安全研究员成功逆向分析了 PISTOL JavaScript 虚拟机混淆器。\n[亮点] 详细拆解了基于栈的指令集架构（ISA）及其在浏览器环境下的动态解密执行流。\n[洞察] 这种混淆技术试图通过增加“理解成本”来构建安全护城河，但研究表明，只要攻击者能映射出虚拟指令与原生 JS 操作的对应关系，这种基于软件的逻辑隔离就会迅速瓦解，其本质是牺牲性能换取短暂的不可见性。",
+      "keywords": [
+        "JavaScript VM",
+        "PISTOL JSVM",
+        "Deobfuscation",
+        "Reverse Engineering",
+        "Cybersecurity"
+      ],
+      "summary_en": "A detailed technical analysis of the PISTOL JavaScript virtual machine obfuscator, demonstrating methods to reverse-engineer and attack stack-based virtualization techniques used for code protection.",
+      "title": "Attacking a stack based JavaScript virtual machine",
+      "published": "2025-07-16T00:00:00+00:00",
+      "link": "https://blog.pixelmelt.dev/analysing-pistoljsvm/",
+      "status": "ok"
+    },
+    {
+      "source": "rachelbythebay.com",
+      "event_zh": "Rachelbythebay 发布文章分析了系统中难以察觉的周期性性能下降，以及隐藏的依赖关系如何掩盖故障根源。",
+      "layman_zh": "打个比方：这就像你家水龙头偶尔出水变小，你以为是水管堵了，结果发现是因为楼下邻居每隔一小时就定时给超大鱼缸换水，这种看不见的关联让修水管的人找不着北。",
+      "expert_zh": "[事件] 深入探讨了分布式系统中由于隐性依赖导致的周期性性能抖动问题。\n[亮点] 揭示了非直观耦合（Hidden Dependencies）在复杂系统监控中的盲区。\n[洞察] 遵循 Mollick 视角，这揭示了现代运维工作流中“可观测性”的局限：当系统复杂度超过人类直觉时，传统的单点监控已失效，工程师必须从“修理工”转型为“系统考古学家”，通过跨层级的关联分析来识别那些被抽象层掩盖的性能损耗，否则边际维护成本将呈指数级增长。",
+      "keywords": [
+        "系统性能",
+        "隐性依赖",
+        "故障排查",
+        "可观测性",
+        "分布式系统",
+        "System Latency"
+      ],
+      "summary_en": "The article explores the technical debt and operational challenges posed by subtle, recurring system slowdowns caused by hidden dependencies that are often invisible to standard monitoring tools.",
+      "title": "The Mysterious Slowdowns",
+      "published": "2025-07-03T00:00:00+00:00",
+      "link": "https://rachelbythebay.com/w/2025/07/03/slow/",
+      "status": "ok"
+    },
+    {
+      "source": "brutecat.com",
+      "event_zh": "安全研究员发现利用 IPv6 地址空间和绕过 Botguard 验证的方法，可以大规模获取任意 Google 用户的手机号。",
+      "layman_zh": "打个比方：以前坏人想去查户口，门口保安（频率限制）会盯着同一个人。现在坏人学会了“分身术”，每次换个新面孔（IPv6地址）去问，保安就认不出来了，导致全城的电话簿都被人偷偷翻了个遍。",
+      "expert_zh": "[事件] 研究员通过绕过 Google 的 Botguard 防护机制并利用 IPv6 海量地址池，实现了对 Google 用户手机号的大规模爬取。\n[亮点] 攻击者利用了传统频率限制（Rate Limiting）在面对 IPv6 庞大地址空间时的失效，结合对客户端加密脚本的逆向工程绕过验证。\n[洞察] 这揭示了现代互联网基础设施的一个战略性漏洞：当防御方仍基于 IP 这种“稀缺资源”建立信任模型时，IPv6 的普及让攻击者的身份切换成本降至零，彻底摧毁了基于 IP 的传统安全护城河。",
+      "keywords": [
+        "Google Security",
+        "IPv6",
+        "Botguard Bypass",
+        "Data Leak",
+        "Rate Limiting",
+        "Privacy"
+      ],
+      "summary_en": "Security researchers demonstrated a vulnerability where bypassing Google's Botguard and leveraging IPv6 address rotation allowed for the mass extraction of user phone numbers.",
+      "title": "Leaking the phone number of any Google user",
+      "published": "2025-06-09T00:00:00+00:00",
+      "link": "https://brutecat.com/articles/leaking-google-phones",
+      "status": "ok"
+    },
+    {
+      "source": "philiplaine.com",
+      "event_zh": "开发者 Philip Laine 分享了开源项目 Spegel 的起源，该项目旨在通过无状态的 P2P 机制解决 Kubernetes 集群在镜像仓库宕机时的扩容难题。",
+      "layman_zh": "打个比方：以前工厂开工得去总仓库领零件，一旦总仓库关门全厂就停产；现在这套系统让工位之间能互相借零件，只要厂里有一个人手里有，大家都能开工，不用再看总仓库脸色。",
+      "expert_zh": "[事件] 开发者通过 Spegel 项目实现了 Kubernetes 节点间的无状态镜像共享机制。\n[亮点] 摒弃了传统的中心化镜像缓存架构，利用 P2P 协议在集群内部实现镜像的高可用分发。\n[洞察] (The Mollick Rule) 该工具直接优化了运维工程师在极端流量波动（如黑五）下的容灾流程，将原本依赖外部网络稳定性的“脆弱环节”转化为集群内部的自愈能力，显著降低了云原生架构的运维成本与停机风险。",
+      "keywords": [
+        "Spegel",
+        "Kubernetes",
+        "P2P",
+        "Container Registry",
+        "Scalability",
+        "Open Source"
+      ],
+      "summary_en": "The creator of Spegel details how the project was born to solve Kubernetes scaling failures during registry outages by enabling peer-to-peer image sharing between nodes without stateful mirrors.",
+      "title": "Getting Forked by Microsoft",
+      "published": "2025-04-21T00:00:00+00:00",
+      "link": "https://philiplaine.com/posts/getting-forked-by-microsoft/",
+      "status": "ok"
+    },
+    {
+      "source": "danielwirtz.com",
+      "event_zh": "Daniel Wirtz 发布了关于如何利用 Airtable 构建结构化工具库的实操指南。",
+      "layman_zh": "打个比方：这就像是把家里乱塞在抽屉里的各种螺丝刀、扳手和锤子，全部挂到一个带标签的展示墙上，让你一眼就能看到哪个工具在谁手里、好不好用。",
+      "expert_zh": "[事件] 本文详细介绍了利用 Airtable 的关系型数据库特性构建企业级工具资产管理系统的流程。\n[亮点] 通过多表关联（Linked Records）实现工具属性、使用状态与责任人的自动化映射。\n[洞察] 该方案本质上是在优化“知识与资产的检索工作流”；它将原本碎片化的非结构化信息转化为可编程的资产，通过降低工具发现的摩擦成本，直接提升了团队的协作 ROI。",
+      "keywords": [
+        "Airtable",
+        "Tool Library",
+        "Workflow Optimization",
+        "No-code",
+        "Asset Management"
+      ],
+      "summary_en": "The guide demonstrates how to leverage Airtable's relational database features to build a structured tool library for better asset tracking and team collaboration.",
+      "title": "How to create a tool library in Airtable",
+      "published": "2021-12-09T19:35:00+00:00",
+      "link": "https://danielwirtz.com/blog/airtable-tool-library",
+      "status": "ok"
+    },
+    {
+      "source": "gwern.net",
+      "event_zh": "Gwern.net 发布 2021 年 5 月简报，重点探讨了 AI 硬件、扩散模型、光遗传学及脑部扫描等前沿交叉领域。",
+      "layman_zh": "打个比方：这就像是一份“未来科技预报”，它不只告诉你现在的手机怎么造，还告诉你未来的机器人大脑该如何设计，以及我们能不能像读U盘一样读取人类的大脑记忆。",
+      "expert_zh": "[事件] Gwern 发布深度技术简报，涵盖从底层算力硬件到高层生成式扩散模型及神经科学的跨学科进展。\n[亮点] 早期识别出扩散模型（Diffusion Models）在生成任务中的潜力，并将其与底层硬件效率挂钩。\n[洞察] (The Karpathy Rule) 扩散模型本质上是将“从无序中寻找结构”的过程参数化，通过不断预测并剔除噪声来逼近真实数据分布，这预示着计算资源将从单纯的逻辑推理向大规模概率采样转移。",
+      "keywords": [
+        "Gwern",
+        "Diffusion Models",
+        "AI Hardware",
+        "Optogenetics",
+        "Brain Scanning"
+      ],
+      "summary_en": "The newsletter explores the convergence of AI hardware efficiency and generative diffusion models alongside breakthroughs in neuro-interfacing technologies.",
+      "title": "May 2021 Gwern.net Newsletter",
+      "published": "2021-06-11T14:16:22+00:00",
+      "link": "https://gwern.substack.com/p/may-2021-gwernnet-newsletter",
+      "status": "ok"
+    },
+    {
+      "source": "paulgraham.com",
+      "event_zh": "Paul Graham 发表文章《超线性回报》，探讨了现代社会中产出与投入不再成正比的底层逻辑。",
+      "layman_zh": "打个比方：以前干活像搬砖，搬一块赚一块；现在干活像种果树或者写代码，前期可能没动静，但一旦树长大了或者程序火了，收益会像滚雪球一样自己翻倍，远远超过你流的那点汗。",
+      "expert_zh": "[事件] Paul Graham 深度解析了在科技与杠杆驱动下，个人与企业的收益如何脱离线性增长轨迹。\n[亮点] 核心指出“复利”与“阈值”是实现超线性增长的两个关键引擎。\n[洞察] 映射到科技生态位中，这揭示了现代商业护城河的本质：在具备网络效应或极低边际成本的领域，领先者通过积累微弱的初始优势，利用指数级杠杆彻底拉开与追随者的差距，导致财富与影响力的分配呈现极端的不对称性。",
+      "keywords": [
+        "Superlinear Returns",
+        "Paul Graham",
+        "复利效应",
+        "指数增长",
+        "杠杆",
+        "财富分配"
+      ],
+      "summary_en": "Paul Graham explores the concept of superlinear returns, explaining how modern work increasingly rewards exponential growth over linear effort through compounding and leverage.",
+      "title": "Superlinear Returns",
+      "published": "1970-01-01T00:00:00+00:00",
+      "link": "http://www.paulgraham.com/superlinear.html",
+      "status": "ok"
+    },
+    {
+      "source": "chadnauseam.com",
+      "event_zh": "司美格鲁肽（Semaglutide）正在全球范围内引发深刻的社会与经济变革。",
+      "layman_zh": "这就像是给你的大脑装了一个“饱腹感开关”，以前你面对火锅炸鸡是靠意志力硬扛，现在身体会自动告诉你“够了，没兴趣”，让减肥从痛苦的自我折磨变成了顺水推舟的生理本能。",
+      "expert_zh": "[事件] 司美格鲁肽作为GLP-1受体激动剂，其影响力已从单纯的临床医药跨越至全球消费生态。\n[亮点] 通过模拟天然激素实现中枢神经系统的食欲抑制，其有效性彻底重塑了减重产业的底层逻辑。\n[洞察] 这正在移动食品、零售及保险行业的“奶酪”：当人类对高热量食物的成瘾性需求被生理性阻断，传统的“成瘾性消费”商业模式将面临瓦解，医疗保险的长期支出结构也将从治疗并发症转向前置预防。",
+      "keywords": [
+        "Semaglutide",
+        "GLP-1",
+        "司美格鲁肽",
+        "生物医药",
+        "消费行为变革",
+        "减重药物"
+      ],
+      "summary_en": "Semaglutide is transcending its role as a medical treatment to become a global socio-economic force, fundamentally altering human consumption patterns and the healthcare landscape.",
+      "title": "semaglutide-has-changed-the-world",
+      "published": "1970-01-01T00:00:00+00:00",
+      "link": "https://chadnauseam.com/random/semaglutide-has-changed-the-world",
+      "status": "ok"
+    }
+  ]
+}

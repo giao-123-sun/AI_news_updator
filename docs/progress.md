@@ -22,6 +22,25 @@
 - `latest_dashboard.html` and `source_map.html` are not currently generated in this branch/repo layout.
 - Stable entry should use `reports/daily/index.html` instead of date-bound links.
 
+## 2026-03-02 (Web Pages Recovery)
+
+### Issue
+- Daily page rendering looked "missing" and legacy URLs appeared to disappear.
+- Root cause: only newest day files were kept in `reports/daily`, while historical day main files were left only in `reports/daily/runs`.
+
+### Fix
+- Enhanced `scripts/build_daily_site_index.py`:
+  - auto-restore missing daily main files from `reports/daily/runs` (latest snapshot per day).
+  - regenerate stable entry `reports/daily/index.html`.
+  - regenerate legacy alias `reports/daily/latest_dashboard.html`.
+  - regenerate source-map entry page `reports/daily/source_map.html`.
+- Restored historical daily files for:
+  - `2026-02-23` to `2026-03-01` (dashboards / reports / briefs).
+
+### Result
+- Daily archive pages are present again in `reports/daily/`.
+- Legacy URLs are no longer missing (after deployment).
+
 ## 2026-02-27
 
 ### Completed

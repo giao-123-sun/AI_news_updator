@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>每日新闻可视化</title>
+  <link rel="icon" type="image/png" href="../../data/ai_news.png" />
+  <style>
+    :root {
+      --bg: #f7f5ef;
+      --panel: #fffdf8;
+      --text: #1f2328;
+      --muted: #5f6b7a;
+      --accent: #0b6bcb;
+      --line: #e6ddcc;
+      --chip: #eef5ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: radial-gradient(circle at top right, #fff6dc 0, var(--bg) 45%);
+      color: var(--text);
+      line-height: 1.45;
+    }
+    .wrap {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 20px 16px 28px;
+    }
+    .hero {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+    }
+    .hero h1 { margin: 0; font-size: 24px; }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 6px;
+    }
+    .brand-logo {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 1px solid var(--line);
+      background: #fff;
+      flex: 0 0 auto;
+    }
+    .meta { color: var(--muted); font-size: 14px; }
+    .filters {
+      margin-top: 12px;
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 10px;
+    }
+    select, input {
+      width: 100%;
+      border: 1px solid var(--line);
+      background: white;
+      color: var(--text);
+      border-radius: 10px;
+      padding: 10px 12px;
+      font-size: 14px;
+    }
+    .sections {
+      margin-top: 16px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+    .section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px;
+    }
+    .section h2 {
+      margin: 0 0 10px;
+      font-size: 18px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 12px;
+    }
+    .card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .card-head {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .idx {
+      background: #f2ead8;
+      border-radius: 6px;
+      padding: 2px 7px;
+    }
+    .source { font-weight: 600; color: var(--accent); word-break: break-all; }
+    .event { margin: 0; font-weight: 600; }
+    .layman { margin: 0; color: #333; }
+    .summary-en { color: #444; font-size: 14px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+    .chip {
+      background: var(--chip);
+      border: 1px solid #dbeaff;
+      color: #27496d;
+      border-radius: 999px;
+      padding: 2px 8px;
+      font-size: 12px;
+    }
+    .link {
+      margin-top: auto;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .link:hover { text-decoration: underline; }
+    .muted { color: var(--muted); font-size: 13px; }
+    @media (max-width: 760px) {
+      .filters {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="brand">
+        <img class="brand-logo" src="../../data/ai_news.png" alt="AI News Updator Logo" />
+        <h1>当日 AI/Tech 新闻可视化总览</h1>
+      </div>
+      <div class="meta">本地时间：2026-02-24 23:57:27 | 数据生成时间：2026-02-24 15:57:27 UTC | 模型：google/gemini-3-flash-preview | 条目数：<span id="visible-count">5</span> / 5</div>
+      <div class="filters">
+        <select id="source-filter">
+          <option value="">全部来源</option>
+          <option value="derekthompson.org">derekthompson.org</option>
+<option value="johndcook.com">johndcook.com</option>
+<option value="nesbitt.io">nesbitt.io</option>
+<option value="shkspr.mobi">shkspr.mobi</option>
+<option value="worksonmymachine.substack.com">worksonmymachine.substack.com</option>
+        </select>
+        <input id="search-input" type="text" placeholder="搜索：来源/事件/关键词/英文总结..." />
+      </div>
+    </section>
+
+    <section class="sections">
+      <section class="section">
+        <h2>TL;DR 摘要区</h2>
+        <p class="muted">直接看「事情 + 大白话」，让非技术读者快速理解。</p>
+        <div class="grid" id="tldr-grid">
+          
+            <article class="card tldr-card" data-source="worksonmymachine.substack.com" data-search="worksonmymachine.substack.com 文章探讨了在ai时代如何通过解决数据格式不兼容（如csv处理）等琐碎痛点，来构建尚未存在的新兴市场。 打个比方：这就像是发明了一个“万能插头”，让原本互相不理睬的电器都能通电。它不是在修路，而是在修补路面上的小裂缝，让车流能跑向以前去不了的地方。 [事件] 文章深入分析了ai如何通过自动化处理琐碎的工程障碍（如csv转换）来连接碎片化的市场需求。
+[亮点] 提出“资本主义拉链”概念，强调解决微观摩擦是创造宏观增量的核心。
+[洞察] (the mollick rule) 该逻辑将原本需要人工反复调试的“数据清洗”工作流彻底自动化，其roi在于将原本因成本过高而放弃的边缘业务，转化为具备规模效应的自动化资产，改变了开发者寻找产品市场匹配度（pmf）的路径。 ai automation / data interoperability / market creation / product strategy / csv processing the article explores how ai can act as a &#x27;zipper&#x27; to bridge fragmented data workflows, enabling the creation of new markets by automating mundane engineering frictions.">
+              <div class="card-head">
+                <span class="idx">#1</span>
+                <span class="source">worksonmymachine.substack.com</span>
+              </div>
+              <p class="event">文章探讨了在AI时代如何通过解决数据格式不兼容（如CSV处理）等琐碎痛点，来构建尚未存在的新兴市场。</p>
+              <p class="layman">打个比方：这就像是发明了一个“万能插头”，让原本互相不理睬的电器都能通电。它不是在修路，而是在修补路面上的小裂缝，让车流能跑向以前去不了的地方。</p>
+              <div class="chips"><span class="chip">AI Automation</span><span class="chip">Data Interoperability</span><span class="chip">Market Creation</span><span class="chip">Product Strategy</span><span class="chip">CSV Processing</span></div>
+              <a class="link" href="https://worksonmymachine.ai/p/the-great-zipper-of-capitalism" target="_blank" rel="noopener noreferrer">查看原文</a>
+            </article>
+            
+            <article class="card tldr-card" data-source="shkspr.mobi" data-search="shkspr.mobi 欧盟ist咨询小组回顾了25年前提出的“环境智能”愿景，探讨普适计算在当今ai时代的实现程度。 这就像是翻开一张25年前画的“未来生活”草图：那时候人们觉得电脑会像空气一样无处不在，不用你动手，家里的灯光和电器就能懂你的心思并自动服务，而不是像现在这样到处是满天飞的广告和垃圾信息。 [事件] 欧盟istag回顾1999年提出的“环境智能”愿景，反思普适计算与当前ai发展的偏差。
+[亮点] 强调从“以设备为中心”向“以环境感知为中心”的计算范式演进。
+[洞察] 按照thompson的商业生态视角，当前的ai发展正处于“注意力经济”与“工具效率”的拉锯战中；早期的愿景是建立一个无缝集成的系统护城河，但现实中由于数据孤岛和商业变现压力，我们得到的更多是碎片化的智能插件，而非真正隐形且无处不在的数字基础设施。 ambient intelligence / ubiquitous computing / istag / 欧盟科技愿景 / 环境智能 / 普适计算 the article reflects on the 25th anniversary of the eu&#x27;s &#x27;ambient intelligence&#x27; vision, contrasting the original dream of seamless, ubiquitous computing with the current reality of fragmented ai and digital noise.">
+              <div class="card-head">
+                <span class="idx">#2</span>
+                <span class="source">shkspr.mobi</span>
+              </div>
+              <p class="event">欧盟IST咨询小组回顾了25年前提出的“环境智能”愿景，探讨普适计算在当今AI时代的实现程度。</p>
+              <p class="layman">这就像是翻开一张25年前画的“未来生活”草图：那时候人们觉得电脑会像空气一样无处不在，不用你动手，家里的灯光和电器就能懂你的心思并自动服务，而不是像现在这样到处是满天飞的广告和垃圾信息。</p>
+              <div class="chips"><span class="chip">Ambient Intelligence</span><span class="chip">Ubiquitous Computing</span><span class="chip">ISTAG</span><span class="chip">欧盟科技愿景</span><span class="chip">环境智能</span><span class="chip">普适计算</span></div>
+              <a class="link" href="https://shkspr.mobi/blog/2026/02/how-close-are-we-to-a-vision-for-2010/" target="_blank" rel="noopener noreferrer">查看原文</a>
+            </article>
+            
+            <article class="card tldr-card" data-source="derekthompson.org" data-search="derekthompson.org 《大西洋月刊》撰稿人 derek thompson 提出“口语化理论”，探讨社交媒体如何导致阅读衰退并重塑人类思维方式。 打个比方：以前我们获取知识像是在图书馆里读厚厚的说明书（文字逻辑），现在就像是在菜市场听大家七嘴八舌地聊天（口语情绪）。这种转变让我们更在意谁说话好听、谁嗓门大，而不是谁说得更有道理。 [事件] 社交媒体正在将人类文明从“文字逻辑”时代推向“次生口语化”时代。
+[亮点] 媒介形式从深度阅读向碎片化、情绪化的短视频和社交互动转型。
+[洞察] (the mollick rule) 这一转变彻底重塑了知识生产的流转效率：它用“共鸣”取代了“论证”，将人类的认知工作流从“逻辑推演”简化为“模式识别”。对于知识工作者而言，这意味着信息获取的roi虽然在短期内因速度提升而增加，但长期来看，深度思考的护城河正在被这种碎片化的认知习惯瓦解。 orality theory / social media / cognitive shift / literacy crisis / 媒介理论 / 认知重塑 the article explores the &#x27;orality theory,&#x27; arguing that the shift from text-based culture to social media-driven interaction is fundamentally altering human cognition and the nature of public discourse.">
+              <div class="card-head">
+                <span class="idx">#3</span>
+                <span class="source">derekthompson.org</span>
+              </div>
+              <p class="event">《大西洋月刊》撰稿人 Derek Thompson 提出“口语化理论”，探讨社交媒体如何导致阅读衰退并重塑人类思维方式。</p>
+              <p class="layman">打个比方：以前我们获取知识像是在图书馆里读厚厚的说明书（文字逻辑），现在就像是在菜市场听大家七嘴八舌地聊天（口语情绪）。这种转变让我们更在意谁说话好听、谁嗓门大，而不是谁说得更有道理。</p>
+              <div class="chips"><span class="chip">Orality Theory</span><span class="chip">Social Media</span><span class="chip">Cognitive Shift</span><span class="chip">Literacy Crisis</span><span class="chip">媒介理论</span><span class="chip">认知重塑</span></div>
+              <a class="link" href="https://www.theatlantic.com/ideas/2026/02/social-media-literacy-crisis/686076/?utm_source=feed" target="_blank" rel="noopener noreferrer">查看原文</a>
+            </article>
+            
+            <article class="card tldr-card" data-source="nesbitt.io" data-search="nesbitt.io 技术博客总结了主流代码托管平台（如github、gitlab等）中特定配置文件夹的功能与用途。 这就像是给不同品牌的电器配了专门的“说明书插槽”：虽然都是电器，但如果你把github的说明书放进gitlab的插槽里，机器就不知道该怎么自动干活了。 [事件] 本文系统梳理了主流git托管平台中以点开头的特定配置文件夹（如.github/）的作用。
+[亮点] 揭示了代码仓库从纯代码存储向“自包含自动化单元”演进的标准化路径。
+[洞察] 这种设计体现了典型的“约定优于配置”模式，它在开发者工作流中建立了一个隐形的标准化层，虽然增强了单一平台的粘性，但也通过这种结构化的元数据定义了现代devops的协作边界。 git forge / repository structure / devops / github actions / ci/cd configuration / automation the article provides a comprehensive overview of platform-specific hidden folders like .github/ and .gitlab/, explaining how they govern automation and metadata across different git forges.">
+              <div class="card-head">
+                <span class="idx">#4</span>
+                <span class="source">nesbitt.io</span>
+              </div>
+              <p class="event">技术博客总结了主流代码托管平台（如GitHub、GitLab等）中特定配置文件夹的功能与用途。</p>
+              <p class="layman">这就像是给不同品牌的电器配了专门的“说明书插槽”：虽然都是电器，但如果你把GitHub的说明书放进GitLab的插槽里，机器就不知道该怎么自动干活了。</p>
+              <div class="chips"><span class="chip">Git Forge</span><span class="chip">Repository Structure</span><span class="chip">DevOps</span><span class="chip">GitHub Actions</span><span class="chip">CI/CD Configuration</span><span class="chip">Automation</span></div>
+              <a class="link" href="https://nesbitt.io/2026/02/22/forge-specific-repository-folders.html" target="_blank" rel="noopener noreferrer">查看原文</a>
+            </article>
+            
+            <article class="card tldr-card" data-source="johndcook.com" data-search="johndcook.com john d. cook 利用辅助验证数据（certificate）成功计算并快速验证了第 1000 万个斐波那契数。 这就像是你在算一道超级复杂的数学大题，旁边有人给了你一个“验算秘籍”。你不需要重新算一遍，只要对照这个秘籍扫一眼，就能立刻确定之前的超长答案是不是对的。 [事件] 开发者通过引入辅助验证数据（certificate）实现了超大规模斐波那契数列的高效计算与校验。
+[亮点] 利用辅助信息将验证复杂度与原始计算解耦，大幅缩短了结果确认的耗时。
+[洞察] 这体现了计算架构中“计算与验证分离”的逻辑：在处理海量数据流时，通过增加少量的元数据（辅助证明），可以将原本昂贵的全局重算转变为廉价的局部校验，这是构建高可靠分布式计算系统的核心思路。 fibonacci / computational verification / certificate / algorithm efficiency / 斐波那契数列 / 算法验证 the author calculated the 10,000,000th fibonacci number and demonstrated how auxiliary &#x27;certificates&#x27; can significantly accelerate the verification process of large-scale mathematical computations.">
+              <div class="card-head">
+                <span class="idx">#5</span>
+                <span class="source">johndcook.com</span>
+              </div>
+              <p class="event">John D. Cook 利用辅助验证数据（Certificate）成功计算并快速验证了第 1000 万个斐波那契数。</p>
+              <p class="layman">这就像是你在算一道超级复杂的数学大题，旁边有人给了你一个“验算秘籍”。你不需要重新算一遍，只要对照这个秘籍扫一眼，就能立刻确定之前的超长答案是不是对的。</p>
+              <div class="chips"><span class="chip">Fibonacci</span><span class="chip">Computational Verification</span><span class="chip">Certificate</span><span class="chip">Algorithm Efficiency</span><span class="chip">斐波那契数列</span><span class="chip">算法验证</span></div>
+              <a class="link" href="https://www.johndcook.com/blog/2026/02/21/f10000000/" target="_blank" rel="noopener noreferrer">查看原文</a>
+            </article>
+            
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Hardcore 深度区</h2>
+        <p class="muted">根据 expert_zh 的换行结构渲染为：📌事件 / ✨亮点 / 🧠洞察。</p>
+        <div class="grid" id="deep-grid">
+          
+            <article class="card deep-card" data-source="worksonmymachine.substack.com" data-search="worksonmymachine.substack.com 文章探讨了在ai时代如何通过解决数据格式不兼容（如csv处理）等琐碎痛点，来构建尚未存在的新兴市场。 打个比方：这就像是发明了一个“万能插头”，让原本互相不理睬的电器都能通电。它不是在修路，而是在修补路面上的小裂缝，让车流能跑向以前去不了的地方。 [事件] 文章深入分析了ai如何通过自动化处理琐碎的工程障碍（如csv转换）来连接碎片化的市场需求。
+[亮点] 提出“资本主义拉链”概念，强调解决微观摩擦是创造宏观增量的核心。
+[洞察] (the mollick rule) 该逻辑将原本需要人工反复调试的“数据清洗”工作流彻底自动化，其roi在于将原本因成本过高而放弃的边缘业务，转化为具备规模效应的自动化资产，改变了开发者寻找产品市场匹配度（pmf）的路径。 ai automation / data interoperability / market creation / product strategy / csv processing the article explores how ai can act as a &#x27;zipper&#x27; to bridge fragmented data workflows, enabling the creation of new markets by automating mundane engineering frictions.">
+              <div class="card-head">
+                <span class="idx">#1</span>
+                <span class="source">worksonmymachine.substack.com</span>
+              </div>
+              <p><strong>📌 事件：</strong>文章深入分析了AI如何通过自动化处理琐碎的工程障碍（如CSV转换）来连接碎片化的市场需求。</p>
+              <p><strong>✨ 亮点：</strong>提出“资本主义拉链”概念，强调解决微观摩擦是创造宏观增量的核心。</p>
+              <p><strong>🧠 洞察：</strong>(The Mollick Rule) 该逻辑将原本需要人工反复调试的“数据清洗”工作流彻底自动化，其ROI在于将原本因成本过高而放弃的边缘业务，转化为具备规模效应的自动化资产，改变了开发者寻找产品市场匹配度（PMF）的路径。</p>
+              <p class="summary-en"><strong>EN：</strong>The article explores how AI can act as a &#x27;zipper&#x27; to bridge fragmented data workflows, enabling the creation of new markets by automating mundane engineering frictions.</p>
+              <a class="link" href="https://worksonmymachine.ai/p/the-great-zipper-of-capitalism" target="_blank" rel="noopener noreferrer">查看原文</a>
+            </article>
+            
+            <article class="card deep-card" data-source="shkspr.mobi" data-search="shkspr.mobi 欧盟ist咨询小组回顾了25年前提出的“环境智能”愿景，探讨普适计算在当今ai时代的实现程度。 这就像是翻开一张25年前画的“未来生活”草图：那时候人们觉得电脑会像空气一样无处不在，不用你动手，家里的灯光和电器就能懂你的心思并自动服务，而不是像现在这样到处是满天飞的广告和垃圾信息。 [事件] 欧盟istag回顾1999年提出的“环境智能”愿景，反思普适计算与当前ai发展的偏差。
+[亮点] 强调从“以设备为中心”向“以环境感知为中心”的计算范式演进。
+[洞察] 按照thompson的商业生态视角，当前的ai发展正处于“注意力经济”与“工具效率”的拉锯战中；早期的愿景是建立一个无缝集成的系统护城河，但现实中由于数据孤岛和商业变现压力，我们得到的更多是碎片化的智能插件，而非真正隐形且无处不在的数字基础设施。 ambient intelligence / ubiquitous computing / istag / 欧盟科技愿景 / 环境智能 / 普适计算 the article reflects on the 25th anniversary of the eu&#x27;s &#x27;ambient intelligence&#x27; vision, contrasting the original dream of seamless, ubiquitous computing with the current reality of fragmented ai and digital noise.">
+              <div class="card-head">
+                <span class="idx">#2</span>
+                <span class="source">shkspr.mobi</span>
+              </div>
+              <p><strong>📌 事件：</strong>欧盟ISTAG回顾1999年提出的“环境智能”愿景，反思普适计算与当前AI发展的偏差。</p>
+              <p><strong>✨ 亮点：</strong>强调从“以设备为中心”向“以环境感知为中心”的计算范式演进。</p>
+              <p><strong>🧠 洞察：</strong>按照Thompson的商业生态视角，当前的AI发展正处于“注意力经济”与“工具效率”的拉锯战中；早期的愿景是建立一个无缝集成的系统护城河，但现实中由于数据孤岛和商业变现压力，我们得到的更多是碎片化的智能插件，而非真正隐形且无处不在的数字基础设施。</p>
+              <p class="summary-en"><strong>EN：</strong>The article reflects on the 25th anniversary of the EU&#x27;s &#x27;Ambient Intelligence&#x27; vision, contrasting the original dream of seamless, ubiquitous computing with the current reality of fragmented AI and digital noise.</p>
+              <a class="link" href="https://shkspr.mobi/blog/2026/02/how-close-are-we-to-a-vision-for-2010/" target="_blank" rel="noopener noreferrer">查看原文</a>
+            </article>
+            
+            <article class="card deep-card" data-source="derekthompson.org" data-search="derekthompson.org 《大西洋月刊》撰稿人 derek thompson 提出“口语化理论”，探讨社交媒体如何导致阅读衰退并重塑人类思维方式。 打个比方：以前我们获取知识像是在图书馆里读厚厚的说明书（文字逻辑），现在就像是在菜市场听大家七嘴八舌地聊天（口语情绪）。这种转变让我们更在意谁说话好听、谁嗓门大，而不是谁说得更有道理。 [事件] 社交媒体正在将人类文明从“文字逻辑”时代推向“次生口语化”时代。
+[亮点] 媒介形式从深度阅读向碎片化、情绪化的短视频和社交互动转型。
+[洞察] (the mollick rule) 这一转变彻底重塑了知识生产的流转效率：它用“共鸣”取代了“论证”，将人类的认知工作流从“逻辑推演”简化为“模式识别”。对于知识工作者而言，这意味着信息获取的roi虽然在短期内因速度提升而增加，但长期来看，深度思考的护城河正在被这种碎片化的认知习惯瓦解。 orality theory / social media / cognitive shift / literacy crisis / 媒介理论 / 认知重塑 the article explores the &#x27;orality theory,&#x27; arguing that the shift from text-based culture to social media-driven interaction is fundamentally altering human cognition and the nature of public discourse.">
+              <div class="card-head">
+                <span class="idx">#3</span>
+                <span class="source">derekthompson.org</span>
+              </div>
+              <p><strong>📌 事件：</strong>社交媒体正在将人类文明从“文字逻辑”时代推向“次生口语化”时代。</p>
+              <p><strong>✨ 亮点：</strong>媒介形式从深度阅读向碎片化、情绪化的短视频和社交互动转型。</p>
+              <p><strong>🧠 洞察：</strong>(The Mollick Rule) 这一转变彻底重塑了知识生产的流转效率：它用“共鸣”取代了“论证”，将人类的认知工作流从“逻辑推演”简化为“模式识别”。对于知识工作者而言，这意味着信息获取的ROI虽然在短期内因速度提升而增加，但长期来看，深度思考的护城河正在被这种碎片化的认知习惯瓦解。</p>
+              <p class="summary-en"><strong>EN：</strong>The article explores the &#x27;Orality Theory,&#x27; arguing that the shift from text-based culture to social media-driven interaction is fundamentally altering human cognition and the nature of public discourse.</p>
+              <a class="link" href="https://www.theatlantic.com/ideas/2026/02/social-media-literacy-crisis/686076/?utm_source=feed" target="_blank" rel="noopener noreferrer">查看原文</a>
+            </article>
+            
+            <article class="card deep-card" data-source="nesbitt.io" data-search="nesbitt.io 技术博客总结了主流代码托管平台（如github、gitlab等）中特定配置文件夹的功能与用途。 这就像是给不同品牌的电器配了专门的“说明书插槽”：虽然都是电器，但如果你把github的说明书放进gitlab的插槽里，机器就不知道该怎么自动干活了。 [事件] 本文系统梳理了主流git托管平台中以点开头的特定配置文件夹（如.github/）的作用。
+[亮点] 揭示了代码仓库从纯代码存储向“自包含自动化单元”演进的标准化路径。
+[洞察] 这种设计体现了典型的“约定优于配置”模式，它在开发者工作流中建立了一个隐形的标准化层，虽然增强了单一平台的粘性，但也通过这种结构化的元数据定义了现代devops的协作边界。 git forge / repository structure / devops / github actions / ci/cd configuration / automation the article provides a comprehensive overview of platform-specific hidden folders like .github/ and .gitlab/, explaining how they govern automation and metadata across different git forges.">
+              <div class="card-head">
+                <span class="idx">#4</span>
+                <span class="source">nesbitt.io</span>
+              </div>
+              <p><strong>📌 事件：</strong>本文系统梳理了主流Git托管平台中以点开头的特定配置文件夹（如.github/）的作用。</p>
+              <p><strong>✨ 亮点：</strong>揭示了代码仓库从纯代码存储向“自包含自动化单元”演进的标准化路径。</p>
+              <p><strong>🧠 洞察：</strong>这种设计体现了典型的“约定优于配置”模式，它在开发者工作流中建立了一个隐形的标准化层，虽然增强了单一平台的粘性，但也通过这种结构化的元数据定义了现代DevOps的协作边界。</p>
+              <p class="summary-en"><strong>EN：</strong>The article provides a comprehensive overview of platform-specific hidden folders like .github/ and .gitlab/, explaining how they govern automation and metadata across different git forges.</p>
+              <a class="link" href="https://nesbitt.io/2026/02/22/forge-specific-repository-folders.html" target="_blank" rel="noopener noreferrer">查看原文</a>
+            </article>
+            
+            <article class="card deep-card" data-source="johndcook.com" data-search="johndcook.com john d. cook 利用辅助验证数据（certificate）成功计算并快速验证了第 1000 万个斐波那契数。 这就像是你在算一道超级复杂的数学大题，旁边有人给了你一个“验算秘籍”。你不需要重新算一遍，只要对照这个秘籍扫一眼，就能立刻确定之前的超长答案是不是对的。 [事件] 开发者通过引入辅助验证数据（certificate）实现了超大规模斐波那契数列的高效计算与校验。
+[亮点] 利用辅助信息将验证复杂度与原始计算解耦，大幅缩短了结果确认的耗时。
+[洞察] 这体现了计算架构中“计算与验证分离”的逻辑：在处理海量数据流时，通过增加少量的元数据（辅助证明），可以将原本昂贵的全局重算转变为廉价的局部校验，这是构建高可靠分布式计算系统的核心思路。 fibonacci / computational verification / certificate / algorithm efficiency / 斐波那契数列 / 算法验证 the author calculated the 10,000,000th fibonacci number and demonstrated how auxiliary &#x27;certificates&#x27; can significantly accelerate the verification process of large-scale mathematical computations.">
+              <div class="card-head">
+                <span class="idx">#5</span>
+                <span class="source">johndcook.com</span>
+              </div>
+              <p><strong>📌 事件：</strong>开发者通过引入辅助验证数据（Certificate）实现了超大规模斐波那契数列的高效计算与校验。</p>
+              <p><strong>✨ 亮点：</strong>利用辅助信息将验证复杂度与原始计算解耦，大幅缩短了结果确认的耗时。</p>
+              <p><strong>🧠 洞察：</strong>这体现了计算架构中“计算与验证分离”的逻辑：在处理海量数据流时，通过增加少量的元数据（辅助证明），可以将原本昂贵的全局重算转变为廉价的局部校验，这是构建高可靠分布式计算系统的核心思路。</p>
+              <p class="summary-en"><strong>EN：</strong>The author calculated the 10,000,000th Fibonacci number and demonstrated how auxiliary &#x27;certificates&#x27; can significantly accelerate the verification process of large-scale mathematical computations.</p>
+              <a class="link" href="https://www.johndcook.com/blog/2026/02/21/f10000000/" target="_blank" rel="noopener noreferrer">查看原文</a>
+            </article>
+            
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script>
+    const sourceFilter = document.getElementById('source-filter');
+    const searchInput = document.getElementById('search-input');
+    const cards = [...document.querySelectorAll('.card')];
+    const visibleCount = document.getElementById('visible-count');
+
+    function applyFilters() {
+      const sourceValue = sourceFilter.value.trim().toLowerCase();
+      const searchValue = searchInput.value.trim().toLowerCase();
+      let visibleSources = new Set();
+
+      cards.forEach((card) => {
+        const source = (card.dataset.source || '').toLowerCase();
+        const search = (card.dataset.search || '').toLowerCase();
+        const sourceOk = !sourceValue || source === sourceValue;
+        const textOk = !searchValue || search.includes(searchValue);
+        const ok = sourceOk && textOk;
+        card.style.display = ok ? '' : 'none';
+        if (ok) visibleSources.add(source + '|' + (card.querySelector('.idx')?.textContent || ''));
+      });
+
+      // each item appears twice (tldr + deep), so divide by 2
+      const n = Math.floor(visibleSources.size);
+      visibleCount.textContent = String(n);
+    }
+
+    sourceFilter.addEventListener('change', applyFilters);
+    searchInput.addEventListener('input', applyFilters);
+    applyFilters();
+  </script>
+</body>
+</html>

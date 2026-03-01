@@ -6,6 +6,8 @@ Daily AI information pipeline for crawling, structuring, and publishing readable
 
 - Home: `https://giao-123-sun.github.io/AI_news_updator/`
 - Stable daily entry: `https://giao-123-sun.github.io/AI_news_updator/reports/daily/index.html`
+- Latest dashboard alias: `https://giao-123-sun.github.io/AI_news_updator/reports/daily/latest_dashboard.html`
+- Source map page: `https://giao-123-sun.github.io/AI_news_updator/reports/daily/source_map.html`
 - Replica digest home: `https://giao-123-sun.github.io/AI_news_updator/reports/daily/replica_digest/index.html`
 - Latest dated dashboard (current snapshot):  
   `https://giao-123-sun.github.io/AI_news_updator/reports/daily/subagent_dashboard_2026-03-02.html`
