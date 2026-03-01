@@ -1,5 +1,27 @@
 # Progress
 
+## 2026-03-02 (Repo-Web Linkage Refresh)
+
+### Completed
+- Added stable website entry generator:
+  - `scripts/build_daily_site_index.py`
+- Generated stable web index page:
+  - `reports/daily/index.html`
+- Updated `README.md` with:
+  - GitHub Pages links
+  - repo-to-website path mapping
+  - stable daily index build step
+- Updated `docs/process.md` with website sync checklist and verification rules.
+
+### Online verification snapshot
+- `https://giao-123-sun.github.io/AI_news_updator/` -> `200`
+- `https://giao-123-sun.github.io/AI_news_updator/reports/daily/replica_digest/index.html` -> `200`
+- `https://giao-123-sun.github.io/AI_news_updator/reports/daily/subagent_dashboard_2026-03-02.html` -> `200`
+
+### Notes
+- `latest_dashboard.html` and `source_map.html` are not currently generated in this branch/repo layout.
+- Stable entry should use `reports/daily/index.html` instead of date-bound links.
+
 ## 2026-02-27
 
 ### Completed
