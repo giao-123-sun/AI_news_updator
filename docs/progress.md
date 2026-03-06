@@ -1,5 +1,37 @@
 # Progress
 
+## 2026-03-06 (Twitter Reader v2 + Process Rule)
+
+### Completed
+- Upgraded `twitter_reader` to template-driven rendering:
+  - added `templates/twitter_reader_template.html`
+  - `scripts/build_twitter_reader.py` now reads template file for page output
+- Improved image presentation:
+  - new image size switch: `compact / balanced / large`
+  - switched to non-cropping display (`object-fit: contain`) for in-card readability
+- Added filtered-report feature in `twitter_reader`:
+  - supports API base URL / model / key config (stored in browser localStorage)
+  - one-click summary for filtered tweets
+  - automatic chunked summarization for large filtered sets
+  - export report as standalone HTML with image evidence wall
+- Added collaboration rule file:
+  - `AGENTS.md`
+  - includes: sync every turn, write changes to docs, read docs first after context refresh
+- Updated process doc:
+  - `docs/process.md` now explicitly requires reading docs first after context refresh
+  - added rule to sync and document changes every turn
+
+### Validation
+- Rebuilt outputs:
+  - `reports/daily/twitter_reader.html`
+  - `reports/daily/twitter_reader_data.json`
+- Runtime checks:
+  - `python -m py_compile scripts/build_twitter_reader.py` passed
+  - local Playwright checks confirm:
+    - image size toggle works
+    - filtered report generation works
+    - chunked report mode works
+
 ## 2026-03-02 (Repo-Web Linkage Refresh)
 
 ### Completed

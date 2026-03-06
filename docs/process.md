@@ -1,6 +1,7 @@
 # Process (Always-on)
 
 ## Standard cycle for each new request
+0. After each context-window refresh, read docs first.
 1. Run a capability test first (small sample).
 2. Record objective outputs (counts, failures, boundaries).
 3. Update docs in the same turn:
@@ -14,6 +15,7 @@
    - regenerate stable site entry `reports/daily/index.html`
    - verify GitHub Pages URLs return `200`
    - push code + generated pages in the same commit
+7. Every turn: sync changes and write change notes into docs.
 
 ## Probe command
 ```bash
