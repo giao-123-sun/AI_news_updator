@@ -80,6 +80,50 @@ def choose_images(item: dict) -> list[str]:
     return merged
 
 
+def stable_str(v: object) -> str:
+    if v is None:
+        return ""
+    if isinstance(v, float) and pd.isna(v):
+        return ""
+    s = str(v).strip()
+    if s.lower() == "nan":
+        return ""
+    return s
+
+
+def dedup_key(item: dict) -> str:
+    tid = stable_str(item.get("tweet_id"))
+    if tid:
+        return f"id:{tid}"
+    turl = stable_str(item.get("tweet_url"))
+    if turl:
+        return f"url:{turl}"
+    author = stable_str(item.get("author"))
+    t = stable_str(item.get("time"))
+    content = stable_str(item.get("content"))[:200]
+    return f"fallback:{author}|{t}|{content}"
+
+
+def row_quality(item: dict) -> tuple:
+    images = len(choose_images(item))
+    engage = int(item.get("likes", 0)) + int(item.get("replies", 0)) + int(item.get("reposts", 0))
+    content_len = len(stable_str(item.get("content")))
+    has_link = 1 if stable_str(item.get("external_link")) else 0
+    t = parse_time_for_sort(stable_str(item.get("time")))
+    return (images, engage, has_link, content_len, t)
+
+
+def deduplicate_rows(rows: list[dict]) -> tuple[list[dict], int]:
+    best: dict[str, dict] = {}
+    for item in rows:
+        k = dedup_key(item)
+        prev = best.get(k)
+        if prev is None or row_quality(item) > row_quality(prev):
+            best[k] = item
+    deduped = list(best.values())
+    return deduped, len(rows) - len(deduped)
+
+
 def parse_time_for_sort(time_str: str) -> float:
     try:
         dt = datetime.strptime(time_str, "%Y-%m-%d %H:%M:%S")
@@ -102,9 +146,11 @@ def build_payload(max_rows: int) -> dict:
         }
 
     df = pd.read_csv(RAW_CSV, encoding="utf-8-sig")
-    rows = [normalize_row(r) for _, r in df.iterrows()]
+    raw_rows = [normalize_row(r) for _, r in df.iterrows()]
+    rows, removed = deduplicate_rows(raw_rows)
     rows.sort(
         key=lambda x: (
+            len(choose_images(x)),
             parse_time_for_sort(x.get("time", "")),
             x.get("likes", 0),
             x.get("replies", 0),
@@ -123,6 +169,8 @@ def build_payload(max_rows: int) -> dict:
             "source_csv": RAW_CSV.as_posix(),
             "exists": True,
             "latest_time": latest_time,
+            "total_rows_before_dedup": len(raw_rows),
+            "duplicates_removed": removed,
             "total_rows": len(rows),
             "rows_in_page": len(limited),
             "authors_in_page": authors,
@@ -303,6 +351,7 @@ def build_html() -> str:
           <option value="1">仅看带图</option>
         </select>
         <select id="sort">
+          <option value="image_time_desc">图文优先</option>
           <option value="time_desc">按时间(新->旧)</option>
           <option value="likes_desc">按点赞(高->低)</option>
         </select>
@@ -343,6 +392,15 @@ def build_html() -> str:
 
     function sortRows(rows, sortType) {
       const copy = [...rows];
+      if (sortType === "image_time_desc") {
+        copy.sort((a, b) => {
+          const ai = getImages(a).length;
+          const bi = getImages(b).length;
+          if (bi !== ai) return bi - ai;
+          return String(b.time || "").localeCompare(String(a.time || ""));
+        });
+        return copy;
+      }
       if (sortType === "likes_desc") {
         copy.sort((a, b) => (b.likes || 0) - (a.likes || 0));
         return copy;
@@ -435,7 +493,10 @@ def build_html() -> str:
 
     function setMeta(meta) {
       document.getElementById("kpi-updated").textContent = `更新时间: ${meta.generated_at_utc || "-"}`;
-      document.getElementById("kpi-total").textContent = `抓取总条数: ${meta.total_rows || 0}`;
+      const removed = Number(meta.duplicates_removed || 0);
+      const before = Number(meta.total_rows_before_dedup || meta.total_rows || 0);
+      const after = Number(meta.total_rows || 0);
+      document.getElementById("kpi-total").textContent = `抓取总条数: ${after} (原始 ${before}, 去重 ${removed})`;
       document.getElementById("kpi-show").textContent = `本页载入: ${meta.rows_in_page || 0}`;
       document.getElementById("kpi-authors").textContent = `作者数: ${meta.authors_in_page || 0}`;
       document.getElementById("kpi-img").textContent = `带图条数: ${meta.with_images_in_page || 0}`;
@@ -464,7 +525,7 @@ def build_html() -> str:
       document.getElementById("q").value = "";
       document.getElementById("author").value = "";
       document.getElementById("has-image").value = "";
-      document.getElementById("sort").value = "time_desc";
+      document.getElementById("sort").value = "image_time_desc";
       applyFilter();
     });
 

@@ -168,6 +168,7 @@
           <option value="1">仅看带图</option>
         </select>
         <select id="sort">
+          <option value="image_time_desc">图文优先</option>
           <option value="time_desc">按时间(新->旧)</option>
           <option value="likes_desc">按点赞(高->低)</option>
         </select>
@@ -208,6 +209,15 @@
 
     function sortRows(rows, sortType) {
       const copy = [...rows];
+      if (sortType === "image_time_desc") {
+        copy.sort((a, b) => {
+          const ai = getImages(a).length;
+          const bi = getImages(b).length;
+          if (bi !== ai) return bi - ai;
+          return String(b.time || "").localeCompare(String(a.time || ""));
+        });
+        return copy;
+      }
       if (sortType === "likes_desc") {
         copy.sort((a, b) => (b.likes || 0) - (a.likes || 0));
         return copy;
@@ -300,7 +310,10 @@
 
     function setMeta(meta) {
       document.getElementById("kpi-updated").textContent = `更新时间: ${meta.generated_at_utc || "-"}`;
-      document.getElementById("kpi-total").textContent = `抓取总条数: ${meta.total_rows || 0}`;
+      const removed = Number(meta.duplicates_removed || 0);
+      const before = Number(meta.total_rows_before_dedup || meta.total_rows || 0);
+      const after = Number(meta.total_rows || 0);
+      document.getElementById("kpi-total").textContent = `抓取总条数: ${after} (原始 ${before}, 去重 ${removed})`;
       document.getElementById("kpi-show").textContent = `本页载入: ${meta.rows_in_page || 0}`;
       document.getElementById("kpi-authors").textContent = `作者数: ${meta.authors_in_page || 0}`;
       document.getElementById("kpi-img").textContent = `带图条数: ${meta.with_images_in_page || 0}`;
@@ -329,7 +342,7 @@
       document.getElementById("q").value = "";
       document.getElementById("author").value = "";
       document.getElementById("has-image").value = "";
-      document.getElementById("sort").value = "time_desc";
+      document.getElementById("sort").value = "image_time_desc";
       applyFilter();
     });
 
