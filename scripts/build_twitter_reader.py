@@ -329,10 +329,13 @@ def build_html() -> str:
         .replaceAll(">", "&gt;");
 
     const getImages = (row) => {
-      const remote = Array.isArray(row.remote_images) ? row.remote_images : [];
-      const local = Array.isArray(row.local_images) ? row.local_images : [];
+      const remote = Array.isArray(row.remote_images) ? row.remote_images.filter(Boolean) : [];
+      const local = Array.isArray(row.local_images) ? row.local_images.filter(Boolean) : [];
       const uniq = [];
-      for (const u of [...remote, ...local]) {
+      // On GitHub Pages, local crawl images are usually not published.
+      // Prefer remote URLs to avoid broken-image noise.
+      const source = remote.length ? remote : local;
+      for (const u of source) {
         if (u && !uniq.includes(u)) uniq.push(u);
       }
       return uniq;
@@ -383,7 +386,7 @@ def build_html() -> str:
           const images = getImages(r);
           const gallery = images.length
             ? `<div class="gallery">${images
-                .map((u) => `<a href="${esc(u)}" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="${esc(u)}" alt="tweet image" /></a>`)
+                .map((u) => `<a href="${esc(u)}" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="${esc(u)}" alt="tweet image" onerror="if(!this.dataset.retry){this.dataset.retry='1';if(this.src.indexOf('name=orig')>-1){this.src=this.src.replace('name=orig','name=large');return;}}this.parentElement.style.display='none';" /></a>`)
                 .join("")}</div>`
             : "";
           const links = `
