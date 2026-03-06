@@ -6,6 +6,7 @@ __pycache__/
 # Secrets
 config/github_key.txt
 config/key.txt
+config/cookie.txt
 human_comment/cookies.txt
 
 # Local crawl outputs
@@ -15,6 +16,7 @@ twitter_*.csv
 tweet_images/
 report/
 report_karpathy/
+reports/daily/runs/
 tmp_ai_digest/
 human_comment/3ofthem/qa/
 human_comment/3ofthem/*.md
