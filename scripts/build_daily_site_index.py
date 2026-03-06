@@ -11,6 +11,7 @@ DAILY_DIR = ROOT / "reports" / "daily"
 OUT_HTML = DAILY_DIR / "index.html"
 OUT_LATEST_ALIAS = DAILY_DIR / "latest_dashboard.html"
 OUT_SOURCE_MAP_HTML = DAILY_DIR / "source_map.html"
+OUT_ROOT_HTML = ROOT / "index.html"
 
 
 def pick_latest_dashboard(daily_dir: Path) -> str:
@@ -220,10 +221,14 @@ def build_html() -> str:
     ) or "<li>No dated dashboards found</li>"
 
     links = [
+        ("Twitter Crawl Reader (latest crawl)", "twitter_reader.html"),
+        ("Twitter Reader Data JSON", "twitter_reader_data.json"),
         ("Daily Dashboard Alias (legacy URL)", latest_alias_html),
         ("Daily Dashboard (latest date file)", latest_dashboard_rel),
         ("Replica Digest Home", replica_home),
         ("Replica Latest Digest Page", latest_digest),
+        ("Local Hub (latest run, local env)", "../../report/hub_v1.html"),
+        ("Local AI Digest Home (latest run, local env)", "../../report/ai_digest_clone/index.html"),
         ("Source Map (legacy URL)", source_map_html),
         ("Latest Report JSON", "latest_report.json"),
         ("Latest Report JS", "latest_report.js"),
@@ -239,7 +244,7 @@ def build_html() -> str:
         items.append(make_link(label, href, exists))
 
     generated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
-    html = f"""<!doctype html>
+    page_html = f"""<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -300,9 +305,18 @@ def build_html() -> str:
 <body>
   <div class="wrap">
     <section class="card">
-      <h1>Daily Site Index</h1>
-      <p class="muted">Stable web entry for this repository's generated daily artifacts.</p>
+      <h1>AI News Reader Entry</h1>
+      <p class="muted">Reader-first entry. For newest crawl content, open <code>twitter_reader.html</code> first.</p>
       <p class="muted">Generated at: {generated}</p>
+    </section>
+
+    <section class="card">
+      <h2>Recommended Reading Order</h2>
+      <ul>
+        <li><a href="twitter_reader.html" target="_blank">1) Twitter Crawl Reader</a> (最新抓取的文本+图片阅读页)</li>
+        <li><a href="{html.escape(latest_dashboard_rel or 'latest_dashboard.html')}" target="_blank">2) Subagent Dashboard</a> (历史专题仪表盘，更新频率低于抓取流)</li>
+        <li><a href="replica_digest/index.html" target="_blank">3) Replica Digest</a> (按日报风格归档浏览)</li>
+      </ul>
     </section>
 
     <section class="card">
@@ -329,7 +343,81 @@ def build_html() -> str:
 </body>
 </html>
 """
-    return html
+    return page_html
+
+
+def build_root_home_html() -> str:
+    generated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
+    return f"""<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI News Updator</title>
+  <style>
+    :root {{
+      --bg:#f4efe3;
+      --panel:#fffdf7;
+      --line:#dfd6c2;
+      --ink:#111827;
+      --muted:#6b7280;
+      --accent:#0b5cab;
+    }}
+    * {{ box-sizing:border-box; }}
+    body {{
+      margin:0;
+      font:16px/1.65 "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at 10% 0%, #fff3d6 0, transparent 34%),
+        radial-gradient(circle at 95% 8%, #e8f2ff 0, transparent 30%),
+        var(--bg);
+    }}
+    .wrap {{ max-width:980px; margin:0 auto; padding:20px 14px 40px; }}
+    .card {{
+      background:var(--panel);
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:16px;
+      margin-bottom:10px;
+      box-shadow:0 8px 22px rgba(18, 22, 33, .06);
+    }}
+    h1 {{ margin:0 0 8px; font-size:34px; font-family: Georgia, "Times New Roman", serif; line-height:1.1; }}
+    h2 {{ margin:0 0 8px; font-size:20px; }}
+    .muted {{ color:var(--muted); }}
+    ul {{ margin:6px 0 0 18px; padding:0; }}
+    li {{ margin:6px 0; }}
+    a {{ color:var(--accent); text-decoration:none; }}
+    a:hover {{ text-decoration:underline; }}
+    code {{ background:#f1f5f9; border:1px solid #e2e8f0; border-radius:6px; padding:1px 6px; }}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <h1>AI News Updator</h1>
+      <div class="muted">最新生成时间: {generated}</div>
+    </section>
+    <section class="card">
+      <h2>先看这里（最新爬取）</h2>
+      <ul>
+        <li><a href="reports/daily/twitter_reader.html" target="_blank">Twitter Crawl Reader</a>：最新抓取文本 + 图片阅读页</li>
+        <li><a href="reports/daily/index.html" target="_blank">Daily Entry</a>：总入口（含历史档案）</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>历史与专题</h2>
+      <ul>
+        <li><a href="reports/daily/latest_dashboard.html" target="_blank">Latest Dashboard Alias</a></li>
+        <li><a href="reports/daily/source_map.html" target="_blank">Source Map</a></li>
+        <li><a href="reports/daily/replica_digest/index.html" target="_blank">Replica Digest</a></li>
+      </ul>
+      <p class="muted">如果你在本地运行，还可以看 <code>report/hub_v1.html</code> 和 <code>report/longreads/index.html</code>。</p>
+    </section>
+  </main>
+</body>
+</html>
+"""
 
 
 def main() -> int:
@@ -343,12 +431,14 @@ def main() -> int:
         encoding="utf-8",
     )
     OUT_SOURCE_MAP_HTML.write_text(build_source_map_html(DAILY_DIR), encoding="utf-8")
+    OUT_ROOT_HTML.write_text(build_root_home_html(), encoding="utf-8")
     print(
         f"[ok] restored from runs: days={restore['days']}, files_restored={restore['files_restored']}"
     )
     print(f"[ok] wrote: {OUT_HTML}")
     print(f"[ok] wrote: {OUT_LATEST_ALIAS}")
     print(f"[ok] wrote: {OUT_SOURCE_MAP_HTML}")
+    print(f"[ok] wrote: {OUT_ROOT_HTML}")
     return 0
 
 

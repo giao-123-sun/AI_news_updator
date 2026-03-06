@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Twitter Crawl Reader</title>
+  <style>
+    :root {
+      --bg: #f4f0e6;
+      --panel: #fffdf8;
+      --line: #ddd4c1;
+      --ink: #1f2937;
+      --muted: #6b7280;
+      --accent: #0b5cab;
+      --chip: #f3f4f6;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 10% 0%, #fff6df 0, transparent 35%),
+        radial-gradient(circle at 90% 10%, #e8f3ff 0, transparent 30%),
+        var(--bg);
+    }
+    .wrap { max-width: 1120px; margin: 0 auto; padding: 16px 14px 38px; }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px;
+      margin-bottom: 10px;
+      box-shadow: 0 6px 20px rgba(20, 27, 45, .06);
+    }
+    h1 {
+      margin: 0 0 6px;
+      font-size: 30px;
+      line-height: 1.1;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    .muted { color: var(--muted); }
+    .toolbar {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr 1fr 1fr auto;
+      gap: 8px;
+    }
+    .toolbar input, .toolbar select, .toolbar button {
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: 10px;
+      padding: 10px 12px;
+      font-size: 14px;
+    }
+    .toolbar button {
+      cursor: pointer;
+      background: #0f172a;
+      color: #fff;
+      border-color: #0f172a;
+    }
+    .kpis {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 8px;
+    }
+    .kpi {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 4px 10px;
+      font-size: 12px;
+      background: #fff;
+    }
+    .list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+    .item {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 12px;
+      background: #fff;
+    }
+    .meta {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 6px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .author { font-weight: 700; color: var(--ink); }
+    .chips { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
+    .chip {
+      background: var(--chip);
+      border: 1px solid #e5e7eb;
+      border-radius: 999px;
+      padding: 2px 8px;
+      font-size: 12px;
+    }
+    .content {
+      white-space: pre-wrap;
+      line-height: 1.55;
+      margin-bottom: 8px;
+    }
+    .links a {
+      color: var(--accent);
+      text-decoration: none;
+      margin-right: 12px;
+      font-size: 13px;
+    }
+    .links a:hover { text-decoration: underline; }
+    .gallery {
+      margin-top: 8px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 8px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      background: #f3f4f6;
+    }
+    .load-more {
+      margin-top: 8px;
+      text-align: center;
+    }
+    .load-more button {
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: 999px;
+      padding: 8px 16px;
+      cursor: pointer;
+    }
+    @media (max-width: 900px) {
+      .toolbar { grid-template-columns: 1fr; }
+      h1 { font-size: 26px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <h1>Twitter Crawl Reader</h1>
+      <div class="muted">查看最新抓取的推文文本、原帖链接和配图。支持搜索、按作者筛选、仅看带图内容。</div>
+      <div class="kpis">
+        <span class="kpi" id="kpi-updated">更新时间: -</span>
+        <span class="kpi" id="kpi-total">抓取总条数: -</span>
+        <span class="kpi" id="kpi-show">本页载入: -</span>
+        <span class="kpi" id="kpi-authors">作者数: -</span>
+        <span class="kpi" id="kpi-img">带图条数: -</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="toolbar">
+        <input id="q" placeholder="搜索作者 / 内容 / 外链" />
+        <select id="author">
+          <option value="">全部作者</option>
+        </select>
+        <select id="has-image">
+          <option value="">全部内容</option>
+          <option value="1">仅看带图</option>
+        </select>
+        <select id="sort">
+          <option value="time_desc">按时间(新->旧)</option>
+          <option value="likes_desc">按点赞(高->低)</option>
+        </select>
+        <button id="reset">重置</button>
+      </div>
+    </section>
+
+    <section class="list" id="list"></section>
+    <div class="load-more"><button id="more">加载更多</button></div>
+  </main>
+
+  <script>
+    const state = {
+      all: [],
+      filtered: [],
+      pageSize: 30,
+      page: 1,
+    };
+
+    const esc = (s) =>
+      String(s ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;");
+
+    const getImages = (row) => {
+      const remote = Array.isArray(row.remote_images) ? row.remote_images : [];
+      const local = Array.isArray(row.local_images) ? row.local_images : [];
+      const uniq = [];
+      for (const u of [...remote, ...local]) {
+        if (u && !uniq.includes(u)) uniq.push(u);
+      }
+      return uniq;
+    };
+
+    function sortRows(rows, sortType) {
+      const copy = [...rows];
+      if (sortType === "likes_desc") {
+        copy.sort((a, b) => (b.likes || 0) - (a.likes || 0));
+        return copy;
+      }
+      copy.sort((a, b) => String(b.time || "").localeCompare(String(a.time || "")));
+      return copy;
+    }
+
+    function applyFilter() {
+      const q = document.getElementById("q").value.trim().toLowerCase();
+      const author = document.getElementById("author").value;
+      const hasImage = document.getElementById("has-image").value === "1";
+      const sortType = document.getElementById("sort").value;
+
+      let rows = state.all.filter((r) => {
+        if (author && r.author !== author) return false;
+        if (hasImage && getImages(r).length === 0) return false;
+        if (!q) return true;
+        const blob = [
+          r.author,
+          r.content,
+          r.external_link,
+          r.tweet_url,
+        ]
+          .join(" ")
+          .toLowerCase();
+        return blob.includes(q);
+      });
+
+      rows = sortRows(rows, sortType);
+      state.filtered = rows;
+      state.page = 1;
+      render();
+    }
+
+    function render() {
+      const list = document.getElementById("list");
+      const showRows = state.filtered.slice(0, state.page * state.pageSize);
+      list.innerHTML = showRows
+        .map((r) => {
+          const images = getImages(r);
+          const gallery = images.length
+            ? `<div class="gallery">${images
+                .map((u) => `<a href="${esc(u)}" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="${esc(u)}" alt="tweet image" /></a>`)
+                .join("")}</div>`
+            : "";
+          const links = `
+            <div class="links">
+              ${r.tweet_url ? `<a href="${esc(r.tweet_url)}" target="_blank" rel="noopener noreferrer">原推文</a>` : ""}
+              ${r.external_link ? `<a href="${esc(r.external_link)}" target="_blank" rel="noopener noreferrer">外部链接</a>` : ""}
+            </div>
+          `;
+          return `
+            <article class="item">
+              <div class="meta">
+                <span class="author">@${esc(r.author)}</span>
+                <span>${esc(r.time || "-")}</span>
+                <span>粉丝 ${esc(r.followers || 0)}</span>
+              </div>
+              <div class="chips">
+                <span class="chip">赞 ${esc(r.likes || 0)}</span>
+                <span class="chip">评 ${esc(r.replies || 0)}</span>
+                <span class="chip">转 ${esc(r.reposts || 0)}</span>
+                <span class="chip">图片 ${images.length}</span>
+              </div>
+              <div class="content">${esc(r.content || "")}</div>
+              ${links}
+              ${gallery}
+            </article>
+          `;
+        })
+        .join("");
+
+      const moreBtn = document.getElementById("more");
+      if (showRows.length >= state.filtered.length) {
+        moreBtn.style.display = "none";
+      } else {
+        moreBtn.style.display = "inline-block";
+      }
+    }
+
+    function fillAuthors(rows) {
+      const set = new Set(rows.map((r) => r.author).filter(Boolean));
+      const authors = [...set].sort((a, b) => a.localeCompare(b));
+      const sel = document.getElementById("author");
+      sel.innerHTML =
+        `<option value="">全部作者</option>` +
+        authors.map((a) => `<option value="${esc(a)}">${esc(a)}</option>`).join("");
+    }
+
+    function setMeta(meta) {
+      document.getElementById("kpi-updated").textContent = `更新时间: ${meta.generated_at_utc || "-"}`;
+      document.getElementById("kpi-total").textContent = `抓取总条数: ${meta.total_rows || 0}`;
+      document.getElementById("kpi-show").textContent = `本页载入: ${meta.rows_in_page || 0}`;
+      document.getElementById("kpi-authors").textContent = `作者数: ${meta.authors_in_page || 0}`;
+      document.getElementById("kpi-img").textContent = `带图条数: ${meta.with_images_in_page || 0}`;
+    }
+
+    async function bootstrap() {
+      const res = await fetch("./twitter_reader_data.json", { cache: "no-cache" });
+      const payload = await res.json();
+      const rows = Array.isArray(payload.rows) ? payload.rows : [];
+      state.all = rows;
+      state.filtered = [...rows];
+      fillAuthors(rows);
+      setMeta(payload.meta || {});
+      applyFilter();
+    }
+
+    document.getElementById("q").addEventListener("input", applyFilter);
+    document.getElementById("author").addEventListener("change", applyFilter);
+    document.getElementById("has-image").addEventListener("change", applyFilter);
+    document.getElementById("sort").addEventListener("change", applyFilter);
+    document.getElementById("more").addEventListener("click", () => {
+      state.page += 1;
+      render();
+    });
+    document.getElementById("reset").addEventListener("click", () => {
+      document.getElementById("q").value = "";
+      document.getElementById("author").value = "";
+      document.getElementById("has-image").value = "";
+      document.getElementById("sort").value = "time_desc";
+      applyFilter();
+    });
+
+    bootstrap().catch((err) => {
+      const list = document.getElementById("list");
+      list.innerHTML = `<section class="card">加载失败: ${esc(err.message || err)}</section>`;
+    });
+  </script>
+</body>
+</html>
