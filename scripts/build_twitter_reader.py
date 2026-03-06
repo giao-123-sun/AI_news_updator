@@ -1,6 +1,7 @@
 import html
 import json
 import os
+import shutil
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -12,6 +13,7 @@ RAW_CSV = ROOT / "twitter_all_users.csv"
 OUT_DIR = ROOT / "reports" / "daily"
 OUT_JSON = OUT_DIR / "twitter_reader_data.json"
 OUT_HTML = OUT_DIR / "twitter_reader.html"
+ASSET_DIR = OUT_DIR / "twitter_reader_assets"
 
 
 def parse_list_field(value: object) -> list[str]:
@@ -65,6 +67,7 @@ def normalize_row(row: pd.Series) -> dict:
         "external_link": str(row.get("外部链接", "") or "").strip(),
         "remote_images": remote_images,
         "local_images": local_images,
+        "hosted_images": [],
     }
 
 
@@ -124,6 +127,42 @@ def deduplicate_rows(rows: list[dict]) -> tuple[list[dict], int]:
     return deduped, len(rows) - len(deduped)
 
 
+def stage_hosted_images(rows: list[dict], hosted_posts: int) -> tuple[int, int]:
+    if ASSET_DIR.exists():
+        shutil.rmtree(ASSET_DIR)
+    ASSET_DIR.mkdir(parents=True, exist_ok=True)
+
+    posts_with_assets = 0
+    bytes_total = 0
+    for r in rows:
+        if posts_with_assets >= hosted_posts:
+            break
+        locals_in_row = [u for u in (r.get("local_images") or []) if u]
+        if not locals_in_row:
+            continue
+        tweet_id = stable_str(r.get("tweet_id")) or "noid"
+        hosted = []
+        copied_any = False
+        for idx, rel in enumerate(locals_in_row, start=1):
+            rel_clean = rel.replace("\\", "/").strip()
+            if rel_clean.startswith("../../"):
+                rel_clean = rel_clean[6:]
+            src = ROOT / rel_clean
+            if not src.exists():
+                continue
+            ext = src.suffix.lower() or ".jpg"
+            dst_name = f"{tweet_id}_{idx}{ext}"
+            dst = ASSET_DIR / dst_name
+            shutil.copy2(src, dst)
+            hosted.append(f"./twitter_reader_assets/{dst_name}")
+            bytes_total += dst.stat().st_size
+            copied_any = True
+        if copied_any:
+            r["hosted_images"] = hosted
+            posts_with_assets += 1
+    return posts_with_assets, bytes_total
+
+
 def parse_time_for_sort(time_str: str) -> float:
     try:
         dt = datetime.strptime(time_str, "%Y-%m-%d %H:%M:%S")
@@ -159,6 +198,8 @@ def build_payload(max_rows: int) -> dict:
         reverse=True,
     )
     limited = rows[:max_rows]
+    hosted_posts = int(os.environ.get("TW_READER_HOSTED_POSTS", "120"))
+    hosted_count, hosted_bytes = stage_hosted_images(limited, hosted_posts=hosted_posts)
 
     latest_time = limited[0]["time"] if limited else ""
     with_images = sum(1 for r in limited if choose_images(r))
@@ -175,6 +216,8 @@ def build_payload(max_rows: int) -> dict:
             "rows_in_page": len(limited),
             "authors_in_page": authors,
             "with_images_in_page": with_images,
+            "hosted_image_posts": hosted_count,
+            "hosted_image_bytes": hosted_bytes,
         },
         "rows": limited,
     }
@@ -378,12 +421,13 @@ def build_html() -> str:
         .replaceAll(">", "&gt;");
 
     const getImages = (row) => {
+      const hosted = Array.isArray(row.hosted_images) ? row.hosted_images.filter(Boolean) : [];
       const remote = Array.isArray(row.remote_images) ? row.remote_images.filter(Boolean) : [];
       const local = Array.isArray(row.local_images) ? row.local_images.filter(Boolean) : [];
       const uniq = [];
       // On GitHub Pages, local crawl images are usually not published.
       // Prefer remote URLs to avoid broken-image noise.
-      const source = remote.length ? remote : local;
+      const source = hosted.length ? hosted : (remote.length ? remote : local);
       for (const u of source) {
         if (u && !uniq.includes(u)) uniq.push(u);
       }
@@ -499,7 +543,9 @@ def build_html() -> str:
       document.getElementById("kpi-total").textContent = `抓取总条数: ${after} (原始 ${before}, 去重 ${removed})`;
       document.getElementById("kpi-show").textContent = `本页载入: ${meta.rows_in_page || 0}`;
       document.getElementById("kpi-authors").textContent = `作者数: ${meta.authors_in_page || 0}`;
-      document.getElementById("kpi-img").textContent = `带图条数: ${meta.with_images_in_page || 0}`;
+      const hostedPosts = Number(meta.hosted_image_posts || 0);
+      const hostedMB = (Number(meta.hosted_image_bytes || 0) / (1024 * 1024)).toFixed(1);
+      document.getElementById("kpi-img").textContent = `带图条数: ${meta.with_images_in_page || 0} (本地托管 ${hostedPosts} 条, ${hostedMB}MB)`;
     }
 
     async function bootstrap() {

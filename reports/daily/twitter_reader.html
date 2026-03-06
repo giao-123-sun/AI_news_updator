@@ -195,12 +195,13 @@
         .replaceAll(">", "&gt;");
 
     const getImages = (row) => {
+      const hosted = Array.isArray(row.hosted_images) ? row.hosted_images.filter(Boolean) : [];
       const remote = Array.isArray(row.remote_images) ? row.remote_images.filter(Boolean) : [];
       const local = Array.isArray(row.local_images) ? row.local_images.filter(Boolean) : [];
       const uniq = [];
       // On GitHub Pages, local crawl images are usually not published.
       // Prefer remote URLs to avoid broken-image noise.
-      const source = remote.length ? remote : local;
+      const source = hosted.length ? hosted : (remote.length ? remote : local);
       for (const u of source) {
         if (u && !uniq.includes(u)) uniq.push(u);
       }
@@ -316,7 +317,9 @@
       document.getElementById("kpi-total").textContent = `抓取总条数: ${after} (原始 ${before}, 去重 ${removed})`;
       document.getElementById("kpi-show").textContent = `本页载入: ${meta.rows_in_page || 0}`;
       document.getElementById("kpi-authors").textContent = `作者数: ${meta.authors_in_page || 0}`;
-      document.getElementById("kpi-img").textContent = `带图条数: ${meta.with_images_in_page || 0}`;
+      const hostedPosts = Number(meta.hosted_image_posts || 0);
+      const hostedMB = (Number(meta.hosted_image_bytes || 0) / (1024 * 1024)).toFixed(1);
+      document.getElementById("kpi-img").textContent = `带图条数: ${meta.with_images_in_page || 0} (本地托管 ${hostedPosts} 条, ${hostedMB}MB)`;
     }
 
     async function bootstrap() {
