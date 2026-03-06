@@ -1,5 +1,29 @@
 # Progress
 
+## 2026-03-06 (Markdown Report Rendering + X Watchlist Expansion)
+
+### Completed
+- Improved report readability in `twitter_reader`:
+  - added in-page Markdown renderer for report output
+  - supports heading / list / quote / inline code / fenced code / links / bold / italic
+  - added dedicated markdown styles for better scanability
+- Improved exported report HTML:
+  - export now keeps markdown-rendered structure (not plain escaped text)
+  - image evidence wall retained
+- Expanded X crawl watchlist:
+  - updated `data/X.txt` from smaller seed list to 101 curated accounts
+  - includes researchers, builders, frontier labs, infra companies, and investor/operator accounts
+  - verified by `load_users('data/X.txt')` with valid count = 101
+
+### Validation
+- Rebuilt:
+  - `reports/daily/twitter_reader.html`
+  - `reports/daily/twitter_reader_data.json`
+- Local runtime check:
+  - report generation status = `Report ready`
+  - markdown nodes rendered (`h2`, `ul`) in report output
+  - export button enabled after generation
+
 ## 2026-03-06 (Twitter Reader v2 + Process Rule)
 
 ### Completed

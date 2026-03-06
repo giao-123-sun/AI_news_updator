@@ -3,6 +3,7 @@
 ## Crawl
 - Read user list from `data/X.txt`.
 - Learning mode supports expanded watchlist (core + exploration accounts).
+- `data/X.txt` now contains expanded high-quality watchlist (researchers / builders / labs / infra / investors).
 - Build search query as `from:<username>`.
 - Crawl with cursor pagination and per-page/per-user sleep.
 - Continue-on-error per user.
@@ -97,6 +98,22 @@ python run_daily_pipeline_v1.py
 - analysis input now prefers aggregate CSVs (`twitter_all_users*`, merged) over per-user files.
 - among candidates, selects the file with richer evidence fields first.
 - analysis stage backfills `tweet_link` / `external_links` from text URLs when raw fields are empty.
+
+## Twitter Reader
+`scripts/build_twitter_reader.py` + `templates/twitter_reader_template.html`:
+- Build latest reader pages:
+  - `reports/daily/twitter_reader.html`
+  - `reports/daily/twitter_reader_data.json`
+- Page supports:
+  - filter by keyword / author / with-image
+  - image size switch (`compact` / `balanced` / `large`)
+  - local hosted image rendering fallback
+- Filtered report module:
+  - uses user-provided API base URL / model / API key in browser localStorage
+  - single-pass summary for small filtered sets
+  - chunked summary + merge for large filtered sets
+  - markdown-rendered report view in-page
+  - export standalone report HTML with markdown rendering and image evidence wall
 
 ## Full recrawl baseline (2026-03-01)
 - Raw crawl file:
