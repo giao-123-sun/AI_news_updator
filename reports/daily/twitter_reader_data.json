@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at_utc": "2026-03-06 14:02:19 UTC",
+    "generated_at_utc": "2026-03-06 14:19:15 UTC",
     "source_csv": "D:/test/codex/work1/twitter_all_users.csv",
     "exists": true,
     "latest_time": "2026-03-06 05:17:07",
@@ -10,8 +10,8 @@
     "rows_in_page": 2000,
     "authors_in_page": 49,
     "with_images_in_page": 369,
-    "hosted_image_posts": 120,
-    "hosted_image_bytes": 60598152
+    "hosted_image_posts": 369,
+    "hosted_image_bytes": 119476846
   },
   "rows": [
     {
@@ -3051,7 +3051,9 @@
       "local_images": [
         "../../tweet_images/op7418/2029218942649287034_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2029218942649287034_1.jpg"
+      ]
     },
     {
       "author": "vista8",
@@ -3072,7 +3074,9 @@
       "local_images": [
         "../../tweet_images/vista8/2029202393024561521_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2029202393024561521_1.jpg"
+      ]
     },
     {
       "author": "op7418",
@@ -3093,7 +3097,9 @@
       "local_images": [
         "../../tweet_images/op7418/2029201057977704960_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2029201057977704960_1.jpg"
+      ]
     },
     {
       "author": "op7418",
@@ -3114,7 +3120,9 @@
       "local_images": [
         "../../tweet_images/op7418/2029198747759165493_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2029198747759165493_1.jpg"
+      ]
     },
     {
       "author": "op7418",
@@ -3135,7 +3143,9 @@
       "local_images": [
         "../../tweet_images/op7418/2029154461625794608_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2029154461625794608_1.jpg"
+      ]
     },
     {
       "author": "vista8",
@@ -3156,7 +3166,9 @@
       "local_images": [
         "../../tweet_images/vista8/2029149557528117678_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2029149557528117678_1.jpg"
+      ]
     },
     {
       "author": "vista8",
@@ -3177,7 +3189,9 @@
       "local_images": [
         "../../tweet_images/vista8/2029148296581910868_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2029148296581910868_1.jpg"
+      ]
     },
     {
       "author": "vista8",
@@ -3198,7 +3212,9 @@
       "local_images": [
         "../../tweet_images/vista8/2029121632741277836_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2029121632741277836_1.jpg"
+      ]
     },
     {
       "author": "op7418",
@@ -3219,7 +3235,9 @@
       "local_images": [
         "../../tweet_images/op7418/2029102682892648813_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2029102682892648813_1.jpg"
+      ]
     },
     {
       "author": "vista8",
@@ -3240,7 +3258,9 @@
       "local_images": [
         "../../tweet_images/vista8/2029064089822216444_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2029064089822216444_1.jpg"
+      ]
     },
     {
       "author": "vista8",
@@ -3261,7 +3281,9 @@
       "local_images": [
         "../../tweet_images/vista8/2029035773551624522_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2029035773551624522_1.jpg"
+      ]
     },
     {
       "author": "vista8",
@@ -3282,7 +3304,9 @@
       "local_images": [
         "../../tweet_images/vista8/2029021107379159197_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2029021107379159197_1.jpg"
+      ]
     },
     {
       "author": "nikitabier",
@@ -3303,7 +3327,9 @@
       "local_images": [
         "../../tweet_images/nikitabier/2029017758613291168_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2029017758613291168_1.jpg"
+      ]
     },
     {
       "author": "deedydas",
@@ -3324,7 +3350,9 @@
       "local_images": [
         "../../tweet_images/deedydas/2029012000240746759_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2029012000240746759_1.png"
+      ]
     },
     {
       "author": "deedydas",
@@ -3345,7 +3373,9 @@
       "local_images": [
         "../../tweet_images/deedydas/2029009395787678023_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2029009395787678023_1.jpg"
+      ]
     },
     {
       "author": "lennysan",
@@ -3366,7 +3396,9 @@
       "local_images": [
         "../../tweet_images/lennysan/2028979762077810791_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028979762077810791_1.jpg"
+      ]
     },
     {
       "author": "swyx",
@@ -3387,7 +3419,9 @@
       "local_images": [
         "../../tweet_images/swyx/2028966588410675226_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028966588410675226_1.jpg"
+      ]
     },
     {
       "author": "rasbt",
@@ -3408,7 +3442,9 @@
       "local_images": [
         "../../tweet_images/rasbt/2028961822372425941_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028961822372425941_1.jpg"
+      ]
     },
     {
       "author": "dongxi_nlp",
@@ -3429,7 +3465,9 @@
       "local_images": [
         "../../tweet_images/dongxi_nlp/2028958442082193815_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028958442082193815_1.jpg"
+      ]
     },
     {
       "author": "swyx",
@@ -3450,7 +3488,9 @@
       "local_images": [
         "../../tweet_images/swyx/2028944956463956047_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028944956463956047_1.jpg"
+      ]
     },
     {
       "author": "stanfordnlp",
@@ -3471,7 +3511,9 @@
       "local_images": [
         "../../tweet_images/stanfordnlp/2028943366524965324_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028943366524965324_1.jpg"
+      ]
     },
     {
       "author": "lennysan",
@@ -3492,7 +3534,9 @@
       "local_images": [
         "../../tweet_images/lennysan/2028941226356232449_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028941226356232449_1.jpg"
+      ]
     },
     {
       "author": "hamelhusain",
@@ -3513,7 +3557,9 @@
       "local_images": [
         "../../tweet_images/hamelhusain/2028930153204883881_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028930153204883881_1.png"
+      ]
     },
     {
       "author": "lennysan",
@@ -3534,7 +3580,9 @@
       "local_images": [
         "../../tweet_images/lennysan/2028917046290071711_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028917046290071711_1.jpg"
+      ]
     },
     {
       "author": "hamelhusain",
@@ -3555,7 +3603,9 @@
       "local_images": [
         "../../tweet_images/hamelhusain/2028911095403168179_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028911095403168179_1.jpg"
+      ]
     },
     {
       "author": "OpenAI",
@@ -3576,7 +3626,9 @@
       "local_images": [
         "../../tweet_images/OpenAI/2028893702865989707_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028893702865989707_1.jpg"
+      ]
     },
     {
       "author": "rrhoover",
@@ -3597,7 +3649,9 @@
       "local_images": [
         "../../tweet_images/rrhoover/2028891452533842193_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028891452533842193_1.png"
+      ]
     },
     {
       "author": "allen_ai",
@@ -3618,7 +3672,9 @@
       "local_images": [
         "../../tweet_images/allen_ai/2028888337944117490_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028888337944117490_1.jpg"
+      ]
     },
     {
       "author": "OfficialLoganK",
@@ -3639,7 +3695,9 @@
       "local_images": [
         "../../tweet_images/OfficialLoganK/2028872755664580947_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028872755664580947_1.jpg"
+      ]
     },
     {
       "author": "GoogleDeepMind",
@@ -3660,7 +3718,9 @@
       "local_images": [
         "../../tweet_images/GoogleDeepMind/2028872383851905331_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028872383851905331_1.png"
+      ]
     },
     {
       "author": "vista8",
@@ -3681,7 +3741,9 @@
       "local_images": [
         "../../tweet_images/vista8/2028836689008050633_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028836689008050633_1.jpg"
+      ]
     },
     {
       "author": "emollick",
@@ -3702,7 +3764,9 @@
       "local_images": [
         "../../tweet_images/emollick/2028795972868878559_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028795972868878559_1.jpg"
+      ]
     },
     {
       "author": "swyx",
@@ -3723,7 +3787,9 @@
       "local_images": [
         "../../tweet_images/swyx/2028795270306079156_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028795270306079156_1.jpg"
+      ]
     },
     {
       "author": "op7418",
@@ -3744,7 +3810,9 @@
       "local_images": [
         "../../tweet_images/op7418/2028772841534140679_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028772841534140679_1.jpg"
+      ]
     },
     {
       "author": "op7418",
@@ -3765,7 +3833,9 @@
       "local_images": [
         "../../tweet_images/op7418/2028752838701285813_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028752838701285813_1.jpg"
+      ]
     },
     {
       "author": "op7418",
@@ -3786,7 +3856,9 @@
       "local_images": [
         "../../tweet_images/op7418/2028751592837779519_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028751592837779519_1.jpg"
+      ]
     },
     {
       "author": "lennysan",
@@ -3807,7 +3879,9 @@
       "local_images": [
         "../../tweet_images/lennysan/2028703174388043966_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028703174388043966_1.jpg"
+      ]
     },
     {
       "author": "deedydas",
@@ -3828,7 +3902,9 @@
       "local_images": [
         "../../tweet_images/deedydas/2028608293531435114_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028608293531435114_1.png"
+      ]
     },
     {
       "author": "rrhoover",
@@ -3849,7 +3925,9 @@
       "local_images": [
         "../../tweet_images/rrhoover/2028597981105070111_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028597981105070111_1.png"
+      ]
     },
     {
       "author": "lennysan",
@@ -3870,7 +3948,9 @@
       "local_images": [
         "../../tweet_images/lennysan/2028591522598531427_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028591522598531427_1.jpg"
+      ]
     },
     {
       "author": "lennysan",
@@ -3891,7 +3971,9 @@
       "local_images": [
         "../../tweet_images/lennysan/2028591229152452961_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028591229152452961_1.png"
+      ]
     },
     {
       "author": "emollick",
@@ -3912,7 +3994,9 @@
       "local_images": [
         "../../tweet_images/emollick/2028582699376525728_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028582699376525728_1.png"
+      ]
     },
     {
       "author": "lennysan",
@@ -3933,7 +4017,9 @@
       "local_images": [
         "../../tweet_images/lennysan/2028580244735877121_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028580244735877121_1.jpg"
+      ]
     },
     {
       "author": "lennysan",
@@ -3954,7 +4040,9 @@
       "local_images": [
         "../../tweet_images/lennysan/2028580246824657098_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028580246824657098_1.jpg"
+      ]
     },
     {
       "author": "dongxi_nlp",
@@ -3975,7 +4063,9 @@
       "local_images": [
         "../../tweet_images/dongxi_nlp/2028578045750128946_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028578045750128946_1.jpg"
+      ]
     },
     {
       "author": "allen_ai",
@@ -3996,7 +4086,9 @@
       "local_images": [
         "../../tweet_images/allen_ai/2028572682908762340_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028572682908762340_1.jpg"
+      ]
     },
     {
       "author": "jeremyphoward",
@@ -4017,7 +4109,9 @@
       "local_images": [
         "../../tweet_images/jeremyphoward/2028556068901765216_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028556068901765216_1.png"
+      ]
     },
     {
       "author": "jeremyphoward",
@@ -4038,7 +4132,9 @@
       "local_images": [
         "../../tweet_images/jeremyphoward/2028556065013641341_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028556065013641341_1.png"
+      ]
     },
     {
       "author": "jeremyphoward",
@@ -4059,7 +4155,9 @@
       "local_images": [
         "../../tweet_images/jeremyphoward/2028556060886474935_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028556060886474935_1.png"
+      ]
     },
     {
       "author": "jeremyphoward",
@@ -4080,7 +4178,9 @@
       "local_images": [
         "../../tweet_images/jeremyphoward/2028556056906084535_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028556056906084535_1.png"
+      ]
     },
     {
       "author": "jeremyphoward",
@@ -4101,7 +4201,9 @@
       "local_images": [
         "../../tweet_images/jeremyphoward/2028556052590178447_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028556052590178447_1.png"
+      ]
     },
     {
       "author": "jeremyphoward",
@@ -4122,7 +4224,9 @@
       "local_images": [
         "../../tweet_images/jeremyphoward/2028556049159164272_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028556049159164272_1.jpg"
+      ]
     },
     {
       "author": "jeremyphoward",
@@ -4143,7 +4247,9 @@
       "local_images": [
         "../../tweet_images/jeremyphoward/2028556045719949674_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028556045719949674_1.jpg"
+      ]
     },
     {
       "author": "natolambert",
@@ -4164,7 +4270,9 @@
       "local_images": [
         "../../tweet_images/natolambert/2028539564504277009_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028539564504277009_1.jpg"
+      ]
     },
     {
       "author": "swyx",
@@ -4185,7 +4293,9 @@
       "local_images": [
         "../../tweet_images/swyx/2028536051376218611_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028536051376218611_1.jpg"
+      ]
     },
     {
       "author": "vista8",
@@ -4206,7 +4316,9 @@
       "local_images": [
         "../../tweet_images/vista8/2028535080579465528_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028535080579465528_1.jpg"
+      ]
     },
     {
       "author": "deedydas",
@@ -4227,7 +4339,9 @@
       "local_images": [
         "../../tweet_images/deedydas/2028528130940620947_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028528130940620947_1.jpg"
+      ]
     },
     {
       "author": "op7418",
@@ -4248,7 +4362,9 @@
       "local_images": [
         "../../tweet_images/op7418/2028495878148047081_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028495878148047081_1.jpg"
+      ]
     },
     {
       "author": "vista8",
@@ -4269,7 +4385,9 @@
       "local_images": [
         "../../tweet_images/vista8/2028483067388821720_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028483067388821720_1.jpg"
+      ]
     },
     {
       "author": "vista8",
@@ -4290,7 +4408,9 @@
       "local_images": [
         "../../tweet_images/vista8/2028478188024938615_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028478188024938615_1.jpg"
+      ]
     },
     {
       "author": "vista8",
@@ -4311,7 +4431,9 @@
       "local_images": [
         "../../tweet_images/vista8/2028467740026273917_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028467740026273917_1.jpg"
+      ]
     },
     {
       "author": "GoogleDeepMind",
@@ -4332,7 +4454,9 @@
       "local_images": [
         "../../tweet_images/GoogleDeepMind/2028455947350225364_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028455947350225364_1.jpg"
+      ]
     },
     {
       "author": "vista8",
@@ -4353,7 +4477,9 @@
       "local_images": [
         "../../tweet_images/vista8/2028387778199969871_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028387778199969871_1.jpg"
+      ]
     },
     {
       "author": "vista8",
@@ -4374,7 +4500,9 @@
       "local_images": [
         "../../tweet_images/vista8/2028376109235245490_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028376109235245490_1.jpg"
+      ]
     },
     {
       "author": "vista8",
@@ -4395,7 +4523,9 @@
       "local_images": [
         "../../tweet_images/vista8/2028368633186168975_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028368633186168975_1.jpg"
+      ]
     },
     {
       "author": "deedydas",
@@ -4416,7 +4546,9 @@
       "local_images": [
         "../../tweet_images/deedydas/2028359581139955971_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028359581139955971_1.jpg"
+      ]
     },
     {
       "author": "deedydas",
@@ -4437,7 +4569,9 @@
       "local_images": [
         "../../tweet_images/deedydas/2028347491104833553_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028347491104833553_1.jpg"
+      ]
     },
     {
       "author": "nikitabier",
@@ -4458,7 +4592,9 @@
       "local_images": [
         "../../tweet_images/nikitabier/2028335054838206581_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028335054838206581_1.jpg"
+      ]
     },
     {
       "author": "nikitabier",
@@ -4479,7 +4615,9 @@
       "local_images": [
         "../../tweet_images/nikitabier/2028307474839933052_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028307474839933052_1.jpg"
+      ]
     },
     {
       "author": "swyx",
@@ -4500,7 +4638,9 @@
       "local_images": [
         "../../tweet_images/swyx/2028296779977113836_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028296779977113836_1.jpg"
+      ]
     },
     {
       "author": "paulg",
@@ -4521,7 +4661,9 @@
       "local_images": [
         "../../tweet_images/paulg/2028262577898442855_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028262577898442855_1.jpg"
+      ]
     },
     {
       "author": "dongxi_nlp",
@@ -4542,7 +4684,9 @@
       "local_images": [
         "../../tweet_images/dongxi_nlp/2028239190920409300_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028239190920409300_1.jpg"
+      ]
     },
     {
       "author": "lennysan",
@@ -4563,7 +4707,9 @@
       "local_images": [
         "../../tweet_images/lennysan/2028226864565899441_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028226864565899441_1.png"
+      ]
     },
     {
       "author": "nikitabier",
@@ -4584,7 +4730,9 @@
       "local_images": [
         "../../tweet_images/nikitabier/2028223743898898813_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028223743898898813_1.jpg"
+      ]
     },
     {
       "author": "jeremyphoward",
@@ -4605,7 +4753,9 @@
       "local_images": [
         "../../tweet_images/jeremyphoward/2028211153286107414_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028211153286107414_1.jpg"
+      ]
     },
     {
       "author": "yoheinakajima",
@@ -4626,7 +4776,9 @@
       "local_images": [
         "../../tweet_images/yoheinakajima/2028144143235747868_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028144143235747868_1.jpg"
+      ]
     },
     {
       "author": "nikitabier",
@@ -4647,7 +4799,9 @@
       "local_images": [
         "../../tweet_images/nikitabier/2028141520952692935_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028141520952692935_1.jpg"
+      ]
     },
     {
       "author": "deedydas",
@@ -4668,7 +4822,9 @@
       "local_images": [
         "../../tweet_images/deedydas/2028030521973125617_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028030521973125617_1.jpg"
+      ]
     },
     {
       "author": "dotey",
@@ -4689,7 +4845,9 @@
       "local_images": [
         "../../tweet_images/dotey/2028006094879047737_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2028006094879047737_1.jpg"
+      ]
     },
     {
       "author": "lexfridman",
@@ -4710,7 +4868,9 @@
       "local_images": [
         "../../tweet_images/lexfridman/2027989037663895992_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027989037663895992_1.jpg"
+      ]
     },
     {
       "author": "yoheinakajima",
@@ -4731,7 +4891,9 @@
       "local_images": [
         "../../tweet_images/yoheinakajima/2027973804677542152_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027973804677542152_1.jpg"
+      ]
     },
     {
       "author": "nikitabier",
@@ -4752,7 +4914,9 @@
       "local_images": [
         "../../tweet_images/nikitabier/2027972162057802000_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027972162057802000_1.jpg"
+      ]
     },
     {
       "author": "nikitabier",
@@ -4773,7 +4937,9 @@
       "local_images": [
         "../../tweet_images/nikitabier/2027962840833786310_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027962840833786310_1.jpg"
+      ]
     },
     {
       "author": "nikitabier",
@@ -4794,7 +4960,9 @@
       "local_images": [
         "../../tweet_images/nikitabier/2027962197725331630_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027962197725331630_1.jpg"
+      ]
     },
     {
       "author": "yoheinakajima",
@@ -4815,7 +4983,9 @@
       "local_images": [
         "../../tweet_images/yoheinakajima/2027905883326582988_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027905883326582988_1.jpg"
+      ]
     },
     {
       "author": "nikitabier",
@@ -4836,7 +5006,9 @@
       "local_images": [
         "../../tweet_images/nikitabier/2027892340283871392_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027892340283871392_1.jpg"
+      ]
     },
     {
       "author": "venturetwins",
@@ -4857,7 +5029,9 @@
       "local_images": [
         "../../tweet_images/venturetwins/2027891215916814609_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027891215916814609_1.jpg"
+      ]
     },
     {
       "author": "hamelhusain",
@@ -4878,7 +5052,9 @@
       "local_images": [
         "../../tweet_images/hamelhusain/2027888994911203530_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027888994911203530_1.jpg"
+      ]
     },
     {
       "author": "hamelhusain",
@@ -4899,7 +5075,9 @@
       "local_images": [
         "../../tweet_images/hamelhusain/2027888413123477688_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027888413123477688_1.jpg"
+      ]
     },
     {
       "author": "yoheinakajima",
@@ -4920,7 +5098,9 @@
       "local_images": [
         "../../tweet_images/yoheinakajima/2027870032999682127_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027870032999682127_1.jpg"
+      ]
     },
     {
       "author": "venturetwins",
@@ -4941,7 +5121,9 @@
       "local_images": [
         "../../tweet_images/venturetwins/2027851535485702283_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027851535485702283_1.jpg"
+      ]
     },
     {
       "author": "venturetwins",
@@ -4962,7 +5144,9 @@
       "local_images": [
         "../../tweet_images/venturetwins/2027821569914114127_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027821569914114127_1.jpg"
+      ]
     },
     {
       "author": "dotey",
@@ -4983,7 +5167,9 @@
       "local_images": [
         "../../tweet_images/dotey/2027810640773996627_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027810640773996627_1.jpg"
+      ]
     },
     {
       "author": "nikitabier",
@@ -5004,7 +5190,9 @@
       "local_images": [
         "../../tweet_images/nikitabier/2027793341547794479_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027793341547794479_1.jpg"
+      ]
     },
     {
       "author": "nikitabier",
@@ -5025,7 +5213,9 @@
       "local_images": [
         "../../tweet_images/nikitabier/2027664096418795787_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027664096418795787_1.jpg"
+      ]
     },
     {
       "author": "deedydas",
@@ -5046,7 +5236,9 @@
       "local_images": [
         "../../tweet_images/deedydas/2027614403693318348_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027614403693318348_1.jpg"
+      ]
     },
     {
       "author": "natolambert",
@@ -5067,7 +5259,9 @@
       "local_images": [
         "../../tweet_images/natolambert/2027598658724892914_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027598658724892914_1.jpg"
+      ]
     },
     {
       "author": "deedydas",
@@ -5088,7 +5282,9 @@
       "local_images": [
         "../../tweet_images/deedydas/2027592261337583934_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027592261337583934_1.jpg"
+      ]
     },
     {
       "author": "yoheinakajima",
@@ -5109,7 +5305,9 @@
       "local_images": [
         "../../tweet_images/yoheinakajima/2027561626413765005_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027561626413765005_1.jpg"
+      ]
     },
     {
       "author": "lennysan",
@@ -5130,7 +5328,9 @@
       "local_images": [
         "../../tweet_images/lennysan/2027535415692218425_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027535415692218425_1.jpg"
+      ]
     },
     {
       "author": "NVIDIAAI",
@@ -5151,7 +5351,9 @@
       "local_images": [
         "../../tweet_images/NVIDIAAI/2027534220600451423_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027534220600451423_1.jpg"
+      ]
     },
     {
       "author": "NVIDIAAI",
@@ -5172,7 +5374,9 @@
       "local_images": [
         "../../tweet_images/NVIDIAAI/2027534216662011907_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027534216662011907_1.jpg"
+      ]
     },
     {
       "author": "NVIDIAAI",
@@ -5193,7 +5397,9 @@
       "local_images": [
         "../../tweet_images/NVIDIAAI/2027534213281415648_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027534213281415648_1.jpg"
+      ]
     },
     {
       "author": "fchollet",
@@ -5214,7 +5420,9 @@
       "local_images": [
         "../../tweet_images/fchollet/2027331177951179084_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027331177951179084_1.png"
+      ]
     },
     {
       "author": "emollick",
@@ -5235,7 +5443,9 @@
       "local_images": [
         "../../tweet_images/emollick/2027242826388365776_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027242826388365776_1.jpg"
+      ]
     },
     {
       "author": "emollick",
@@ -5256,7 +5466,9 @@
       "local_images": [
         "../../tweet_images/emollick/2027237925113463162_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027237925113463162_1.jpg"
+      ]
     },
     {
       "author": "deedydas",
@@ -5277,7 +5489,9 @@
       "local_images": [
         "../../tweet_images/deedydas/2027230336607006733_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027230336607006733_1.jpg"
+      ]
     },
     {
       "author": "venturetwins",
@@ -5298,7 +5512,9 @@
       "local_images": [
         "../../tweet_images/venturetwins/2027203267688886576_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027203267688886576_1.jpg"
+      ]
     },
     {
       "author": "bgurley",
@@ -5319,7 +5535,9 @@
       "local_images": [
         "../../tweet_images/bgurley/2027177071907307536_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027177071907307536_1.png"
+      ]
     },
     {
       "author": "NVIDIAAI",
@@ -5340,7 +5558,9 @@
       "local_images": [
         "../../tweet_images/NVIDIAAI/2027156728479875332_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027156728479875332_1.jpg"
+      ]
     },
     {
       "author": "lennysan",
@@ -5361,7 +5581,9 @@
       "local_images": [
         "../../tweet_images/lennysan/2027124942249378208_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027124942249378208_1.jpg"
+      ]
     },
     {
       "author": "venturetwins",
@@ -5382,7 +5604,9 @@
       "local_images": [
         "../../tweet_images/venturetwins/2027117835227644182_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027117835227644182_1.jpg"
+      ]
     },
     {
       "author": "perplexity_ai",
@@ -5403,7 +5627,9 @@
       "local_images": [
         "../../tweet_images/perplexity_ai/2027095027881750923_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027095027881750923_1.png"
+      ]
     },
     {
       "author": "perplexity_ai",
@@ -5424,7 +5650,9 @@
       "local_images": [
         "../../tweet_images/perplexity_ai/2027095012547453183_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027095012547453183_1.png"
+      ]
     },
     {
       "author": "perplexity_ai",
@@ -5445,7 +5673,9 @@
       "local_images": [
         "../../tweet_images/perplexity_ai/2027094997070381142_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027094997070381142_1.png"
+      ]
     },
     {
       "author": "perplexity_ai",
@@ -5466,7 +5696,9 @@
       "local_images": [
         "../../tweet_images/perplexity_ai/2027067776217841792_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027067776217841792_1.jpg"
+      ]
     },
     {
       "author": "deedydas",
@@ -5487,7 +5719,9 @@
       "local_images": [
         "../../tweet_images/deedydas/2027057965862432843_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027057965862432843_1.jpg"
+      ]
     },
     {
       "author": "OfficialLoganK",
@@ -5508,7 +5742,9 @@
       "local_images": [
         "../../tweet_images/OfficialLoganK/2027054617616351282_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027054617616351282_1.jpg"
+      ]
     },
     {
       "author": "emollick",
@@ -5529,7 +5765,9 @@
       "local_images": [
         "../../tweet_images/emollick/2027051701258109306_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027051701258109306_1.jpg"
+      ]
     },
     {
       "author": "NVIDIAAI",
@@ -5550,7 +5788,9 @@
       "local_images": [
         "../../tweet_images/NVIDIAAI/2027035937843056927_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027035937843056927_1.jpg"
+      ]
     },
     {
       "author": "NVIDIAAI",
@@ -5571,7 +5811,9 @@
       "local_images": [
         "../../tweet_images/NVIDIAAI/2027035931081883735_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027035931081883735_1.jpg"
+      ]
     },
     {
       "author": "NVIDIAAI",
@@ -5592,7 +5834,9 @@
       "local_images": [
         "../../tweet_images/NVIDIAAI/2027035934420537532_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027035934420537532_1.jpg"
+      ]
     },
     {
       "author": "NVIDIAAI",
@@ -5613,7 +5857,9 @@
       "local_images": [
         "../../tweet_images/NVIDIAAI/2027035927965512093_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2027035927965512093_1.jpg"
+      ]
     },
     {
       "author": "deedydas",
@@ -5634,7 +5880,9 @@
       "local_images": [
         "../../tweet_images/deedydas/2026854763300872619_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2026854763300872619_1.jpg"
+      ]
     },
     {
       "author": "lexfridman",
@@ -5655,7 +5903,9 @@
       "local_images": [
         "../../tweet_images/lexfridman/2026795882637599146_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2026795882637599146_1.jpg"
+      ]
     },
     {
       "author": "dongxi_nlp",
@@ -5676,7 +5926,9 @@
       "local_images": [
         "../../tweet_images/dongxi_nlp/2026781078518694143_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2026781078518694143_1.png"
+      ]
     },
     {
       "author": "AnthropicAI",
@@ -5697,7 +5949,9 @@
       "local_images": [
         "../../tweet_images/AnthropicAI/2026765822623182987_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2026765822623182987_1.jpg"
+      ]
     },
     {
       "author": "bgurley",
@@ -5718,7 +5972,9 @@
       "local_images": [
         "../../tweet_images/bgurley/2026761617828921846_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2026761617828921846_1.jpg"
+      ]
     },
     {
       "author": "ClementDelangue",
@@ -5739,7 +5995,9 @@
       "local_images": [
         "../../tweet_images/ClementDelangue/2026738429770231882_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2026738429770231882_1.jpg"
+      ]
     },
     {
       "author": "hamelhusain",
@@ -5760,7 +6018,9 @@
       "local_images": [
         "../../tweet_images/hamelhusain/2026714894712897698_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2026714894712897698_1.jpg"
+      ]
     },
     {
       "author": "allen_ai",
@@ -5781,7 +6041,9 @@
       "local_images": [
         "../../tweet_images/allen_ai/2026702967164879024_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2026702967164879024_1.jpg"
+      ]
     },
     {
       "author": "allen_ai",
@@ -5802,7 +6064,9 @@
       "local_images": [
         "../../tweet_images/allen_ai/2026702964862206114_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2026702964862206114_1.jpg"
+      ]
     },
     {
       "author": "deedydas",
@@ -5823,7 +6087,9 @@
       "local_images": [
         "../../tweet_images/deedydas/2026534665843257792_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2026534665843257792_1.jpg"
+      ]
     },
     {
       "author": "deedydas",
@@ -5844,7 +6110,9 @@
       "local_images": [
         "../../tweet_images/deedydas/2026500022804836854_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2026500022804836854_1.jpg"
+      ]
     },
     {
       "author": "deedydas",
@@ -5865,7 +6133,9 @@
       "local_images": [
         "../../tweet_images/deedydas/2026500006853881953_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2026500006853881953_1.jpg"
+      ]
     },
     {
       "author": "deedydas",
@@ -5886,7 +6156,9 @@
       "local_images": [
         "../../tweet_images/deedydas/2026499991360123236_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2026499991360123236_1.jpg"
+      ]
     },
     {
       "author": "deedydas",
@@ -5907,7 +6179,9 @@
       "local_images": [
         "../../tweet_images/deedydas/2026499976436830458_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2026499976436830458_1.jpg"
+      ]
     },
     {
       "author": "deedydas",
@@ -5928,7 +6202,9 @@
       "local_images": [
         "../../tweet_images/deedydas/2026499960934641864_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2026499960934641864_1.jpg"
+      ]
     },
     {
       "author": "yoheinakajima",
@@ -5949,7 +6225,9 @@
       "local_images": [
         "../../tweet_images/yoheinakajima/2026430945558147462_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2026430945558147462_1.jpg"
+      ]
     },
     {
       "author": "yoheinakajima",
@@ -5970,7 +6248,9 @@
       "local_images": [
         "../../tweet_images/yoheinakajima/2026426275880165834_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2026426275880165834_1.jpg"
+      ]
     },
     {
       "author": "stanfordnlp",
@@ -5991,7 +6271,9 @@
       "local_images": [
         "../../tweet_images/stanfordnlp/2026386913008169465_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2026386913008169465_1.jpg"
+      ]
     },
     {
       "author": "stanfordnlp",
@@ -6012,7 +6294,9 @@
       "local_images": [
         "../../tweet_images/stanfordnlp/2026377594824962275_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2026377594824962275_1.jpg"
+      ]
     },
     {
       "author": "stanfordnlp",
@@ -6033,7 +6317,9 @@
       "local_images": [
         "../../tweet_images/stanfordnlp/2026373929590469021_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2026373929590469021_1.jpg"
+      ]
     },
     {
       "author": "ClementDelangue",
@@ -6054,7 +6340,9 @@
       "local_images": [
         "../../tweet_images/ClementDelangue/2026365910068388065_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2026365910068388065_1.png"
+      ]
     },
     {
       "author": "karpathy",
@@ -6075,7 +6363,9 @@
       "local_images": [
         "../../tweet_images/karpathy/2026360908398862478_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2026360908398862478_1.jpg"
+      ]
     },
     {
       "author": "NVIDIAAI",
@@ -6096,7 +6386,9 @@
       "local_images": [
         "../../tweet_images/NVIDIAAI/2026303605343490391_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2026303605343490391_1.png"
+      ]
     },
     {
       "author": "GoogleDeepMind",
@@ -6117,7 +6409,9 @@
       "local_images": [
         "../../tweet_images/GoogleDeepMind/2026268012739747855_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2026268012739747855_1.jpg"
+      ]
     },
     {
       "author": "natolambert",
@@ -6138,7 +6432,9 @@
       "local_images": [
         "../../tweet_images/natolambert/2026096742471479598_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2026096742471479598_1.jpg"
+      ]
     },
     {
       "author": "rasbt",
@@ -6159,7 +6455,9 @@
       "local_images": [
         "../../tweet_images/rasbt/2026088278869328370_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2026088278869328370_1.jpg"
+      ]
     },
     {
       "author": "AnthropicAI",
@@ -6180,7 +6478,9 @@
       "local_images": [
         "../../tweet_images/AnthropicAI/2026062458419286217_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2026062458419286217_1.jpg"
+      ]
     },
     {
       "author": "rasbt",
@@ -6201,7 +6501,9 @@
       "local_images": [
         "../../tweet_images/rasbt/2026062254571913522_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2026062254571913522_1.jpg"
+      ]
     },
     {
       "author": "NVIDIAAI",
@@ -6222,7 +6524,9 @@
       "local_images": [
         "../../tweet_images/NVIDIAAI/2026054464101023748_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2026054464101023748_1.jpg"
+      ]
     },
     {
       "author": "allen_ai",
@@ -6243,7 +6547,9 @@
       "local_images": [
         "../../tweet_images/allen_ai/2026042241521705408_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2026042241521705408_1.jpg"
+      ]
     },
     {
       "author": "allen_ai",
@@ -6264,7 +6570,9 @@
       "local_images": [
         "../../tweet_images/allen_ai/2026042243006480537_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2026042243006480537_1.jpg"
+      ]
     },
     {
       "author": "AndrewYNg",
@@ -6285,7 +6593,9 @@
       "local_images": [
         "../../tweet_images/AndrewYNg/2025973459843715185_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2025973459843715185_1.jpg"
+      ]
     },
     {
       "author": "yoheinakajima",
@@ -6306,7 +6616,9 @@
       "local_images": [
         "../../tweet_images/yoheinakajima/2025754708997222736_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2025754708997222736_1.jpg"
+      ]
     },
     {
       "author": "natolambert",
@@ -6327,7 +6639,9 @@
       "local_images": [
         "../../tweet_images/natolambert/2025739085755933015_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2025739085755933015_1.jpg"
+      ]
     },
     {
       "author": "yoheinakajima",
@@ -6348,7 +6662,9 @@
       "local_images": [
         "../../tweet_images/yoheinakajima/2025327744767459571_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2025327744767459571_1.jpg"
+      ]
     },
     {
       "author": "NVIDIAAI",
@@ -6369,7 +6685,9 @@
       "local_images": [
         "../../tweet_images/NVIDIAAI/2024876701918929154_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2024876701918929154_1.jpg"
+      ]
     },
     {
       "author": "huggingface",
@@ -6390,7 +6708,9 @@
       "local_images": [
         "../../tweet_images/huggingface/2024871487753044243_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2024871487753044243_1.jpg"
+      ]
     },
     {
       "author": "sama",
@@ -6411,7 +6731,9 @@
       "local_images": [
         "../../tweet_images/sama/2024826822060290508_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2024826822060290508_1.jpg"
+      ]
     },
     {
       "author": "NVIDIAAI",
@@ -6432,7 +6754,9 @@
       "local_images": [
         "../../tweet_images/NVIDIAAI/2024604911095218626_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2024604911095218626_1.jpg"
+      ]
     },
     {
       "author": "perplexity_ai",
@@ -6453,7 +6777,9 @@
       "local_images": [
         "../../tweet_images/perplexity_ai/2024590462057922864_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2024590462057922864_1.png"
+      ]
     },
     {
       "author": "perplexity_ai",
@@ -6474,7 +6800,9 @@
       "local_images": [
         "../../tweet_images/perplexity_ai/2024532470407065819_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2024532470407065819_1.jpg"
+      ]
     },
     {
       "author": "demishassabis",
@@ -6495,7 +6823,9 @@
       "local_images": [
         "../../tweet_images/demishassabis/2024519780976177645_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2024519780976177645_1.jpg"
+      ]
     },
     {
       "author": "GoogleDeepMind",
@@ -6516,7 +6846,9 @@
       "local_images": [
         "../../tweet_images/GoogleDeepMind/2024516467618656357_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2024516467618656357_1.png"
+      ]
     },
     {
       "author": "GroqInc",
@@ -6537,7 +6869,9 @@
       "local_images": [
         "../../tweet_images/GroqInc/2024243692568269253_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2024243692568269253_1.jpg"
+      ]
     },
     {
       "author": "allen_ai",
@@ -6558,7 +6892,9 @@
       "local_images": [
         "../../tweet_images/allen_ai/2024191319237644448_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2024191319237644448_1.jpg"
+      ]
     },
     {
       "author": "allen_ai",
@@ -6579,7 +6915,9 @@
       "local_images": [
         "../../tweet_images/allen_ai/2024191317899645006_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2024191317899645006_1.jpg"
+      ]
     },
     {
       "author": "NVIDIAAI",
@@ -6600,7 +6938,9 @@
       "local_images": [
         "../../tweet_images/NVIDIAAI/2024182123796590987_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2024182123796590987_1.jpg"
+      ]
     },
     {
       "author": "NVIDIAAI",
@@ -6621,7 +6961,9 @@
       "local_images": [
         "../../tweet_images/NVIDIAAI/2024151924048613861_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2024151924048613861_1.jpg"
+      ]
     },
     {
       "author": "perplexity_ai",
@@ -6642,7 +6984,9 @@
       "local_images": [
         "../../tweet_images/perplexity_ai/2023839622242206179_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2023839622242206179_1.png"
+      ]
     },
     {
       "author": "tomgoldsteincs",
@@ -6663,7 +7007,9 @@
       "local_images": [
         "../../tweet_images/tomgoldsteincs/2023796761308131777_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2023796761308131777_1.png"
+      ]
     },
     {
       "author": "tomgoldsteincs",
@@ -6684,7 +7030,9 @@
       "local_images": [
         "../../tweet_images/tomgoldsteincs/2023796758770299147_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2023796758770299147_1.jpg"
+      ]
     },
     {
       "author": "tomgoldsteincs",
@@ -6705,7 +7053,9 @@
       "local_images": [
         "../../tweet_images/tomgoldsteincs/2023796756366963032_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2023796756366963032_1.jpg"
+      ]
     },
     {
       "author": "NVIDIAAI",
@@ -6726,7 +7076,9 @@
       "local_images": [
         "../../tweet_images/NVIDIAAI/2023789539299361102_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2023789539299361102_1.jpg"
+      ]
     },
     {
       "author": "stanfordnlp",
@@ -6747,7 +7099,9 @@
       "local_images": [
         "../../tweet_images/stanfordnlp/2023481884207141231_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2023481884207141231_1.jpg"
+      ]
     },
     {
       "author": "GroqInc",
@@ -6768,7 +7122,9 @@
       "local_images": [
         "../../tweet_images/GroqInc/2023474809351659638_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2023474809351659638_1.jpg"
+      ]
     },
     {
       "author": "ClementDelangue",
@@ -6789,7 +7145,9 @@
       "local_images": [
         "../../tweet_images/ClementDelangue/2023078587549573470_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2023078587549573470_1.jpg"
+      ]
     },
     {
       "author": "DeepLearningAI",
@@ -6810,7 +7168,9 @@
       "local_images": [
         "../../tweet_images/DeepLearningAI/2022385327260709255_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2022385327260709255_1.jpg"
+      ]
     },
     {
       "author": "allen_ai",
@@ -6831,7 +7191,9 @@
       "local_images": [
         "../../tweet_images/allen_ai/2022347702516711494_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2022347702516711494_1.jpg"
+      ]
     },
     {
       "author": "AndrewYNg",
@@ -6852,7 +7214,9 @@
       "local_images": [
         "../../tweet_images/AndrewYNg/2022345770398347407_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2022345770398347407_1.jpg"
+      ]
     },
     {
       "author": "DeepLearningAI",
@@ -6873,7 +7237,9 @@
       "local_images": [
         "../../tweet_images/DeepLearningAI/2022158790406123960_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2022158790406123960_1.jpg"
+      ]
     },
     {
       "author": "demishassabis",
@@ -6894,7 +7260,9 @@
       "local_images": [
         "../../tweet_images/demishassabis/2022053593910821164_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2022053593910821164_1.png"
+      ]
     },
     {
       "author": "stanfordnlp",
@@ -6915,7 +7283,9 @@
       "local_images": [
         "../../tweet_images/stanfordnlp/2021998329249636846_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2021998329249636846_1.jpg"
+      ]
     },
     {
       "author": "lexfridman",
@@ -6936,7 +7306,9 @@
       "local_images": [
         "../../tweet_images/lexfridman/2021785665059352834_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2021785665059352834_1.jpg"
+      ]
     },
     {
       "author": "GroqInc",
@@ -6957,7 +7329,9 @@
       "local_images": [
         "../../tweet_images/GroqInc/2021343675100561408_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2021343675100561408_1.jpg"
+      ]
     },
     {
       "author": "perplexity_ai",
@@ -6978,7 +7352,9 @@
       "local_images": [
         "../../tweet_images/perplexity_ai/2020962433591017492_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2020962433591017492_1.png"
+      ]
     },
     {
       "author": "OpenAI",
@@ -6999,7 +7375,9 @@
       "local_images": [
         "../../tweet_images/OpenAI/2020936703763153010_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2020936703763153010_1.jpg"
+      ]
     },
     {
       "author": "huggingface",
@@ -7020,7 +7398,9 @@
       "local_images": [
         "../../tweet_images/huggingface/2019754567685050384_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2019754567685050384_1.jpg"
+      ]
     },
     {
       "author": "stanfordnlp",
@@ -7041,7 +7421,9 @@
       "local_images": [
         "../../tweet_images/stanfordnlp/2019127077027660015_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2019127077027660015_1.jpg"
+      ]
     },
     {
       "author": "MistralAI",
@@ -7062,7 +7444,9 @@
       "local_images": [
         "../../tweet_images/MistralAI/2019068828257333466_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2019068828257333466_1.png"
+      ]
     },
     {
       "author": "ding_liam",
@@ -7083,7 +7467,9 @@
       "local_images": [
         "../../tweet_images/ding_liam/2018595477613338877_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2018595477613338877_1.png"
+      ]
     },
     {
       "author": "demishassabis",
@@ -7104,7 +7490,9 @@
       "local_images": [
         "../../tweet_images/demishassabis/2018385762861863306_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2018385762861863306_1.png"
+      ]
     },
     {
       "author": "ding_liam",
@@ -7125,7 +7513,9 @@
       "local_images": [
         "../../tweet_images/ding_liam/2018300857377550801_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2018300857377550801_1.jpg"
+      ]
     },
     {
       "author": "ding_liam",
@@ -7146,7 +7536,9 @@
       "local_images": [
         "../../tweet_images/ding_liam/2017826727339401323_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2017826727339401323_1.jpg"
+      ]
     },
     {
       "author": "lexfridman",
@@ -7167,7 +7559,9 @@
       "local_images": [
         "../../tweet_images/lexfridman/2017735631397654921_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2017735631397654921_1.jpg"
+      ]
     },
     {
       "author": "ding_liam",
@@ -7188,7 +7582,9 @@
       "local_images": [
         "../../tweet_images/ding_liam/2017468543575658657_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2017468543575658657_1.png"
+      ]
     },
     {
       "author": "ding_liam",
@@ -7209,7 +7605,9 @@
       "local_images": [
         "../../tweet_images/ding_liam/2017422277466587263_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2017422277466587263_1.jpg"
+      ]
     },
     {
       "author": "ding_liam",
@@ -7230,7 +7628,9 @@
       "local_images": [
         "../../tweet_images/ding_liam/2017237868243230861_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2017237868243230861_1.jpg"
+      ]
     },
     {
       "author": "ding_liam",
@@ -7251,7 +7651,9 @@
       "local_images": [
         "../../tweet_images/ding_liam/2017237324976062933_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2017237324976062933_1.jpg"
+      ]
     },
     {
       "author": "huggingface",
@@ -7272,7 +7674,9 @@
       "local_images": [
         "../../tweet_images/huggingface/2016952476667166750_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2016952476667166750_1.jpg"
+      ]
     },
     {
       "author": "ClementDelangue",
@@ -7293,7 +7697,9 @@
       "local_images": [
         "../../tweet_images/ClementDelangue/2016208523898634453_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2016208523898634453_1.jpg"
+      ]
     },
     {
       "author": "Cohere",
@@ -7314,7 +7720,9 @@
       "local_images": [
         "../../tweet_images/Cohere/2015903351410438177_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2015903351410438177_1.jpg"
+      ]
     },
     {
       "author": "stanfordnlp",
@@ -7335,7 +7743,9 @@
       "local_images": [
         "../../tweet_images/stanfordnlp/2015874846828462234_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2015874846828462234_1.jpg"
+      ]
     },
     {
       "author": "mustafasuleyman",
@@ -7356,7 +7766,9 @@
       "local_images": [
         "../../tweet_images/mustafasuleyman/2015849958197625255_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2015849958197625255_1.jpg"
+      ]
     },
     {
       "author": "mustafasuleyman",
@@ -7377,7 +7789,9 @@
       "local_images": [
         "../../tweet_images/mustafasuleyman/2015845567138816326_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2015845567138816326_1.jpg"
+      ]
     },
     {
       "author": "GroqInc",
@@ -7398,7 +7812,9 @@
       "local_images": [
         "../../tweet_images/GroqInc/2014044469641740540_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2014044469641740540_1.jpg"
+      ]
     },
     {
       "author": "ClementDelangue",
@@ -7419,7 +7835,9 @@
       "local_images": [
         "../../tweet_images/ClementDelangue/2012333265605067041_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2012333265605067041_1.png"
+      ]
     },
     {
       "author": "ClementDelangue",
@@ -7440,7 +7858,9 @@
       "local_images": [
         "../../tweet_images/ClementDelangue/2012319974946206024_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2012319974946206024_1.jpg"
+      ]
     },
     {
       "author": "ClementDelangue",
@@ -7461,7 +7881,9 @@
       "local_images": [
         "../../tweet_images/ClementDelangue/2011839414096269674_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2011839414096269674_1.jpg"
+      ]
     },
     {
       "author": "ClementDelangue",
@@ -7482,7 +7904,9 @@
       "local_images": [
         "../../tweet_images/ClementDelangue/2011573993200144856_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2011573993200144856_1.jpg"
+      ]
     },
     {
       "author": "ClementDelangue",
@@ -7503,7 +7927,9 @@
       "local_images": [
         "../../tweet_images/ClementDelangue/2011526642792087955_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2011526642792087955_1.jpg"
+      ]
     },
     {
       "author": "ClementDelangue",
@@ -7524,7 +7950,9 @@
       "local_images": [
         "../../tweet_images/ClementDelangue/2011477703698895245_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2011477703698895245_1.png"
+      ]
     },
     {
       "author": "stanfordnlp",
@@ -7545,7 +7973,9 @@
       "local_images": [
         "../../tweet_images/stanfordnlp/2011253599683408168_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2011253599683408168_1.jpg"
+      ]
     },
     {
       "author": "GroqInc",
@@ -7566,7 +7996,9 @@
       "local_images": [
         "../../tweet_images/GroqInc/2001791164341751833_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2001791164341751833_1.jpg"
+      ]
     },
     {
       "author": "MistralAI",
@@ -7587,7 +8019,9 @@
       "local_images": [
         "../../tweet_images/MistralAI/2001669581275033741_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2001669581275033741_1.jpg"
+      ]
     },
     {
       "author": "GroqInc",
@@ -7608,7 +8042,9 @@
       "local_images": [
         "../../tweet_images/GroqInc/2001382389675610337_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2001382389675610337_1.jpg"
+      ]
     },
     {
       "author": "GroqInc",
@@ -7629,7 +8065,9 @@
       "local_images": [
         "../../tweet_images/GroqInc/2001364563254747374_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2001364563254747374_1.jpg"
+      ]
     },
     {
       "author": "GroqInc",
@@ -7650,7 +8088,9 @@
       "local_images": [
         "../../tweet_images/GroqInc/2001095276355059903_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/2001095276355059903_1.jpg"
+      ]
     },
     {
       "author": "Cohere",
@@ -7671,7 +8111,9 @@
       "local_images": [
         "../../tweet_images/Cohere/1999162808962023464_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/1999162808962023464_1.jpg"
+      ]
     },
     {
       "author": "Cohere",
@@ -7692,7 +8134,9 @@
       "local_images": [
         "../../tweet_images/Cohere/1999162805749158151_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/1999162805749158151_1.png"
+      ]
     },
     {
       "author": "Cohere",
@@ -7713,7 +8157,9 @@
       "local_images": [
         "../../tweet_images/Cohere/1999162802033066362_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/1999162802033066362_1.png"
+      ]
     },
     {
       "author": "Cohere",
@@ -7734,7 +8180,9 @@
       "local_images": [
         "../../tweet_images/Cohere/1999162798321107104_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/1999162798321107104_1.png"
+      ]
     },
     {
       "author": "Cohere",
@@ -7755,7 +8203,9 @@
       "local_images": [
         "../../tweet_images/Cohere/1999162794315599929_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/1999162794315599929_1.png"
+      ]
     },
     {
       "author": "Cohere",
@@ -7776,7 +8226,9 @@
       "local_images": [
         "../../tweet_images/Cohere/1999162791966745079_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/1999162791966745079_1.jpg"
+      ]
     },
     {
       "author": "MistralAI",
@@ -7797,7 +8249,9 @@
       "local_images": [
         "../../tweet_images/MistralAI/1999124574798217324_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/1999124574798217324_1.jpg"
+      ]
     },
     {
       "author": "MistralAI",
@@ -7818,7 +8272,9 @@
       "local_images": [
         "../../tweet_images/MistralAI/1998407335308358028_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/1998407335308358028_1.jpg"
+      ]
     },
     {
       "author": "mustafasuleyman",
@@ -7839,7 +8295,9 @@
       "local_images": [
         "../../tweet_images/mustafasuleyman/1996995208530309237_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/1996995208530309237_1.jpg"
+      ]
     },
     {
       "author": "mustafasuleyman",
@@ -7860,7 +8318,9 @@
       "local_images": [
         "../../tweet_images/mustafasuleyman/1996994917827289481_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/1996994917827289481_1.jpg"
+      ]
     },
     {
       "author": "MistralAI",
@@ -7881,7 +8341,9 @@
       "local_images": [
         "../../tweet_images/MistralAI/1996580307336638951_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/1996580307336638951_1.jpg"
+      ]
     },
     {
       "author": "huggingface",
@@ -7902,7 +8364,9 @@
       "local_images": [
         "../../tweet_images/huggingface/1995575607456137716_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/1995575607456137716_1.jpg"
+      ]
     },
     {
       "author": "Cohere",
@@ -7923,7 +8387,9 @@
       "local_images": [
         "../../tweet_images/Cohere/1994016476596949386_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/1994016476596949386_1.jpg"
+      ]
     },
     {
       "author": "mustafasuleyman",
@@ -7944,7 +8410,9 @@
       "local_images": [
         "../../tweet_images/mustafasuleyman/1993704100996022276_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/1993704100996022276_1.jpg"
+      ]
     },
     {
       "author": "mustafasuleyman",
@@ -7965,7 +8433,9 @@
       "local_images": [
         "../../tweet_images/mustafasuleyman/1993704097149821062_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/1993704097149821062_1.jpg"
+      ]
     },
     {
       "author": "mustafasuleyman",
@@ -7986,7 +8456,9 @@
       "local_images": [
         "../../tweet_images/mustafasuleyman/1993704093202997621_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/1993704093202997621_1.jpg"
+      ]
     },
     {
       "author": "goodside",
@@ -8007,7 +8479,9 @@
       "local_images": [
         "../../tweet_images/goodside/1993049543945159145_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/1993049543945159145_1.jpg"
+      ]
     },
     {
       "author": "goodside",
@@ -8028,7 +8502,9 @@
       "local_images": [
         "../../tweet_images/goodside/1992955706144911824_1.png"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/1992955706144911824_1.png"
+      ]
     },
     {
       "author": "goodside",
@@ -8049,7 +8525,9 @@
       "local_images": [
         "../../tweet_images/goodside/1992678157896282381_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/1992678157896282381_1.jpg"
+      ]
     },
     {
       "author": "goodside",
@@ -8070,7 +8548,9 @@
       "local_images": [
         "../../tweet_images/goodside/1992675210663702567_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/1992675210663702567_1.jpg"
+      ]
     },
     {
       "author": "goodside",
@@ -8091,7 +8571,9 @@
       "local_images": [
         "../../tweet_images/goodside/1992673828372172937_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/1992673828372172937_1.jpg"
+      ]
     },
     {
       "author": "goodside",
@@ -8112,7 +8594,9 @@
       "local_images": [
         "../../tweet_images/goodside/1992038915881029641_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/1992038915881029641_1.jpg"
+      ]
     },
     {
       "author": "tomgoldsteincs",
@@ -8133,7 +8617,9 @@
       "local_images": [
         "../../tweet_images/tomgoldsteincs/1965173623356067945_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/1965173623356067945_1.jpg"
+      ]
     },
     {
       "author": "tomgoldsteincs",
@@ -8154,7 +8640,9 @@
       "local_images": [
         "../../tweet_images/tomgoldsteincs/1890426273425502688_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/1890426273425502688_1.jpg"
+      ]
     },
     {
       "author": "tomgoldsteincs",
@@ -8175,7 +8663,9 @@
       "local_images": [
         "../../tweet_images/tomgoldsteincs/1890426271881953655_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/1890426271881953655_1.jpg"
+      ]
     },
     {
       "author": "ilyasut",
@@ -8196,7 +8686,9 @@
       "local_images": [
         "../../tweet_images/ilyasut/1790517460594266508_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/1790517460594266508_1.jpg"
+      ]
     },
     {
       "author": "fei_fei_li",
@@ -8217,7 +8709,9 @@
       "local_images": [
         "../../tweet_images/fei_fei_li/814623767951347712_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/814623767951347712_1.jpg"
+      ]
     },
     {
       "author": "fei_fei_li",
@@ -8238,7 +8732,9 @@
       "local_images": [
         "../../tweet_images/fei_fei_li/814623404514897920_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/814623404514897920_1.jpg"
+      ]
     },
     {
       "author": "fei_fei_li",
@@ -8259,7 +8755,9 @@
       "local_images": [
         "../../tweet_images/fei_fei_li/811462622239485956_1.jpg"
       ],
-      "hosted_images": []
+      "hosted_images": [
+        "./twitter_reader_assets/811462622239485956_1.jpg"
+      ]
     },
     {
       "author": "ylecun",

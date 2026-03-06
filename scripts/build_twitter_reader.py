@@ -198,7 +198,7 @@ def build_payload(max_rows: int) -> dict:
         reverse=True,
     )
     limited = rows[:max_rows]
-    hosted_posts = int(os.environ.get("TW_READER_HOSTED_POSTS", "120"))
+    hosted_posts = int(os.environ.get("TW_READER_HOSTED_POSTS", str(max_rows)))
     hosted_count, hosted_bytes = stage_hosted_images(limited, hosted_posts=hosted_posts)
 
     latest_time = limited[0]["time"] if limited else ""
