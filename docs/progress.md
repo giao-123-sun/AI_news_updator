@@ -474,3 +474,16 @@
   - evidence-any (`tweet_link OR external_links`): `363`
   - `precision_removed_total`: `72`
   - `dedup_removed_total`: `236`
+## 2026-03-07 (Codex Status Line)
+- Customized local Codex CLI status line in `C:\Users\1\.codex\config.toml`.
+- Replaced the previous redundant status items with a denser set:
+  - `model-with-reasoning`
+  - `git-branch`
+  - `current-dir`
+  - `used-tokens`
+  - `context-window-size`
+  - `context-remaining`
+  - `five-hour-limit`
+  - `weekly-limit`
+- Result: the Codex TUI status line now emphasizes model mode, repo context, token usage, remaining context, and rate-limit headroom with more distinct colored segments.
+- Validation: confirmed the binary supports these built-in status line items before updating config.
