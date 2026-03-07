@@ -73,3 +73,28 @@ Outputs to `data/capability_test_results.json`.
   - `X_MAX_PAGES`
   - `X_PAGE_SLEEP_MIN`, `X_PAGE_SLEEP_MAX`
   - `X_USER_SLEEP_MIN`, `X_USER_SLEEP_MAX`
+
+## Daily automation flow (2026-03-08)
+1. Scheduled entry: Windows Task Scheduler task `AI_News_Updator_Daily_X` at `06:00`.
+2. Task runner: `scripts/run_daily_x_job.ps1`.
+3. Runner steps:
+- validate `human_comment/cookies.txt` exists
+- clear proxy-related environment variables for direct network access:
+  - `X_PROXY`
+  - `HTTP_PROXY`
+  - `HTTPS_PROXY`
+  - `ALL_PROXY`
+  - `NO_PROXY`
+- preflight check that generated tracked paths are clean:
+  - `index.html`
+  - `reports/daily`
+- run `python x_user_crawler.py`
+- run `python run_daily_pipeline_v1.py`
+- stage only generated Git-tracked site outputs:
+  - `index.html`
+  - `reports/daily`
+- commit and push to `origin/main`
+4. Logs:
+- `logs/daily_x_job_YYYY-MM-DD_HHMMSS.log`
+5. Safety rule:
+- abort when generated tracked paths are already dirty before the run, to avoid mixing scheduled output with manual edits

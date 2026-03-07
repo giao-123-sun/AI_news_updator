@@ -93,6 +93,29 @@
 python run_daily_pipeline_v1.py
 ```
 
+## Daily automation
+- Runner:
+  - `scripts/run_daily_x_job.ps1`
+- Task installer:
+  - `scripts/install_daily_x_task.ps1`
+- Runner behavior:
+  - checks `human_comment/cookies.txt`
+  - clears proxy-related env vars before crawl:
+    - `X_PROXY`
+    - `HTTP_PROXY`
+    - `HTTPS_PROXY`
+    - `ALL_PROXY`
+    - `NO_PROXY`
+  - runs `x_user_crawler.py`
+  - runs `run_daily_pipeline_v1.py`
+  - stages only:
+    - `index.html`
+    - `reports/daily`
+  - commits with `chore: daily x crawl YYYY-MM-DD`
+  - pushes to `origin/main`
+- Logs:
+  - `logs/daily_x_job_YYYY-MM-DD_HHMMSS.log`
+
 ## Crawl analysis input selection
 `x_user_crawler.py`:
 - analysis input now prefers aggregate CSVs (`twitter_all_users*`, merged) over per-user files.

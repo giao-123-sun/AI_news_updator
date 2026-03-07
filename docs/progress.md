@@ -497,3 +497,29 @@
   - `total-output-tokens`
 - Result: more independent status blocks render in the TUI, which increases color separation and makes the line feel closer to a rainbow strip.
 - Limitation: no validated support was found for a custom script-driven status line or a true user-defined rainbow palette in the current `codex-cli 0.111.0` binary.
+
+## 2026-03-08 (Daily X Crawl Automation)
+- Capability test first:
+  - command: `python capability_probe.py --users-limit 2 --no-proxy --output data/capability_test_results_2026-03-08.json`
+  - result:
+    - `users_ok=2`
+    - `reply_samples=12`
+    - `direct_comment_samples=8`
+  - validated that the current cookie file was usable at execution time
+- Added automation scripts:
+  - `scripts/run_daily_x_job.ps1`
+  - `scripts/install_daily_x_task.ps1`
+- Added local log ignore:
+  - `.gitignore` now ignores `logs/`
+- Automation target:
+  - daily scheduled crawl at `06:00`
+  - run crawl + pipeline
+  - stage only tracked public site outputs:
+    - `index.html`
+    - `reports/daily`
+  - commit and push generated outputs to GitHub
+- Hardening update:
+  - detected system proxy env vars:
+    - `HTTP_PROXY=http://127.0.0.1:7890`
+    - `HTTPS_PROXY=http://127.0.0.1:7890`
+  - updated `scripts/run_daily_x_job.ps1` to clear proxy-related env vars before crawl so the scheduled task runs direct

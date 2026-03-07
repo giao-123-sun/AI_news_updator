@@ -72,3 +72,17 @@
   - image source order: local downloaded image first, remote image fallback.
 - Expected user outcome:
   - users can quickly read summary and immediately jump to original evidence without copying text.
+
+## Scheduled crawl design (2026-03-08)
+- Objective:
+  - run the X crawl automatically every morning at `06:00`
+  - regenerate the latest reading pages
+  - push only generated public outputs to GitHub
+- Safety constraints:
+  - cookie file stays local and is never staged
+  - scheduled runner clears common proxy env vars and prefers direct network access
+  - logs stay local under `logs/`
+  - scheduled job stages only generated tracked site outputs, not arbitrary repo changes
+  - job aborts if generated tracked paths are already dirty before execution
+- Operational outcome:
+  - the daily website can update from a single scheduled local job without manually opening the repo

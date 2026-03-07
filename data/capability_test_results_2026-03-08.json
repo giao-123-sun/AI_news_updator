@@ -1,0 +1,212 @@
+{
+  "timestamp": "2026-03-07T16:16:46.681089+00:00",
+  "proxy_used": false,
+  "tested_users": [
+    {
+      "user": "vista8",
+      "status": "ok",
+      "tweets_on_first_page": 20,
+      "reply_count": 12,
+      "reply_ratio": 0.6,
+      "reply_parent_also_in_same_page": 0
+    },
+    {
+      "user": "lijigang_com",
+      "status": "ok",
+      "tweets_on_first_page": 0,
+      "reply_count": 0,
+      "reply_ratio": 0,
+      "reply_parent_also_in_same_page": 0
+    }
+  ],
+  "reply_detection": {
+    "users_tested_ok": 2,
+    "total_reply_samples": 12,
+    "sample_replies": [
+      {
+        "user": "vista8",
+        "tweet_id": "2030273740156932284",
+        "is_reply": true,
+        "parent_id": "2030271987931865503",
+        "in_reply_to_screen_name": "mmyu1686",
+        "author": "",
+        "text": "@mmyu1686 不行，只有配置了agent2agent可以互相对话，但不是通过@"
+      },
+      {
+        "user": "vista8",
+        "tweet_id": "2030142832221278353",
+        "is_reply": true,
+        "parent_id": "2030142490620350901",
+        "in_reply_to_screen_name": "XueshiQiao",
+        "author": "",
+        "text": "@XueshiQiao 收到，用了半年多，不过风险是要考虑。"
+      },
+      {
+        "user": "vista8",
+        "tweet_id": "2030142689107390636",
+        "is_reply": true,
+        "parent_id": "2030142330624471226",
+        "in_reply_to_screen_name": "RealHanyaHu",
+        "author": "",
+        "text": "@RealHanyaHu 是命令行执行，还是Playwright操作？"
+      },
+      {
+        "user": "vista8",
+        "tweet_id": "2030140403958333947",
+        "is_reply": true,
+        "parent_id": "2030139609431396687",
+        "in_reply_to_screen_name": "berryxia",
+        "author": "",
+        "text": "@berryxia 呃，只是懂一点前端的产品经理，都是CC的功劳。"
+      },
+      {
+        "user": "vista8",
+        "tweet_id": "2030139373229089219",
+        "is_reply": true,
+        "parent_id": "2030138862945849590",
+        "in_reply_to_screen_name": "logiclogic1223",
+        "author": "",
+        "text": "@logiclogic1223 已有脚本，用官方的skill-creator打包，发布到Github也有写好的skill。\n\n所以速度可以很快。"
+      }
+    ]
+  },
+  "reply_parent_fetch_test": {
+    "sample_reply": {
+      "user": "vista8",
+      "tweet_id": "2030273740156932284",
+      "is_reply": true,
+      "parent_id": "2030271987931865503",
+      "in_reply_to_screen_name": "mmyu1686",
+      "author": "",
+      "text": "@mmyu1686 不行，只有配置了agent2agent可以互相对话，但不是通过@"
+    },
+    "conversation_query": "conversation_id:2030271987931865503",
+    "conversation_result_count": 0,
+    "contains_parent_id": false,
+    "unique_authors": [],
+    "sample_conversation_rows": []
+  },
+  "comments_fetch_test": {
+    "target_post": {
+      "user": "vista8",
+      "tweet_id": "2030266319371952596",
+      "is_reply": false,
+      "parent_id": null,
+      "in_reply_to_screen_name": null,
+      "author": "",
+      "text": "让 GPT5.3 驱动的OpenClaw，点评下KimiClaw、Maxclaw、Arkclaw的智力水平。。。 https://t.co/0RXy0D7fdr"
+    },
+    "conversation_query": "conversation_id:2030266319371952596",
+    "conversation_result_count": 10,
+    "direct_reply_count": 8,
+    "contains_target_post": true,
+    "sample_direct_replies": [
+      {
+        "tweet_id": "2030307399911997483",
+        "is_reply": true,
+        "parent_id": "2030266319371952596",
+        "in_reply_to_screen_name": "vista8",
+        "author": "",
+        "text": "@vista8 大佬，求教一下，我在飞书群@多个机器人的时候，只有一个机器人会回复我，可能是什么原因，让openclaw自己排查了半天也没解决"
+      },
+      {
+        "tweet_id": "2030300102116737185",
+        "is_reply": true,
+        "parent_id": "2030266319371952596",
+        "in_reply_to_screen_name": "vista8",
+        "author": "",
+        "text": "@vista8 大哥你收徒弟吗，我报名价格你说的算"
+      },
+      {
+        "tweet_id": "2030299984554500262",
+        "is_reply": true,
+        "parent_id": "2030266319371952596",
+        "in_reply_to_screen_name": "vista8",
+        "author": "",
+        "text": "@vista8 雨露均沾"
+      },
+      {
+        "tweet_id": "2030294828807049405",
+        "is_reply": true,
+        "parent_id": "2030266319371952596",
+        "in_reply_to_screen_name": "vista8",
+        "author": "",
+        "text": "@vista8 OpenClaw超厉害！KimiClaw、Maxclaw、Arkclaw各有千秋，谁最聪明呢？😄"
+      },
+      {
+        "tweet_id": "2030280433460748711",
+        "is_reply": true,
+        "parent_id": "2030266319371952596",
+        "in_reply_to_screen_name": "vista8",
+        "author": "",
+        "text": "@vista8 等5.4的评测"
+      }
+    ],
+    "sample_rows": [
+      {
+        "tweet_id": "2030307399911997483",
+        "is_reply": true,
+        "parent_id": "2030266319371952596",
+        "in_reply_to_screen_name": "vista8",
+        "author": "",
+        "text": "@vista8 大佬，求教一下，我在飞书群@多个机器人的时候，只有一个机器人会回复我，可能是什么原因，让openclaw自己排查了半天也没解决"
+      },
+      {
+        "tweet_id": "2030300102116737185",
+        "is_reply": true,
+        "parent_id": "2030266319371952596",
+        "in_reply_to_screen_name": "vista8",
+        "author": "",
+        "text": "@vista8 大哥你收徒弟吗，我报名价格你说的算"
+      },
+      {
+        "tweet_id": "2030299984554500262",
+        "is_reply": true,
+        "parent_id": "2030266319371952596",
+        "in_reply_to_screen_name": "vista8",
+        "author": "",
+        "text": "@vista8 雨露均沾"
+      },
+      {
+        "tweet_id": "2030294828807049405",
+        "is_reply": true,
+        "parent_id": "2030266319371952596",
+        "in_reply_to_screen_name": "vista8",
+        "author": "",
+        "text": "@vista8 OpenClaw超厉害！KimiClaw、Maxclaw、Arkclaw各有千秋，谁最聪明呢？😄"
+      },
+      {
+        "tweet_id": "2030280433460748711",
+        "is_reply": true,
+        "parent_id": "2030266319371952596",
+        "in_reply_to_screen_name": "vista8",
+        "author": "",
+        "text": "@vista8 等5.4的评测"
+      },
+      {
+        "tweet_id": "2030279258598146154",
+        "is_reply": true,
+        "parent_id": "2030266319371952596",
+        "in_reply_to_screen_name": "vista8",
+        "author": "",
+        "text": "@vista8 玩得花啊"
+      },
+      {
+        "tweet_id": "2030273740156932284",
+        "is_reply": true,
+        "parent_id": "2030271987931865503",
+        "in_reply_to_screen_name": "mmyu1686",
+        "author": "",
+        "text": "@mmyu1686 不行，只有配置了agent2agent可以互相对话，但不是通过@"
+      },
+      {
+        "tweet_id": "2030271987931865503",
+        "is_reply": true,
+        "parent_id": "2030266319371952596",
+        "in_reply_to_screen_name": "vista8",
+        "author": "",
+        "text": "@vista8 这是在飞书吗？群聊机器人可以互相@吗"
+      }
+    ]
+  }
+}
