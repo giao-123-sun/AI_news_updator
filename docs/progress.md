@@ -487,3 +487,13 @@
   - `weekly-limit`
 - Result: the Codex TUI status line now emphasizes model mode, repo context, token usage, remaining context, and rate-limit headroom with more distinct colored segments.
 - Validation: confirmed the binary supports these built-in status line items before updating config.
+
+## 2026-03-07 (Codex Status Line Rainbow Pass)
+- Adjusted the local Codex CLI status line again for a more rainbow-like segmented look.
+- Added more built-in status tokens in `C:\Users\1\.codex\config.toml`:
+  - `codex-version`
+  - `project-root`
+  - `total-input-tokens`
+  - `total-output-tokens`
+- Result: more independent status blocks render in the TUI, which increases color separation and makes the line feel closer to a rainbow strip.
+- Limitation: no validated support was found for a custom script-driven status line or a true user-defined rainbow palette in the current `codex-cli 0.111.0` binary.
